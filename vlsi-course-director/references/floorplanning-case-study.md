@@ -1,0 +1,11 @@
+# Worked precedent: slicing floorplans
+
+The VLSI Floorplanning Lesson 4 project used a shared five-block example to connect full cuts, a slicing tree, postfix representation, stack reconstruction, geometry checks and a non-slicing counterexample. An early sample and user review led to clearer first-time-learner motivation, more expressive intro, explicit width × height, visible empty space, labels separating stack staging from combined geometry, and concrete invalid-expression cards. These were solutions to that course, not required content in other lessons.
+
+The educational reference is [Yongfu Li and contributors' EDA Learning Floorplanning course](https://github.com/yongfu-li/eda-learning/tree/main/courses/learn_floorplanning), whose original course materials are credited under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This skill describes an adapted project workflow; original third-party materials remain under their own terms.
+
+The delivered site used a Python/Pillow picture renderer, separately timed synthetic voices, music, selectable per-track VTT subtitles, HTML/CSS/JS and a data-driven player. Four narration variants and seven subtitle languages were technically tested; their exact voice choices and languages are previous user preferences, not universal defaults. Extra-language subtitles still needed native review, and technical alignment checks did not prove subjective voice quality.
+
+Relevant project artifacts, when available locally, include `Floorplanning_Lesson4/brief/COURSE_CONTRACT.md`, `research/source-manifest.json`, `v4/full_animation/render_full_v3.py`, `v4/audio/timings.json`, `v4/assemble.py`, `v4/site/player.js`, and `v4/site/qa/player-report.json`. Many of these contain hardcoded chapters, diagrams, labels, voices or translation mappings; read as examples and redesign for a new course. Earlier handoff files are snapshots, and later user corrections and real deployment evidence supersede stale status descriptions.
+
+An originally selected ambient track was credited with a CC0 source and the audio mix was ducked around narration; source-specific attribution and licensing must be checked anew in a different project. A later deployment used GitHub Pages with a normal static site; future course deployments still require the correct authorized repository and independent verification.
