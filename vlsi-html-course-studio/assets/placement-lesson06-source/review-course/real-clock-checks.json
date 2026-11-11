@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "voiceDurations": {
+    "en_gb": 398.196,
+    "en_us": 394.236,
+    "en_in": 463.116,
+    "zh": 415.476
+  },
+  "comparedSemanticStatesPerVoice": 117,
+  "positionTolerance": 1e-10,
+  "browserErrors": [],
+  "method": "Actual measured clocks. Same cue and proportional progress yields same geometry/capacity/mode."
+}

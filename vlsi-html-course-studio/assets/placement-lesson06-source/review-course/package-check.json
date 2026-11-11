@@ -1,0 +1,9 @@
+{
+  "archive": "Placement_Lesson06_Complete_Website.zip",
+  "files": 74,
+  "bytes": 273615147,
+  "sha256": "37a82dc25249754b8b076219952d4e6933e32331752a531ee3ec2eca300f2c34",
+  "rootEntry": "index.html",
+  "includes": "All four videos, 28 captions, timing files, editable site components, local server and starter",
+  "excluded": "Production WAVs, raw speech caches, picture masters and Python rendering dependencies remain in the project workspace"
+}

@@ -1,0 +1,9 @@
+{
+  "title": "The Wirelength Studio",
+  "status": "Silent storyboard starter; narration and timing are provisional.",
+  "cues": [
+    {"id": "notice", "chapter": "01", "title": "Two pins. One question.", "en": "Pin A is fixed. Pin B can move. How can we estimate their connection length before routing?", "zh": "A 固定，B 可以移动。实际布线前，怎样估计它们的连线长度？"},
+    {"id": "measure", "chapter": "02", "title": "Across, then up.", "en": "For two pins, the bounding-box width plus height gives a Manhattan wirelength estimate. It is a proxy, not the final routed wire.", "zh": "对于两个引脚，包围盒的宽加高给出曼哈顿线长估计。这是代理指标，不是最终布线。"},
+    {"id": "move", "chapter": "03", "title": "Change the placement.", "en": "Moving B changes both distances. Pause anywhere, take this exact arrangement into the lab, and find another placement with a length between three and six units.", "zh": "移动 B 会改变两个方向的距离。随时暂停，把当前状态带入实验室，寻找另一个估计线长在三到六单位之间的位置。"}
+  ]
+}

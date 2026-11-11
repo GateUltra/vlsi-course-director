@@ -1,0 +1,295 @@
+{
+  "voice": "zh",
+  "fps": 30,
+  "method": "Each semantic picture cue retimed to its measured narration window; speech unchanged. Frame-boundary error <1 frame.",
+  "frames": 12465,
+  "cuts": [
+    {
+      "id": "intro",
+      "sourceStartFrame": 0,
+      "sourceEndFrame": 24,
+      "startFrame": 0,
+      "endFrame": 24
+    },
+    {
+      "id": "welcome",
+      "sourceStartFrame": 24,
+      "sourceEndFrame": 250,
+      "startFrame": 24,
+      "endFrame": 297
+    },
+    {
+      "id": "city",
+      "sourceStartFrame": 250,
+      "sourceEndFrame": 570,
+      "startFrame": 297,
+      "endFrame": 630
+    },
+    {
+      "id": "flow",
+      "sourceStartFrame": 570,
+      "sourceEndFrame": 919,
+      "startFrame": 630,
+      "endFrame": 911
+    },
+    {
+      "id": "temptation",
+      "sourceStartFrame": 919,
+      "sourceEndFrame": 1210,
+      "startFrame": 911,
+      "endFrame": 1195
+    },
+    {
+      "id": "points",
+      "sourceStartFrame": 1210,
+      "sourceEndFrame": 1469,
+      "startFrame": 1195,
+      "endFrame": 1456
+    },
+    {
+      "id": "nets",
+      "sourceStartFrame": 1469,
+      "sourceEndFrame": 1742,
+      "startFrame": 1456,
+      "endFrame": 1821
+    },
+    {
+      "id": "anchors",
+      "sourceStartFrame": 1742,
+      "sourceEndFrame": 2017,
+      "startFrame": 1821,
+      "endFrame": 2122
+    },
+    {
+      "id": "model_limit",
+      "sourceStartFrame": 2017,
+      "sourceEndFrame": 2314,
+      "startFrame": 2122,
+      "endFrame": 2494
+    },
+    {
+      "id": "hpwl_box",
+      "sourceStartFrame": 2314,
+      "sourceEndFrame": 2593,
+      "startFrame": 2494,
+      "endFrame": 2782
+    },
+    {
+      "id": "hpwl_measure",
+      "sourceStartFrame": 2593,
+      "sourceEndFrame": 2908,
+      "startFrame": 2782,
+      "endFrame": 3092
+    },
+    {
+      "id": "hpwl_multi",
+      "sourceStartFrame": 2908,
+      "sourceEndFrame": 3221,
+      "startFrame": 3092,
+      "endFrame": 3412
+    },
+    {
+      "id": "hpwl_inside",
+      "sourceStartFrame": 3221,
+      "sourceEndFrame": 3497,
+      "startFrame": 3412,
+      "endFrame": 3710
+    },
+    {
+      "id": "hpwl_total",
+      "sourceStartFrame": 3497,
+      "sourceEndFrame": 3773,
+      "startFrame": 3710,
+      "endFrame": 4018
+    },
+    {
+      "id": "hpwl_limit",
+      "sourceStartFrame": 3773,
+      "sourceEndFrame": 4062,
+      "startFrame": 4018,
+      "endFrame": 4307
+    },
+    {
+      "id": "bins",
+      "sourceStartFrame": 4062,
+      "sourceEndFrame": 4375,
+      "startFrame": 4307,
+      "endFrame": 4617
+    },
+    {
+      "id": "capacity",
+      "sourceStartFrame": 4375,
+      "sourceEndFrame": 4662,
+      "startFrame": 4617,
+      "endFrame": 4919
+    },
+    {
+      "id": "overflow",
+      "sourceStartFrame": 4662,
+      "sourceEndFrame": 4966,
+      "startFrame": 4919,
+      "endFrame": 5231
+    },
+    {
+      "id": "predict",
+      "sourceStartFrame": 4966,
+      "sourceEndFrame": 5293,
+      "startFrame": 5231,
+      "endFrame": 5558
+    },
+    {
+      "id": "spread_demo",
+      "sourceStartFrame": 5293,
+      "sourceEndFrame": 5618,
+      "startFrame": 5558,
+      "endFrame": 5836
+    },
+    {
+      "id": "tradeoff",
+      "sourceStartFrame": 5618,
+      "sourceEndFrame": 5942,
+      "startFrame": 5836,
+      "endFrame": 6175
+    },
+    {
+      "id": "reference_start",
+      "sourceStartFrame": 5942,
+      "sourceEndFrame": 6278,
+      "startFrame": 6175,
+      "endFrame": 6518
+    },
+    {
+      "id": "algorithm_map",
+      "sourceStartFrame": 6278,
+      "sourceEndFrame": 6595,
+      "startFrame": 6518,
+      "endFrame": 6857
+    },
+    {
+      "id": "force",
+      "sourceStartFrame": 6595,
+      "sourceEndFrame": 6865,
+      "startFrame": 6857,
+      "endFrame": 7153
+    },
+    {
+      "id": "quadratic",
+      "sourceStartFrame": 6865,
+      "sourceEndFrame": 7190,
+      "startFrame": 7153,
+      "endFrame": 7478
+    },
+    {
+      "id": "density_push",
+      "sourceStartFrame": 7190,
+      "sourceEndFrame": 7504,
+      "startFrame": 7478,
+      "endFrame": 7811
+    },
+    {
+      "id": "reconnect",
+      "sourceStartFrame": 7504,
+      "sourceEndFrame": 7804,
+      "startFrame": 7811,
+      "endFrame": 8112
+    },
+    {
+      "id": "repeat",
+      "sourceStartFrame": 7804,
+      "sourceEndFrame": 8156,
+      "startFrame": 8112,
+      "endFrame": 8486
+    },
+    {
+      "id": "heuristic",
+      "sourceStartFrame": 8156,
+      "sourceEndFrame": 8478,
+      "startFrame": 8486,
+      "endFrame": 8823
+    },
+    {
+      "id": "results",
+      "sourceStartFrame": 8478,
+      "sourceEndFrame": 8778,
+      "startFrame": 8823,
+      "endFrame": 9112
+    },
+    {
+      "id": "capacity_bound",
+      "sourceStartFrame": 8778,
+      "sourceEndFrame": 9114,
+      "startFrame": 9112,
+      "endFrame": 9458
+    },
+    {
+      "id": "diagnosis",
+      "sourceStartFrame": 9114,
+      "sourceEndFrame": 9451,
+      "startFrame": 9458,
+      "endFrame": 9793
+    },
+    {
+      "id": "fair_compare",
+      "sourceStartFrame": 9451,
+      "sourceEndFrame": 9758,
+      "startFrame": 9793,
+      "endFrame": 10107
+    },
+    {
+      "id": "weight",
+      "sourceStartFrame": 9758,
+      "sourceEndFrame": 10058,
+      "startFrame": 10107,
+      "endFrame": 10436
+    },
+    {
+      "id": "lab_transfer",
+      "sourceStartFrame": 10058,
+      "sourceEndFrame": 10345,
+      "startFrame": 10436,
+      "endFrame": 10738
+    },
+    {
+      "id": "lab_predict",
+      "sourceStartFrame": 10345,
+      "sourceEndFrame": 10660,
+      "startFrame": 10738,
+      "endFrame": 11048
+    },
+    {
+      "id": "lab_reference",
+      "sourceStartFrame": 10660,
+      "sourceEndFrame": 10938,
+      "startFrame": 11048,
+      "endFrame": 11368
+    },
+    {
+      "id": "challenge",
+      "sourceStartFrame": 10938,
+      "sourceEndFrame": 11256,
+      "startFrame": 11368,
+      "endFrame": 11712
+    },
+    {
+      "id": "takeaway",
+      "sourceStartFrame": 11256,
+      "sourceEndFrame": 11573,
+      "startFrame": 11712,
+      "endFrame": 12039
+    },
+    {
+      "id": "ending",
+      "sourceStartFrame": 11573,
+      "sourceEndFrame": 11922,
+      "startFrame": 12039,
+      "endFrame": 12440
+    },
+    {
+      "id": "tail",
+      "sourceStartFrame": 11922,
+      "sourceEndFrame": 11946,
+      "startFrame": 12440,
+      "endFrame": 12465
+    }
+  ]
+}

@@ -1,0 +1,575 @@
+WEBVTT
+
+welcome-1
+00:00:00.800 --> 00:00:06.141
+Un circuito puede ser lógicamente correcto
+y todavía necesitar una disposición física.
+
+welcome-2
+00:00:06.141 --> 00:00:09.608
+¿Dónde deberían colocarse sus celdas en el
+chip?
+
+city-1
+00:00:09.908 --> 00:00:12.356
+Imagina una ciudad diminuta.
+
+city-2
+00:00:12.356 --> 00:00:16.242
+Los edificios necesitan direcciones y las
+conexiones, rutas.
+
+city-3
+00:00:16.242 --> 00:00:20.684
+El placement elige las posiciones antes de
+trazar esas rutas en detalle.
+
+flow-1
+00:00:20.984 --> 00:00:23.308
+El floorplanning define la organización
+general.
+
+flow-2
+00:00:23.308 --> 00:00:25.208
+El placement sitúa las celdas.
+
+flow-3
+00:00:25.208 --> 00:00:27.707
+La legalización aplica las reglas físicas
+de colocación
+
+flow-4
+00:00:27.707 --> 00:00:30.056
+y el enrutamiento crea las conexiones
+detalladas.
+
+temptation-1
+00:00:30.356 --> 00:00:32.999
+Las conexiones cortas parecen atractivas.
+
+temptation-2
+00:00:32.999 --> 00:00:36.298
+Pero juntar demasiado las celdas conectadas
+puede crear otro
+
+temptation-3
+00:00:36.298 --> 00:00:39.524
+problema: demasiadas celdas compiten por el
+mismo espacio.
+
+points-1
+00:00:39.824 --> 00:00:43.372
+Reduzcamos el problema a seis puntos, de A
+a F.
+
+points-2
+00:00:43.372 --> 00:00:48.224
+En este modelo didáctico, cada punto
+representa una celda o un terminal.
+
+nets-1
+00:00:48.524 --> 00:00:54.103
+Una red, o net, es un grupo de terminales
+que deben conectarse.
+
+nets-2
+00:00:54.103 --> 00:00:57.539
+Aquí casi todas unen dos puntos;
+
+nets-3
+00:00:57.539 --> 00:01:00.404
+una conecta A, B, C y D.
+
+anchors-1
+00:01:00.704 --> 00:01:03.171
+A y D son anclajes fijos.
+
+anchors-2
+00:01:03.171 --> 00:01:06.903
+Podemos mover B, C, E y F, pero no debemos
+obtener
+
+anchors-3
+00:01:06.903 --> 00:01:10.424
+una puntuación menor desplazando los
+anclajes.
+
+model_limit-1
+00:01:10.724 --> 00:01:15.467
+Las celdas reales tienen anchura, altura y
+reglas de colocación.
+
+model_limit-2
+00:01:15.467 --> 00:01:19.127
+Nuestros puntos omiten esos detalles, así
+que
+
+model_limit-3
+00:01:19.127 --> 00:01:22.844
+este experimento no comprueba la
+legalización.
+
+hpwl_box-1
+00:01:23.144 --> 00:01:25.809
+¿Cómo estimar rápidamente la longitud de
+una conexión?
+
+hpwl_box-2
+00:01:25.809 --> 00:01:27.674
+Empecemos por la red B–D.
+
+hpwl_box-3
+00:01:27.674 --> 00:01:30.081
+Dibujemos el rectángulo más pequeño,
+alineado
+
+hpwl_box-4
+00:01:30.081 --> 00:01:32.432
+con los ejes, que contenga ambos extremos.
+
+hpwl_measure-1
+00:01:32.732 --> 00:01:36.061
+Su anchura es siete y su altura también es
+siete.
+
+hpwl_measure-2
+00:01:36.061 --> 00:01:38.573
+Al sumarlas obtenemos catorce.
+
+hpwl_measure-3
+00:01:38.573 --> 00:01:42.764
+Es la longitud estimada por semiperímetro,
+normalmente llamada HPWL.
+
+hpwl_multi-1
+00:01:43.064 --> 00:01:46.609
+Para una red con varios terminales, la
+regla no cambia.
+
+hpwl_multi-2
+00:01:46.609 --> 00:01:49.887
+Busca los extremos izquierdo, derecho,
+inferior y
+
+hpwl_multi-3
+00:01:49.887 --> 00:01:53.432
+superior, y suma la anchura y la altura del
+rectángulo.
+
+hpwl_inside-1
+00:01:53.732 --> 00:01:58.734
+Observa cómo se mueve un terminal interior
+mientras los extremos permanecen fijos.
+
+hpwl_inside-2
+00:01:58.734 --> 00:02:03.356
+El rectángulo no cambia, así que la
+estimación de esta red tampoco cambia.
+
+hpwl_total-1
+00:02:03.656 --> 00:02:08.016
+Repite el cálculo para las seis redes y
+suma las estimaciones.
+
+hpwl_total-2
+00:02:08.016 --> 00:02:13.640
+En esta disposición congestionada, el total
+es cuarenta y ocho coma cinco, no catorce.
+
+hpwl_limit-1
+00:02:13.940 --> 00:02:17.539
+HPWL es una estimación útil, no una ruta de
+cable ya terminada.
+
+hpwl_limit-2
+00:02:17.539 --> 00:02:20.388
+No representa todos los obstáculos ni todas
+
+hpwl_limit-3
+00:02:20.388 --> 00:02:23.276
+las restricciones del enrutamiento
+detallado.
+
+bins-1
+00:02:23.576 --> 00:02:26.052
+Ahora evaluemos el espacio.
+
+bins-2
+00:02:26.052 --> 00:02:29.658
+Dividamos el área de colocación en cuatro
+regiones,
+
+bins-3
+00:02:29.658 --> 00:02:33.608
+llamadas bins, y contemos cuántos puntos
+caen en cada una.
+
+capacity-1
+00:02:33.908 --> 00:02:38.141
+En esta primera comparación, cada región
+tiene capacidad para dos puntos.
+
+capacity-2
+00:02:38.141 --> 00:02:41.089
+El color indica ocupación, no temperatura.
+
+capacity-3
+00:02:41.089 --> 00:02:43.652
+Los puntos fijos también cuentan.
+
+overflow-1
+00:02:43.952 --> 00:02:47.467
+Cinco puntos comparten la región inferior
+izquierda.
+
+overflow-2
+00:02:47.467 --> 00:02:49.730
+Caben dos y sobran tres.
+
+overflow-3
+00:02:49.730 --> 00:02:54.080
+Suma los excesos de todas las regiones para
+obtener el overflow total.
+
+predict-1
+00:02:54.380 --> 00:02:56.921
+Si repartimos los puntos por el espacio
+
+predict-2
+00:02:56.921 --> 00:02:59.784
+disponible, ¿qué pasará con la longitud
+estimada?
+
+predict-3
+00:02:59.784 --> 00:03:02.468
+Tómate un momento para hacer tu predicción.
+
+spread_demo-1
+00:03:05.268 --> 00:03:07.267
+Esta es una disposición posible.
+
+spread_demo-2
+00:03:07.267 --> 00:03:09.637
+Ahora todas las regiones respetan su
+capacidad.
+
+spread_demo-3
+00:03:09.637 --> 00:03:11.954
+El overflow baja de tres a cero, mientras
+que
+
+spread_demo-4
+00:03:11.954 --> 00:03:14.244
+la longitud estimada sube a cincuenta y
+dos.
+
+tradeoff-1
+00:03:14.544 --> 00:03:16.528
+Eso es un compromiso.
+
+tradeoff-2
+00:03:16.528 --> 00:03:20.377
+Si la capacidad es un requisito, no basta
+con acortar las conexiones.
+
+tradeoff-3
+00:03:20.377 --> 00:03:23.036
+Esta comparación está diseñada a mano;
+
+tradeoff-4
+00:03:23.036 --> 00:03:25.536
+no es una ejecución del algoritmo.
+
+reference_start-1
+00:03:25.836 --> 00:03:28.387
+Pasemos al experimento del curso.
+
+reference_start-2
+00:03:28.387 --> 00:03:31.319
+Mantiene la misma red de seis puntos y los
+
+reference_start-3
+00:03:31.319 --> 00:03:34.634
+anclajes fijos, pero la capacidad es uno
+por región.
+
+reference_start-4
+00:03:34.634 --> 00:03:36.972
+Fíjate en la etiqueta nueva.
+
+algorithm_map-1
+00:03:37.272 --> 00:03:40.936
+El pequeño colocador didáctico primero
+acerca los puntos
+
+algorithm_map-2
+00:03:40.936 --> 00:03:44.646
+conectados y después dispersa las regiones
+sobrecargadas.
+
+algorithm_map-3
+00:03:44.646 --> 00:03:48.264
+Tras cada dispersión viene un paso suave de
+reconexión.
+
+force-1
+00:03:48.564 --> 00:03:51.743
+Las primeras seis actualizaciones acercan
+los puntos
+
+force-2
+00:03:51.743 --> 00:03:55.160
+móviles a sus vecinos, con un pequeño
+término de centrado.
+
+force-3
+00:03:55.160 --> 00:03:58.140
+A y D permanecen fijos durante todo el
+proceso.
+
+quadratic-1
+00:03:58.440 --> 00:04:02.219
+Otras tres actualizaciones por promediado
+refinan la etapa de longitud.
+
+quadratic-2
+00:04:02.219 --> 00:04:05.586
+No necesitas resolver una gran ecuación
+para captar la idea:
+
+quadratic-3
+00:04:05.586 --> 00:04:08.952
+los puntos conectados influyen mutuamente
+en sus posiciones.
+
+density_push-1
+00:04:09.252 --> 00:04:12.383
+Después examinamos las regiones
+sobrecargadas.
+
+density_push-2
+00:04:12.383 --> 00:04:16.437
+Los puntos móviles de una región con exceso
+se alejan de su centro.
+
+density_push-3
+00:04:16.437 --> 00:04:20.052
+El peso de densidad controla la intensidad
+de ese empuje.
+
+reconnect-1
+00:04:20.352 --> 00:04:22.839
+Dispersar puede alargar las conexiones, así
+que
+
+reconnect-2
+00:04:22.839 --> 00:04:25.645
+inmediatamente sigue una actualización
+ligera de longitud.
+
+reconnect-3
+00:04:25.645 --> 00:04:28.161
+Acercar y dispersar cumplen funciones
+distintas;
+
+reconnect-4
+00:04:28.161 --> 00:04:30.096
+una no sustituye a la otra.
+
+repeat-1
+00:04:30.396 --> 00:04:34.552
+La referencia realiza doce rondas de
+dispersión y reconexión.
+
+repeat-2
+00:04:34.552 --> 00:04:39.510
+Estos son estados registrados del
+algoritmo, no el movimiento diseñado antes.
+
+repeat-3
+00:04:39.510 --> 00:04:42.564
+Observa las dos métricas en cada paso.
+
+heuristic-1
+00:04:42.864 --> 00:04:47.220
+Este procedimiento sencillo ilustra un
+placement que considera la densidad.
+
+heuristic-2
+00:04:47.220 --> 00:04:50.709
+Es una heurística didáctica, no un
+colocador industrial
+
+heuristic-3
+00:04:50.709 --> 00:04:53.808
+completo ni una garantía de obtener el
+óptimo.
+
+results-1
+00:04:54.108 --> 00:04:57.298
+Con los ajustes predeterminados, la
+longitud estimada
+
+results-2
+00:04:57.298 --> 00:05:00.607
+pasa de cincuenta y dos a unos cuarenta y
+ocho coma uno.
+
+results-3
+00:05:00.607 --> 00:05:03.444
+El overflow empieza en dos y termina en
+dos.
+
+capacity_bound-1
+00:05:03.744 --> 00:05:05.947
+¿Por qué no puede ser cero?
+
+capacity_bound-2
+00:05:05.947 --> 00:05:09.438
+Seis puntos comparten cuatro regiones con
+una plaza cada una.
+
+capacity_bound-3
+00:05:09.438 --> 00:05:12.383
+Al menos dos puntos deben superar la
+capacidad,
+
+capacity_bound-4
+00:05:12.383 --> 00:05:14.976
+elijamos las posiciones que elijamos.
+
+diagnosis-1
+00:05:15.276 --> 00:05:18.299
+Esta cota inferior también cuenta A y D.
+
+diagnosis-2
+00:05:18.299 --> 00:05:21.650
+Más iteraciones no crean la capacidad que
+falta.
+
+diagnosis-3
+00:05:21.650 --> 00:05:26.124
+Revisa el modelo y el espacio disponible
+antes de culpar al optimizador.
+
+fair_compare-1
+00:05:26.424 --> 00:05:29.306
+Al comparar ajustes, mantén iguales la
+lista
+
+fair_compare-2
+00:05:29.306 --> 00:05:32.188
+de redes, los anclajes fijos y la
+capacidad.
+
+fair_compare-3
+00:05:32.188 --> 00:05:36.600
+Una puntuación mucho menor al mover los
+anclajes responde a una pregunta distinta.
+
+weight-1
+00:05:36.900 --> 00:05:41.253
+Prueba otro peso de densidad y después
+informa de ambos resultados.
+
+weight-2
+00:05:41.253 --> 00:05:44.538
+Un empuje más fuerte no garantiza una
+mejora,
+
+weight-3
+00:05:44.538 --> 00:05:47.580
+y el límite de capacidad sigue vigente.
+
+lab_transfer-1
+00:05:47.880 --> 00:05:51.473
+Pausa el vídeo y lleva su disposición
+exacta al laboratorio.
+
+lab_transfer-2
+00:05:51.473 --> 00:05:54.693
+El banco de trabajo conserva la capacidad
+correcta,
+
+lab_transfer-3
+00:05:54.693 --> 00:05:57.624
+y nuestro compañero lee las mismas
+métricas.
+
+lab_predict-1
+00:05:57.924 --> 00:06:00.919
+Primero predice el efecto de un movimiento.
+
+lab_predict-2
+00:06:00.919 --> 00:06:03.613
+Después arrastra un punto y compara.
+
+lab_predict-3
+00:06:03.613 --> 00:06:07.980
+Si las métricas no cambian, piensa qué
+rectángulo o región se mantuvo igual.
+
+lab_reference-1
+00:06:08.280 --> 00:06:11.305
+En el modo de referencia, recorre el bucle
+
+lab_reference-2
+00:06:11.305 --> 00:06:14.463
+real paso a paso o cambia su peso de
+densidad.
+
+lab_reference-3
+00:06:14.463 --> 00:06:18.648
+Restablece la misma disposición inicial
+para comparar de forma justa.
+
+challenge-1
+00:06:18.948 --> 00:06:21.470
+Los ejercicios piden medir una red, contar
+
+challenge-2
+00:06:21.470 --> 00:06:24.024
+el overflow, elegir una disposición
+factible
+
+challenge-3
+00:06:24.024 --> 00:06:26.709
+y explicar por qué el experimento
+predeterminado
+
+challenge-4
+00:06:26.709 --> 00:06:29.100
+no puede alcanzar un overflow de cero.
+
+takeaway-1
+00:06:30.400 --> 00:06:33.419
+El placement da al circuito su disposición
+física.
+
+takeaway-2
+00:06:33.419 --> 00:06:37.278
+Importan tanto la longitud de las
+conexiones como el espacio disponible,
+
+takeaway-3
+00:06:37.278 --> 00:06:40.984
+y un resultado útil debe interpretarse con
+sus restricciones reales.
+
+ending-1
+00:06:41.284 --> 00:06:44.780
+Sigue haciéndote dos preguntas: ¿son más
+cortas las
+
+ending-2
+00:06:44.780 --> 00:06:48.230
+conexiones y tienen los puntos suficiente
+espacio?
+
+ending-3
+00:06:48.230 --> 00:06:50.834
+Después comprueba tu respuesta.
+
+ending-4
+00:06:50.834 --> 00:06:52.876
+El estudio es tuyo.

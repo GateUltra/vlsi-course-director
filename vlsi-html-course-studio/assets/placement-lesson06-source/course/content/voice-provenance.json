@@ -1,0 +1,105 @@
+{
+  "service": "edge_tts",
+  "requested": {
+    "en_gb": [
+      "en",
+      "en-GB-ThomasNeural",
+      "British English · Thomas"
+    ],
+    "en_us": [
+      "en",
+      "en-US-GuyNeural",
+      "American English · Guy"
+    ],
+    "en_in": [
+      "en",
+      "en-IN-PrabhatNeural",
+      "Indian English · Prabhat"
+    ],
+    "zh": [
+      "zh",
+      "zh-CN-YunxiNeural",
+      "普通话 · 云希"
+    ]
+  },
+  "available": [
+    {
+      "Name": "Microsoft Server Speech Text to Speech Voice (zh-CN, YunxiNeural)",
+      "ShortName": "zh-CN-YunxiNeural",
+      "Gender": "Male",
+      "Locale": "zh-CN",
+      "LocaleName": "Chinese (Mandarin, Simplified)",
+      "SuggestedCodec": "audio-24khz-48kbitrate-mono-mp3",
+      "FriendlyName": "Microsoft Yunxi Online (Natural) - Chinese (Mainland)",
+      "Status": "GA",
+      "VoiceTag": {
+        "ContentCategories": [
+          "Novel"
+        ],
+        "VoicePersonalities": [
+          "Lively",
+          "Sunshine"
+        ]
+      }
+    },
+    {
+      "Name": "Microsoft Server Speech Text to Speech Voice (en-IN, PrabhatNeural)",
+      "ShortName": "en-IN-PrabhatNeural",
+      "Gender": "Male",
+      "Locale": "en-IN",
+      "LocaleName": "English (India)",
+      "SuggestedCodec": "audio-24khz-48kbitrate-mono-mp3",
+      "FriendlyName": "Microsoft Prabhat Online (Natural) - English (India)",
+      "Status": "GA",
+      "VoiceTag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "Name": "Microsoft Server Speech Text to Speech Voice (en-GB, ThomasNeural)",
+      "ShortName": "en-GB-ThomasNeural",
+      "Gender": "Male",
+      "Locale": "en-GB",
+      "LocaleName": "English (United Kingdom)",
+      "SuggestedCodec": "audio-24khz-48kbitrate-mono-mp3",
+      "FriendlyName": "Microsoft Thomas Online (Natural) - English (United Kingdom)",
+      "Status": "GA",
+      "VoiceTag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "Name": "Microsoft Server Speech Text to Speech Voice (en-US, GuyNeural)",
+      "ShortName": "en-US-GuyNeural",
+      "Gender": "Male",
+      "Locale": "en-US",
+      "LocaleName": "English (United States)",
+      "SuggestedCodec": "audio-24khz-48kbitrate-mono-mp3",
+      "FriendlyName": "Microsoft Guy Online (Natural) - English (United States)",
+      "Status": "GA",
+      "VoiceTag": {
+        "ContentCategories": [
+          "News",
+          "Novel"
+        ],
+        "VoicePersonalities": [
+          "Passion"
+        ]
+      }
+    }
+  ],
+  "synthetic": true,
+  "note": "Named service voices; no public-person impersonation or age claim."
+}

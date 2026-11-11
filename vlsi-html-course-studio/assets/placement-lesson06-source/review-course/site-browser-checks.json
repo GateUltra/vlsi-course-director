@@ -1,0 +1,190 @@
+{
+  "realMedia": true,
+  "voices": {
+    "en_gb": {
+      "duration": 398.2,
+      "playbackClock": "advances with muted=false",
+      "chapters": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "captions": {
+        "en": 111,
+        "zh": 89,
+        "fr": 125,
+        "es": 122,
+        "de": 125,
+        "ja": 99,
+        "ko": 97
+      }
+    },
+    "en_us": {
+      "duration": 394.266667,
+      "playbackClock": "advances with muted=false",
+      "chapters": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "captions": {
+        "en": 111,
+        "zh": 89,
+        "fr": 125,
+        "es": 122,
+        "de": 125,
+        "ja": 99,
+        "ko": 97
+      }
+    },
+    "en_in": {
+      "duration": 463.133333,
+      "playbackClock": "advances with muted=false",
+      "chapters": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "captions": {
+        "en": 111,
+        "zh": 89,
+        "fr": 125,
+        "es": 122,
+        "de": 125,
+        "ja": 99,
+        "ko": 97
+      }
+    },
+    "zh": {
+      "duration": 415.5,
+      "playbackClock": "advances with muted=false",
+      "chapters": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "captions": {
+        "en": 111,
+        "zh": 89,
+        "fr": 125,
+        "es": 122,
+        "de": 125,
+        "ja": 99,
+        "ko": 97
+      }
+    }
+  },
+  "transfers": [
+    {
+      "voice": "en_gb",
+      "cue": "hpwl_inside",
+      "mode": "hpwl",
+      "capacity": 2,
+      "exactPositions": true
+    },
+    {
+      "voice": "en_gb",
+      "cue": "capacity",
+      "mode": "sandbox",
+      "capacity": 2,
+      "exactPositions": true
+    },
+    {
+      "voice": "en_gb",
+      "cue": "density_push",
+      "mode": "reference",
+      "capacity": 1,
+      "exactPositions": true
+    },
+    {
+      "voice": "en_us",
+      "cue": "hpwl_inside",
+      "mode": "hpwl",
+      "capacity": 2,
+      "exactPositions": true
+    },
+    {
+      "voice": "en_us",
+      "cue": "capacity",
+      "mode": "sandbox",
+      "capacity": 2,
+      "exactPositions": true
+    },
+    {
+      "voice": "en_us",
+      "cue": "density_push",
+      "mode": "reference",
+      "capacity": 1,
+      "exactPositions": true
+    },
+    {
+      "voice": "en_in",
+      "cue": "hpwl_inside",
+      "mode": "hpwl",
+      "capacity": 2,
+      "exactPositions": true
+    },
+    {
+      "voice": "en_in",
+      "cue": "capacity",
+      "mode": "sandbox",
+      "capacity": 2,
+      "exactPositions": true
+    },
+    {
+      "voice": "en_in",
+      "cue": "density_push",
+      "mode": "reference",
+      "capacity": 1,
+      "exactPositions": true
+    },
+    {
+      "voice": "zh",
+      "cue": "hpwl_inside",
+      "mode": "hpwl",
+      "capacity": 2,
+      "exactPositions": true
+    },
+    {
+      "voice": "zh",
+      "cue": "capacity",
+      "mode": "sandbox",
+      "capacity": 2,
+      "exactPositions": true
+    },
+    {
+      "voice": "zh",
+      "cue": "density_push",
+      "mode": "reference",
+      "capacity": 1,
+      "exactPositions": true
+    }
+  ],
+  "captionScreenshots": "English, Japanese and Korean below the picture at results cue, desktop and mobile with paused controls visible",
+  "voiceSwitch": "same cue/fraction, Japanese captions,1.5x speed and pause/play state preserved, including two switches before metadata arrives",
+  "fullscreenCaptions": "Native showing in fullscreen; hidden track plus separate caption strip after exit",
+  "mobile": "390×844 full page has no horizontal overflow; controls, lab and activities present",
+  "pageErrors": [],
+  "httpErrors": [],
+  "fileProtocolNotice": "Run START_PREVIEW.cmd in this folder, then open http://127.0.0.1:8770/ to use the complete lesson."
+}

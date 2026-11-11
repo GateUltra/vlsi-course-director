@@ -1,0 +1,399 @@
+{
+  "clock": "Internal10secondcueQAclock; no delivery timeline generated",
+  "cues": [
+    {
+      "cue": "welcome",
+      "mode": "sandbox",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 798.7999877929688,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "city",
+      "mode": "sandbox",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 534,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "flow",
+      "mode": "sandbox",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 814.5999755859375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "temptation",
+      "mode": "sandbox",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "points",
+      "mode": "sandbox",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "nets",
+      "mode": "sandbox",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "anchors",
+      "mode": "sandbox",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "model_limit",
+      "mode": "sandbox",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "hpwl_box",
+      "mode": "hpwl",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "hpwl_measure",
+      "mode": "hpwl",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "hpwl_multi",
+      "mode": "hpwl",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "hpwl_inside",
+      "mode": "hpwl",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "hpwl_total",
+      "mode": "hpwl",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "hpwl_limit",
+      "mode": "hpwl",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "bins",
+      "mode": "sandbox",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "capacity",
+      "mode": "sandbox",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "overflow",
+      "mode": "sandbox",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "predict",
+      "mode": "sandbox",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "spread_demo",
+      "mode": "sandbox",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "tradeoff",
+      "mode": "sandbox",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "reference_start",
+      "mode": "reference",
+      "capacity": 1,
+      "traceIndex": 0,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "algorithm_map",
+      "mode": "reference",
+      "capacity": 1,
+      "traceIndex": 0,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "force",
+      "mode": "reference",
+      "capacity": 1,
+      "traceIndex": 5,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "quadratic",
+      "mode": "reference",
+      "capacity": 1,
+      "traceIndex": 8,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "density_push",
+      "mode": "reference",
+      "capacity": 1,
+      "traceIndex": 10,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "reconnect",
+      "mode": "reference",
+      "capacity": 1,
+      "traceIndex": 11,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "repeat",
+      "mode": "reference",
+      "capacity": 1,
+      "traceIndex": 31,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "heuristic",
+      "mode": "reference",
+      "capacity": 1,
+      "traceIndex": 33,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "results",
+      "mode": "reference",
+      "capacity": 1,
+      "traceIndex": 33,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "capacity_bound",
+      "mode": "reference",
+      "capacity": 1,
+      "traceIndex": 33,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "diagnosis",
+      "mode": "reference",
+      "capacity": 1,
+      "traceIndex": 33,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "fair_compare",
+      "mode": "reference",
+      "capacity": 1,
+      "traceIndex": 33,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "weight",
+      "mode": "reference",
+      "capacity": 1,
+      "traceIndex": 33,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "lab_transfer",
+      "mode": "reference",
+      "capacity": 1,
+      "traceIndex": 33,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "lab_predict",
+      "mode": "sandbox",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "lab_reference",
+      "mode": "reference",
+      "capacity": 1,
+      "traceIndex": 10,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "challenge",
+      "mode": "sandbox",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "takeaway",
+      "mode": "sandbox",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 922.239990234375,
+      "captionSafeArea": "975\u20131080 px"
+    },
+    {
+      "cue": "ending",
+      "mode": "sandbox",
+      "capacity": 2,
+      "traceIndex": null,
+      "topLevelTextWithinCanvas": true,
+      "teachingTextBottom": 892.7999877929688,
+      "captionSafeArea": "975\u20131080 px"
+    }
+  ],
+  "metrics": {
+    "oneNet": 14,
+    "interiorNet": 16,
+    "designed": {
+      "hpwl": 52,
+      "overflow": 0,
+      "counts": [
+        2,
+        1,
+        1,
+        2
+      ],
+      "perNet": [
+        7,
+        9,
+        7,
+        9,
+        16,
+        4
+      ],
+      "capacity": 2
+    },
+    "reference": {
+      "hpwl": 48.12117617637419,
+      "overflow": 2,
+      "counts": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "perNet": [
+        8,
+        8,
+        8,
+        8,
+        16,
+        0.1211761763741932
+      ],
+      "capacity": 1
+    }
+  },
+  "deterministicRandomAccess": true
+}

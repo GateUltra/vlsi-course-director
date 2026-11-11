@@ -1,0 +1,12 @@
+{
+  "purpose": "Authoring example only; replace with verified content and measured clocks.",
+  "chapters": [{"id": "01", "title": "Why this measurement?"}],
+  "cues": [{
+    "id": "measure_box", "chapter": "01", "title": "Measure the box", "layout": "measurement",
+    "en": "Add the width and height of the bounding box.",
+    "zh": "把包围盒的宽和高相加。", "pauseAfter": 0.6,
+    "teachingIntent": "Read a geometric quantity before changing the layout.",
+    "visualBeats": ["Reveal terminals", "Trace extremes", "Hold the result"],
+    "labMode": "measurement", "misconception": "The estimate is not a physically routed wire."
+  }]
+}

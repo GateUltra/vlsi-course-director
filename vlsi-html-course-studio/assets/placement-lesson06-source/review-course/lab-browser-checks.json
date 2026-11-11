@@ -1,0 +1,8 @@
+{
+  "sandbox": "Presets, metrics, hint, real drag, keyboard and no focus theft pass",
+  "hpwl": "B-D14, multi-net16 and interior-point invariance pass",
+  "reference": "All33updates, exact default golden, capacity1, weight reset, run/pause pass",
+  "exercises": "Five answers, wrong-answer correction, reference-mode rejection and alternative feasible layout pass",
+  "mobile": "390px no horizontal overflow",
+  "pageErrors": []
+}

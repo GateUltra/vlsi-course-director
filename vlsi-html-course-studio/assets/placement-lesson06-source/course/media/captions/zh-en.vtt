@@ -1,0 +1,517 @@
+WEBVTT
+
+welcome-1
+00:00:00.800 --> 00:00:06.161
+A circuit can be logically correct, yet
+still need a physical home.
+
+welcome-2
+00:00:06.161 --> 00:00:09.608
+Where should its cells go on a chip?
+
+city-1
+00:00:09.908 --> 00:00:12.157
+Think of a tiny city.
+
+city-2
+00:00:12.157 --> 00:00:16.080
+Buildings need addresses, and connections
+need routes.
+
+city-3
+00:00:16.080 --> 00:00:20.684
+Placement chooses positions before those
+detailed routes are drawn.
+
+flow-1
+00:00:20.984 --> 00:00:23.309
+Floorplanning sets the broad arrangement.
+
+flow-2
+00:00:23.309 --> 00:00:25.205
+Placement positions cells.
+
+flow-3
+00:00:25.205 --> 00:00:27.673
+Legalization resolves physical placement
+rules,
+
+flow-4
+00:00:27.673 --> 00:00:30.056
+and routing builds the detailed
+connections.
+
+temptation-1
+00:00:30.356 --> 00:00:32.906
+Short connections sound attractive.
+
+temptation-2
+00:00:32.906 --> 00:00:36.295
+But squeezing connected cells together can
+create another
+
+temptation-3
+00:00:36.295 --> 00:00:39.524
+problem: too many cells competing for the
+same space.
+
+points-1
+00:00:39.824 --> 00:00:43.781
+Let us shrink the problem to six points, A
+through F.
+
+points-2
+00:00:43.781 --> 00:00:48.224
+In this teaching model, a point represents
+a cell or terminal.
+
+nets-1
+00:00:48.524 --> 00:00:53.558
+A net is a group of terminals that must
+connect.
+
+nets-2
+00:00:53.558 --> 00:00:57.270
+Most nets here join two points;
+
+nets-3
+00:00:57.270 --> 00:01:00.404
+one joins A, B, C and D.
+
+anchors-1
+00:01:00.704 --> 00:01:03.378
+A and D are fixed anchors.
+
+anchors-2
+00:01:03.378 --> 00:01:06.754
+We may move B, C, E and F, but a lower
+
+anchors-3
+00:01:06.754 --> 00:01:10.424
+score must not come from moving the
+anchors.
+
+model_limit-1
+00:01:10.724 --> 00:01:15.547
+Real cells have width, height and placement
+rules.
+
+model_limit-2
+00:01:15.547 --> 00:01:22.844
+Our points leave those details out, so this
+experiment is not a legalization check.
+
+hpwl_box-1
+00:01:23.144 --> 00:01:26.363
+How can we estimate connection length
+quickly?
+
+hpwl_box-2
+00:01:26.363 --> 00:01:28.524
+Start with net B to D.
+
+hpwl_box-3
+00:01:28.524 --> 00:01:32.432
+Draw the smallest axis-aligned box
+containing both endpoints.
+
+hpwl_measure-1
+00:01:32.732 --> 00:01:36.183
+Its width is seven, and its height is
+seven.
+
+hpwl_measure-2
+00:01:36.183 --> 00:01:38.350
+Add them: fourteen.
+
+hpwl_measure-3
+00:01:38.350 --> 00:01:42.764
+This is the half-perimeter wirelength,
+usually called H P W L.
+
+hpwl_multi-1
+00:01:43.064 --> 00:01:46.605
+For a multi-terminal net, the rule is
+unchanged.
+
+hpwl_multi-2
+00:01:46.605 --> 00:01:50.705
+Find the leftmost, rightmost, lowest and
+highest terminals;
+
+hpwl_multi-3
+00:01:50.705 --> 00:01:53.432
+add the box's width and height.
+
+hpwl_inside-1
+00:01:53.732 --> 00:01:58.292
+Watch an interior terminal move while the
+extremes stay fixed.
+
+hpwl_inside-2
+00:01:58.292 --> 00:02:03.356
+The box does not change, so this net's
+estimate does not change either.
+
+hpwl_total-1
+00:02:03.656 --> 00:02:07.617
+Repeat for all six nets and add the
+estimates.
+
+hpwl_total-2
+00:02:07.617 --> 00:02:13.640
+In this crowded arrangement, the total is
+forty-eight point five, not fourteen.
+
+hpwl_limit-1
+00:02:13.940 --> 00:02:18.438
+H P W L is a convenient estimate, not a
+finished wire route.
+
+hpwl_limit-2
+00:02:18.438 --> 00:02:23.276
+It does not capture every obstacle or
+detailed routing constraint.
+
+bins-1
+00:02:23.576 --> 00:02:25.918
+Now give space a score.
+
+bins-2
+00:02:25.918 --> 00:02:30.281
+Divide the placement area into four
+regions, often called bins.
+
+bins-3
+00:02:30.281 --> 00:02:33.608
+Count how many points fall in each region.
+
+capacity-1
+00:02:33.908 --> 00:02:37.661
+For this first comparison, each region has
+capacity two.
+
+capacity-2
+00:02:37.661 --> 00:02:40.846
+The colour shows occupancy, not
+temperature,
+
+capacity-3
+00:02:40.846 --> 00:02:43.652
+and the fixed points count as well.
+
+overflow-1
+00:02:43.952 --> 00:02:47.189
+Five points share the lower-left region.
+
+overflow-2
+00:02:47.189 --> 00:02:49.800
+Two fit and three are extra.
+
+overflow-3
+00:02:49.800 --> 00:02:54.080
+Add all such extras across the regions to
+get total overflow.
+
+predict-1
+00:02:54.380 --> 00:02:57.163
+If we spread the points into available
+space,
+
+predict-2
+00:02:57.163 --> 00:02:59.908
+what will happen to the wirelength
+estimate?
+
+predict-3
+00:02:59.908 --> 00:03:02.468
+Take a moment to make your prediction.
+
+spread_demo-1
+00:03:05.268 --> 00:03:07.769
+Here is one possible arrangement.
+
+spread_demo-2
+00:03:07.769 --> 00:03:09.819
+Every region now fits.
+
+spread_demo-3
+00:03:09.819 --> 00:03:14.244
+Overflow falls from three to zero, while
+estimated wirelength rises to fifty-two.
+
+tradeoff-1
+00:03:14.544 --> 00:03:16.811
+That is a trade-off.
+
+tradeoff-2
+00:03:16.811 --> 00:03:21.537
+If capacity is a requirement, shorter wires
+alone are not enough.
+
+tradeoff-3
+00:03:21.537 --> 00:03:25.536
+This is a designed comparison, not an
+algorithm run.
+
+reference_start-1
+00:03:25.836 --> 00:03:28.620
+Now switch to the course experiment.
+
+reference_start-2
+00:03:28.620 --> 00:03:31.722
+It uses the same six-point netlist and
+fixed
+
+reference_start-3
+00:03:31.722 --> 00:03:34.687
+anchors, but capacity is one per region.
+
+reference_start-4
+00:03:34.687 --> 00:03:36.972
+Notice the changed label.
+
+algorithm_map-1
+00:03:37.272 --> 00:03:40.750
+The small teaching placer first pulls
+connected
+
+algorithm_map-2
+00:03:40.750 --> 00:03:44.381
+points together, then spreads overcrowded
+regions.
+
+algorithm_map-3
+00:03:44.381 --> 00:03:48.264
+A gentle reconnection step follows each
+spreading step.
+
+force-1
+00:03:48.564 --> 00:03:52.066
+The first six updates pull movable points
+towards
+
+force-2
+00:03:52.066 --> 00:03:55.373
+their neighbours, with a small centring
+term.
+
+force-3
+00:03:55.373 --> 00:03:58.140
+A and D remain locked throughout.
+
+quadratic-1
+00:03:58.440 --> 00:04:02.162
+Three further averaging updates refine the
+wirelength stage.
+
+quadratic-2
+00:04:02.162 --> 00:04:05.666
+You need not solve a large equation to
+follow the idea:
+
+quadratic-3
+00:04:05.666 --> 00:04:08.952
+connected points influence each other's
+positions.
+
+density_push-1
+00:04:09.252 --> 00:04:12.102
+Next, inspect the crowded bins.
+
+density_push-2
+00:04:12.102 --> 00:04:16.818
+Movable points in an overfull bin are
+pushed away from its centre.
+
+density_push-3
+00:04:16.818 --> 00:04:20.052
+The density weight controls that push.
+
+reconnect-1
+00:04:20.352 --> 00:04:22.874
+Spreading may lengthen connections, so a
+
+reconnect-2
+00:04:22.874 --> 00:04:25.498
+light wirelength update follows
+immediately.
+
+reconnect-3
+00:04:25.498 --> 00:04:27.883
+Pull and spread have different jobs;
+
+reconnect-4
+00:04:27.883 --> 00:04:30.096
+one does not replace the other.
+
+repeat-1
+00:04:30.396 --> 00:04:34.632
+The reference performs twelve
+spread-and-reconnect rounds.
+
+repeat-2
+00:04:34.632 --> 00:04:39.735
+These are recorded algorithm states, not
+the earlier hand-designed motion.
+
+repeat-3
+00:04:39.735 --> 00:04:42.564
+Watch both scores at each step.
+
+heuristic-1
+00:04:42.864 --> 00:04:46.836
+This compact procedure illustrates
+density-aware placement.
+
+heuristic-2
+00:04:46.836 --> 00:04:50.517
+It is a teaching heuristic, not a complete
+industrial
+
+heuristic-3
+00:04:50.517 --> 00:04:53.808
+placer or a guarantee of an optimal
+solution.
+
+results-1
+00:04:54.108 --> 00:04:57.220
+With the default settings, estimated
+wirelength
+
+results-2
+00:04:57.220 --> 00:05:00.631
+changes from fifty-two to about forty-eight
+point one.
+
+results-3
+00:05:00.631 --> 00:05:03.444
+Overflow starts at two and ends at two.
+
+capacity_bound-1
+00:05:03.744 --> 00:05:06.135
+Why not zero overflow?
+
+capacity_bound-2
+00:05:06.135 --> 00:05:09.879
+Six points share four bins with one place
+each.
+
+capacity_bound-3
+00:05:09.879 --> 00:05:14.976
+At least two points must exceed capacity,
+whatever positions we choose.
+
+diagnosis-1
+00:05:15.276 --> 00:05:18.202
+This lower bound counts A and D too.
+
+diagnosis-2
+00:05:18.202 --> 00:05:21.620
+More iterations cannot create missing
+capacity.
+
+diagnosis-3
+00:05:21.620 --> 00:05:26.124
+Check the model and the available space
+before blaming the optimiser.
+
+fair_compare-1
+00:05:26.424 --> 00:05:31.642
+Keep the netlist, fixed anchors and
+capacity unchanged when comparing settings.
+
+fair_compare-2
+00:05:31.642 --> 00:05:36.600
+A much smaller score from moving the
+anchors answers a different question.
+
+weight-1
+00:05:36.900 --> 00:05:40.807
+Try another density weight, then report
+both outcomes.
+
+weight-2
+00:05:40.807 --> 00:05:44.089
+A stronger push does not promise a better
+
+weight-3
+00:05:44.089 --> 00:05:47.580
+result, and this capacity limit still
+applies.
+
+lab_transfer-1
+00:05:47.880 --> 00:05:52.030
+Pause the video and take its exact layout
+into the lab.
+
+lab_transfer-2
+00:05:52.030 --> 00:05:57.624
+The workbench keeps the right capacity, and
+our companion reads the same metrics.
+
+lab_predict-1
+00:05:57.924 --> 00:06:00.912
+First predict the effect of one move.
+
+lab_predict-2
+00:06:00.912 --> 00:06:03.552
+Then drag a point and compare.
+
+lab_predict-3
+00:06:03.552 --> 00:06:07.980
+If the scores do not change, ask which box
+or bin stayed unchanged.
+
+lab_reference-1
+00:06:08.280 --> 00:06:14.111
+In reference mode, step through the actual
+loop or change its density weight.
+
+lab_reference-2
+00:06:14.111 --> 00:06:18.648
+Reset to the same starting layout for a
+fair comparison.
+
+challenge-1
+00:06:18.948 --> 00:06:23.997
+The exercises ask you to measure a net,
+count overflow, choose a feasible
+
+challenge-2
+00:06:23.997 --> 00:06:29.100
+layout, and explain why the default
+experiment cannot reach zero overflow.
+
+takeaway-1
+00:06:30.400 --> 00:06:33.766
+Placement gives a circuit its physical
+arrangement.
+
+takeaway-2
+00:06:33.766 --> 00:06:37.308
+Connection length matters, available space
+matters, and
+
+takeaway-3
+00:06:37.308 --> 00:06:40.984
+a useful result must be read under its
+actual constraints.
+
+ending-1
+00:06:41.284 --> 00:06:44.854
+Keep asking two questions: are the
+connections
+
+ending-2
+00:06:44.854 --> 00:06:48.317
+shorter, and do the points have enough
+room?
+
+ending-3
+00:06:48.317 --> 00:06:50.650
+Then test your answer.
+
+ending-4
+00:06:50.650 --> 00:06:52.876
+The studio is yours.

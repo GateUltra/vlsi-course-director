@@ -1,0 +1,21 @@
+{
+  "title": "Einstein",
+  "artist": "j4p4n",
+  "source": "https://openclipart.org/detail/302755/einstein",
+  "download": "https://openclipart.org/download/302755",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "license_evidence": "https://openclipart.org/share",
+  "retrieved": "2026-11-11",
+  "original_sha256": "bfe4993246cdd0402f582385ef123cf5c1229e0b7be3d7f3bba1af3f2ccd2617",
+  "remix_sources": [
+    "Science Clipart 4 by scojoh (266094)",
+    "Cartoon Eyes by Prawny (194430)"
+  ],
+  "modifications": [
+    "Removed original E=mc2 plaque",
+    "Extracted character and added scalable viewBox",
+    "Runtime animation adds head tilt, gesture emphasis, speech bubble and audio-driven mouth overlay"
+  ],
+  "voice": "Synthetic British narrator; not Einstein voice clone"
+}

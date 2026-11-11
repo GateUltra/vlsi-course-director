@@ -1,0 +1,591 @@
+WEBVTT
+
+welcome-1
+00:00:00.800 --> 00:00:03.858
+Un circuit peut être correct sur le plan
+logique
+
+welcome-2
+00:00:03.858 --> 00:00:06.713
+sans avoir encore de disposition physique.
+
+welcome-3
+00:00:06.713 --> 00:00:09.608
+Où faut-il placer ses cellules sur la puce
+?
+
+city-1
+00:00:09.908 --> 00:00:12.353
+Imaginez une ville miniature.
+
+city-2
+00:00:12.353 --> 00:00:16.273
+Les bâtiments ont besoin d'adresses, les
+connexions de chemins.
+
+city-3
+00:00:16.273 --> 00:00:20.684
+Le placement choisit les positions avant le
+tracé détaillé de ces chemins.
+
+flow-1
+00:00:20.984 --> 00:00:23.218
+Le floorplanning définit l'organisation
+générale.
+
+flow-2
+00:00:23.218 --> 00:00:25.204
+Le placement positionne les cellules.
+
+flow-3
+00:00:25.204 --> 00:00:27.551
+La légalisation fait respecter les règles
+physiques de
+
+flow-4
+00:00:27.551 --> 00:00:30.056
+placement, puis le routage réalise les
+connexions détaillées.
+
+temptation-1
+00:00:30.356 --> 00:00:33.108
+Des connexions courtes semblent
+avantageuses.
+
+temptation-2
+00:00:33.108 --> 00:00:36.371
+Mais rapprocher les cellules connectées
+peut créer un autre
+
+temptation-3
+00:00:36.371 --> 00:00:39.524
+problème : trop de cellules se disputent le
+même espace.
+
+points-1
+00:00:39.824 --> 00:00:43.288
+Réduisons le problème à six points, de A à
+F.
+
+points-2
+00:00:43.288 --> 00:00:48.224
+Dans ce modèle pédagogique, un point
+représente une cellule ou une borne.
+
+nets-1
+00:00:48.524 --> 00:00:52.911
+Un net est un groupe de bornes à connecter.
+
+nets-2
+00:00:52.911 --> 00:00:57.448
+Ici, la plupart des nets relient deux
+points ;
+
+nets-3
+00:00:57.448 --> 00:01:00.404
+l'un relie A, B, C et D.
+
+anchors-1
+00:01:00.704 --> 00:01:03.211
+A et D sont des points fixes.
+
+anchors-2
+00:01:03.211 --> 00:01:06.888
+Nous pouvons déplacer B, C, E et F, mais
+nous ne devons
+
+anchors-3
+00:01:06.888 --> 00:01:10.424
+pas abaisser le score en déplaçant ces
+points fixes.
+
+model_limit-1
+00:01:10.724 --> 00:01:15.967
+Les cellules réelles ont une largeur, une
+hauteur et des règles de placement.
+
+model_limit-2
+00:01:15.967 --> 00:01:19.217
+Nos points omettent ces détails : cette
+
+model_limit-3
+00:01:19.217 --> 00:01:22.844
+expérience ne vérifie donc pas la
+légalisation.
+
+hpwl_box-1
+00:01:23.144 --> 00:01:26.313
+Comment estimer rapidement la longueur
+d'une connexion ?
+
+hpwl_box-2
+00:01:26.313 --> 00:01:28.161
+Prenons le net B–D.
+
+hpwl_box-3
+00:01:28.161 --> 00:01:32.432
+Dessinons le plus petit rectangle parallèle
+aux axes qui contient ses deux extrémités.
+
+hpwl_measure-1
+00:01:32.732 --> 00:01:35.981
+Sa largeur vaut sept et sa hauteur vaut
+sept.
+
+hpwl_measure-2
+00:01:35.981 --> 00:01:38.323
+Leur somme vaut quatorze.
+
+hpwl_measure-3
+00:01:38.323 --> 00:01:42.764
+C'est la longueur de fil au demi-périmètre,
+généralement appelée HPWL.
+
+hpwl_multi-1
+00:01:43.064 --> 00:01:46.688
+Pour un net à plusieurs bornes, la règle
+reste la même.
+
+hpwl_multi-2
+00:01:46.688 --> 00:01:50.862
+Trouvez les bornes les plus à gauche, à
+droite, en bas et en haut ;
+
+hpwl_multi-3
+00:01:50.862 --> 00:01:53.432
+additionnez largeur et hauteur.
+
+hpwl_inside-1
+00:01:53.732 --> 00:01:58.033
+Regardez une borne intérieure bouger tandis
+que les extrêmes restent fixes.
+
+hpwl_inside-2
+00:01:58.033 --> 00:02:00.375
+Le rectangle ne change pas ;
+
+hpwl_inside-3
+00:02:00.375 --> 00:02:03.356
+l'estimation de ce net reste donc
+identique.
+
+hpwl_total-1
+00:02:03.656 --> 00:02:07.588
+Répétez le calcul pour les six nets et
+additionnez les estimations.
+
+hpwl_total-2
+00:02:07.588 --> 00:02:10.677
+Dans cette disposition encombrée, le total
+vaut
+
+hpwl_total-3
+00:02:10.677 --> 00:02:13.640
+quarante-huit virgule cinq, et non
+quatorze.
+
+hpwl_limit-1
+00:02:13.940 --> 00:02:17.579
+HPWL est une estimation pratique, pas un
+tracé de fil définitif.
+
+hpwl_limit-2
+00:02:17.579 --> 00:02:20.427
+Elle ne représente pas tous les obstacles
+ni
+
+hpwl_limit-3
+00:02:20.427 --> 00:02:23.276
+toutes les contraintes du routage détaillé.
+
+bins-1
+00:02:23.576 --> 00:02:26.089
+Évaluons maintenant l'espace.
+
+bins-2
+00:02:26.089 --> 00:02:30.530
+Divisons la zone de placement en quatre
+régions, souvent appelées bins.
+
+bins-3
+00:02:30.530 --> 00:02:33.608
+Comptons les points dans chacune d'elles.
+
+capacity-1
+00:02:33.908 --> 00:02:37.772
+Pour cette première comparaison, chaque
+région a une capacité de deux.
+
+capacity-2
+00:02:37.772 --> 00:02:40.928
+La couleur indique l'occupation, pas la
+température.
+
+capacity-3
+00:02:40.928 --> 00:02:43.652
+Les points fixes sont également comptés.
+
+overflow-1
+00:02:43.952 --> 00:02:47.059
+Cinq points occupent la région en bas à
+gauche.
+
+overflow-2
+00:02:47.059 --> 00:02:49.655
+Deux tiennent, trois sont en trop.
+
+overflow-3
+00:02:49.655 --> 00:02:54.080
+Additionnez les excédents de toutes les
+régions pour obtenir l'overflow total.
+
+predict-1
+00:02:54.380 --> 00:02:57.042
+Si nous répartissons les points dans
+l'espace
+
+predict-2
+00:02:57.042 --> 00:02:59.772
+disponible, que deviendra la longueur
+estimée ?
+
+predict-3
+00:02:59.772 --> 00:03:02.468
+Prenez un instant pour faire votre
+prédiction.
+
+spread_demo-1
+00:03:05.268 --> 00:03:07.310
+Voici une disposition possible.
+
+spread_demo-2
+00:03:07.310 --> 00:03:09.468
+Chaque région respecte sa capacité.
+
+spread_demo-3
+00:03:09.468 --> 00:03:11.856
+L'overflow passe de trois à zéro, tandis
+que
+
+spread_demo-4
+00:03:11.856 --> 00:03:14.244
+la longueur estimée monte à cinquante-deux.
+
+tradeoff-1
+00:03:14.544 --> 00:03:16.557
+C'est un compromis.
+
+tradeoff-2
+00:03:16.557 --> 00:03:20.797
+Si la capacité doit être respectée, des
+fils courts ne suffisent pas.
+
+tradeoff-3
+00:03:20.797 --> 00:03:25.536
+Cette comparaison est conçue à la main, ce
+n'est pas une exécution d'algorithme.
+
+reference_start-1
+00:03:25.836 --> 00:03:28.293
+Passons à l'expérience du cours.
+
+reference_start-2
+00:03:28.293 --> 00:03:31.527
+Elle conserve les six points, les nets et
+les points
+
+reference_start-3
+00:03:31.527 --> 00:03:34.678
+fixes, mais la capacité est d'un point par
+région.
+
+reference_start-4
+00:03:34.678 --> 00:03:36.972
+Observez le nouveau libellé.
+
+algorithm_map-1
+00:03:37.272 --> 00:03:40.635
+Le petit placeur pédagogique rapproche
+d'abord les
+
+algorithm_map-2
+00:03:40.635 --> 00:03:44.269
+points connectés, puis disperse les régions
+surchargées.
+
+algorithm_map-3
+00:03:44.269 --> 00:03:48.264
+Une légère étape de reconnexion suit chaque
+étape de dispersion.
+
+force-1
+00:03:48.564 --> 00:03:51.938
+Les six premières mises à jour attirent les
+points mobiles
+
+force-2
+00:03:51.938 --> 00:03:55.195
+vers leurs voisins, avec un faible terme de
+recentrage.
+
+force-3
+00:03:55.195 --> 00:03:58.140
+A et D restent fixes pendant tout le
+processus.
+
+quadratic-1
+00:03:58.440 --> 00:04:00.791
+Trois mises à jour supplémentaires par
+
+quadratic-2
+00:04:00.791 --> 00:04:03.364
+moyenne affinent l'étape de longueur des
+fils.
+
+quadratic-3
+00:04:03.364 --> 00:04:06.221
+Pas besoin de résoudre une grande équation
+: les points
+
+quadratic-4
+00:04:06.221 --> 00:04:08.952
+connectés influencent mutuellement leurs
+positions.
+
+density_push-1
+00:04:09.252 --> 00:04:12.276
+Examinons ensuite les bins surchargés.
+
+density_push-2
+00:04:12.276 --> 00:04:16.238
+Leurs points mobiles sont repoussés loin du
+centre du bin.
+
+density_push-3
+00:04:16.238 --> 00:04:20.052
+Le poids de densité règle l'intensité de
+cette poussée.
+
+reconnect-1
+00:04:20.352 --> 00:04:22.766
+La dispersion peut allonger les connexions.
+
+reconnect-2
+00:04:22.766 --> 00:04:25.621
+Une légère mise à jour de longueur suit
+donc immédiatement.
+
+reconnect-3
+00:04:25.621 --> 00:04:28.211
+Rapprocher et disperser ont des rôles
+différents ;
+
+reconnect-4
+00:04:28.211 --> 00:04:30.096
+ils ne se remplacent pas.
+
+repeat-1
+00:04:30.396 --> 00:04:34.261
+La référence effectue douze cycles de
+dispersion et de reconnexion.
+
+repeat-2
+00:04:34.261 --> 00:04:37.261
+Ce sont des états enregistrés de
+l'algorithme,
+
+repeat-3
+00:04:37.261 --> 00:04:39.769
+pas le mouvement conçu à la main.
+
+repeat-4
+00:04:39.769 --> 00:04:42.564
+Observez les deux scores à chaque étape.
+
+heuristic-1
+00:04:42.864 --> 00:04:47.295
+Cette procédure compacte illustre un
+placement tenant compte de la densité.
+
+heuristic-2
+00:04:47.295 --> 00:04:50.574
+C'est une heuristique pédagogique, pas un
+placeur
+
+heuristic-3
+00:04:50.574 --> 00:04:53.808
+industriel complet ni une garantie
+d'optimalité.
+
+results-1
+00:04:54.108 --> 00:04:57.377
+Avec les réglages par défaut, la longueur
+estimée passe
+
+results-2
+00:04:57.377 --> 00:05:00.567
+de cinquante-deux à environ quarante-huit
+virgule un.
+
+results-3
+00:05:00.567 --> 00:05:03.444
+L'overflow commence à deux et termine à
+deux.
+
+capacity_bound-1
+00:05:03.744 --> 00:05:05.697
+Pourquoi pas zéro ?
+
+capacity_bound-2
+00:05:05.697 --> 00:05:09.128
+Six points se partagent quatre bins d'une
+place chacun.
+
+capacity_bound-3
+00:05:09.128 --> 00:05:11.967
+Au moins deux points doivent dépasser la
+
+capacity_bound-4
+00:05:11.967 --> 00:05:14.976
+capacité, quelles que soient leurs
+positions.
+
+diagnosis-1
+00:05:15.276 --> 00:05:18.254
+Cette borne inférieure compte aussi A et D.
+
+diagnosis-2
+00:05:18.254 --> 00:05:21.998
+Davantage d'itérations ne crée pas de
+capacité supplémentaire.
+
+diagnosis-3
+00:05:21.998 --> 00:05:26.124
+Vérifiez le modèle et l'espace disponible
+avant d'accuser l'optimiseur.
+
+fair_compare-1
+00:05:26.424 --> 00:05:30.617
+Pour comparer les réglages, gardez les
+mêmes nets, points fixes et capacités.
+
+fair_compare-2
+00:05:30.617 --> 00:05:33.688
+Un score beaucoup plus faible obtenu en
+déplaçant
+
+fair_compare-3
+00:05:33.688 --> 00:05:36.600
+les points fixes répond à une autre
+question.
+
+weight-1
+00:05:36.900 --> 00:05:41.066
+Essayez un autre poids de densité, puis
+rapportez les deux résultats.
+
+weight-2
+00:05:41.066 --> 00:05:44.301
+Une poussée plus forte ne promet pas un
+meilleur
+
+weight-3
+00:05:44.301 --> 00:05:47.580
+résultat, et la limite de capacité reste
+valable.
+
+lab_transfer-1
+00:05:47.880 --> 00:05:52.632
+Mettez la vidéo en pause et transférez sa
+disposition exacte au laboratoire.
+
+lab_transfer-2
+00:05:52.632 --> 00:05:57.624
+L'atelier conserve la bonne capacité, et
+notre compagnon lit les mêmes métriques.
+
+lab_predict-1
+00:05:57.924 --> 00:06:00.430
+Prévoyez d'abord l'effet d'un déplacement.
+
+lab_predict-2
+00:06:00.430 --> 00:06:02.968
+Faites ensuite glisser un point et
+comparez.
+
+lab_predict-3
+00:06:02.968 --> 00:06:05.506
+Si les scores ne changent pas,
+demandez-vous
+
+lab_predict-4
+00:06:05.506 --> 00:06:07.980
+quel rectangle ou bin est resté inchangé.
+
+lab_reference-1
+00:06:08.280 --> 00:06:11.347
+En mode référence, avancez étape par étape
+dans
+
+lab_reference-2
+00:06:11.347 --> 00:06:14.539
+la boucle réelle ou modifiez son poids de
+densité.
+
+lab_reference-3
+00:06:14.539 --> 00:06:18.648
+Repartez de la même disposition initiale
+pour une comparaison équitable.
+
+challenge-1
+00:06:18.948 --> 00:06:21.471
+Les exercices vous demandent de mesurer un
+net,
+
+challenge-2
+00:06:21.471 --> 00:06:24.054
+de compter l'overflow, de choisir une
+disposition
+
+challenge-3
+00:06:24.054 --> 00:06:26.577
+admissible et d'expliquer pourquoi
+l'expérience
+
+challenge-4
+00:06:26.577 --> 00:06:29.100
+par défaut ne peut pas atteindre zéro
+overflow.
+
+takeaway-1
+00:06:30.400 --> 00:06:33.651
+Le placement donne au circuit sa
+disposition physique.
+
+takeaway-2
+00:06:33.651 --> 00:06:37.496
+La longueur des connexions et l'espace
+disponible comptent tous deux.
+
+takeaway-3
+00:06:37.496 --> 00:06:40.984
+Un résultat utile s'interprète avec ses
+contraintes réelles.
+
+ending-1
+00:06:41.284 --> 00:06:44.928
+Gardez deux questions en tête : les
+connexions sont-elles
+
+ending-2
+00:06:44.928 --> 00:06:48.349
+plus courtes, et les points ont-ils assez
+de place ?
+
+ending-3
+00:06:48.349 --> 00:06:50.791
+Testez ensuite votre réponse.
+
+ending-4
+00:06:50.791 --> 00:06:52.876
+Le studio est à vous.

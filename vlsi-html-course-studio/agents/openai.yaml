@@ -1,0 +1,4 @@
+interface:
+  display_name: "VLSI HTML Course Studio"
+  short_description: "Create shared HTML lessons, narrated films, and interactive labs"
+  default_prompt: "Use $vlsi-html-course-studio to build a VLSI lesson with shared HTML animation, multilingual narration, interactive labs, and exercises."

@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Deterministic storyboard renderer</title><link rel="stylesheet" href="styles.css"></head><body class="render-page"><div id="render-frame"></div><div class="render-notice">SILENT STORYBOARD · PROVISIONAL CLOCK · NO NARRATION INCLUDED</div><script type="module">
+import {Scene} from './scene.js';
+import {stateAt} from './timeline.js';
+async function data(path) { const response = await fetch(path); if (!response.ok) throw new Error(`Missing ${path}`); return response.json(); }
+const [script, clock] = await Promise.all([data('content/script.json'), data('content/demo-clock.json')]);
+window.clock = clock; window.script = script;
+window.renderAt = time => { const state = stateAt(time, clock, script); document.querySelector('#render-frame').innerHTML = Scene(state); return state; };
+await document.fonts.ready;
+window.renderAt(Number(new URLSearchParams(location.search).get('t') || 0));
+window.ready = true;
+</script></body></html>

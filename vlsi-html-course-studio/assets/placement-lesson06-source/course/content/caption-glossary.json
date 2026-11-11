@@ -1,0 +1,7 @@
+{
+  "HPWL": {"en":"half-perimeter wirelength","zh":"半周长线长","fr":"longueur de fil au demi-périmètre","es":"longitud estimada por semiperímetro","de":"Leitungslängenschätzung über den halben Umfang","ja":"半周長配線長","ko":"반둘레 배선 길이"},
+  "net": {"en":"group of terminals that must connect","zh":"必须连接的一组端点","fr":"groupe de bornes à connecter","es":"grupo de terminales que deben conectarse","de":"Gruppe zu verbindender Anschlüsse","ja":"接続すべき端子の集まり","ko":"서로 연결해야 하는 단자들의 집합"},
+  "bin": {"en":"region used to count occupancy","zh":"统计占用数量的区域","fr":"région utilisée pour compter l'occupation","es":"región donde se cuenta la ocupación","de":"Bereich zur Erfassung der Belegung","ja":"占有数を数える小領域","ko":"점유 수를 세는 구역"},
+  "overflow": {"en":"sum of points beyond each region's capacity","zh":"各区域超容量点数之和","fr":"somme des points dépassant la capacité des régions","es":"suma de puntos que exceden la capacidad de cada región","de":"Summe der Punkte oberhalb der Kapazität jedes Bereichs","ja":"各領域の容量を超える点数の合計","ko":"각 구역의 용량을 초과한 점 수의 합"},
+  "reconnect": {"en":"a light wirelength update after spreading, not a change to the netlist","zh":"疏散后进行轻度线长更新，不改变网络连接关系","fr":"légère mise à jour de longueur après dispersion, sans modifier les nets","es":"actualización ligera de longitud tras dispersar, sin cambiar la lista de redes","de":"leichte Leitungslängen-Aktualisierung nach dem Verteilen, ohne Änderung der Netzliste","ja":"ネットリストを変えず、分散後に配線長を軽く更新する処理","ko":"넷리스트를 바꾸지 않고 분산 후 배선 길이를 가볍게 갱신하는 단계"}
+}

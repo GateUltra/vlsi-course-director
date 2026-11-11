@@ -1,0 +1,280 @@
+{
+  "schema": 1,
+  "review": "AI-authored translations, terminology and numerical consistency checked; no native-language reviewer approval claimed. English and Chinese canonical text remains in script.json.",
+  "alignment": "Each translated semantic cue follows its selected voice's measured cue clock. Short caption chunks are proportionally timed within that cue; translated words are not forced onto source word boundaries.",
+  "cues": {
+    "welcome": {
+      "fr": "Un circuit peut être correct sur le plan logique sans avoir encore de disposition physique. Où faut-il placer ses cellules sur la puce ?",
+      "es": "Un circuito puede ser lógicamente correcto y todavía necesitar una disposición física. ¿Dónde deberían colocarse sus celdas en el chip?",
+      "de": "Eine Schaltung kann logisch korrekt sein und trotzdem noch eine physische Anordnung benötigen. Wo sollen ihre Zellen auf dem Chip liegen?",
+      "ja": "回路が論理的に正しくても、物理的な配置はまだ必要です。チップ上のどこにセルを置けばよいのでしょうか。",
+      "ko": "회로가 논리적으로 올바르더라도 물리적인 배치는 아직 필요합니다. 칩 위의 어디에 셀을 놓아야 할까요?"
+    },
+    "city": {
+      "fr": "Imaginez une ville miniature. Les bâtiments ont besoin d'adresses, les connexions de chemins. Le placement choisit les positions avant le tracé détaillé de ces chemins.",
+      "es": "Imagina una ciudad diminuta. Los edificios necesitan direcciones y las conexiones, rutas. El placement elige las posiciones antes de trazar esas rutas en detalle.",
+      "de": "Stellen Sie sich eine kleine Stadt vor. Gebäude brauchen Adressen, Verbindungen brauchen Wege. Das Placement legt die Positionen fest, bevor die genauen Leitungswege entstehen.",
+      "ja": "小さな街を想像してください。建物には住所が、接続には経路が必要です。配置では、詳しい配線経路を決める前に位置を選びます。",
+      "ko": "작은 도시를 떠올려 보세요. 건물에는 주소가, 연결에는 경로가 필요합니다. 배치는 상세한 배선 경로를 그리기 전에 위치를 정합니다."
+    },
+    "flow": {
+      "fr": "Le floorplanning définit l'organisation générale. Le placement positionne les cellules. La légalisation fait respecter les règles physiques de placement, puis le routage réalise les connexions détaillées.",
+      "es": "El floorplanning define la organización general. El placement sitúa las celdas. La legalización aplica las reglas físicas de colocación y el enrutamiento crea las conexiones detalladas.",
+      "de": "Das Floorplanning bestimmt die grobe Anordnung. Placement positioniert die Zellen. Die Legalisierung setzt physische Platzierungsregeln um, und das Routing erstellt die detaillierten Verbindungen.",
+      "ja": "フロアプランニングで全体の構成を決め、配置でセルの位置を決めます。合法化で物理的な配置規則を満たし、配線で具体的な接続を作ります。",
+      "ko": "플로어플래닝은 전체 구성을 정하고, 배치는 셀의 위치를 정합니다. 합법화는 물리적 배치 규칙을 충족시키고, 배선은 구체적인 연결을 만듭니다."
+    },
+    "temptation": {
+      "fr": "Des connexions courtes semblent avantageuses. Mais rapprocher les cellules connectées peut créer un autre problème : trop de cellules se disputent le même espace.",
+      "es": "Las conexiones cortas parecen atractivas. Pero juntar demasiado las celdas conectadas puede crear otro problema: demasiadas celdas compiten por el mismo espacio.",
+      "de": "Kurze Verbindungen klingen vorteilhaft. Doch wenn verbundene Zellen zu eng zusammenrücken, entsteht ein anderes Problem: Zu viele Zellen beanspruchen denselben Platz.",
+      "ja": "接続が短いのは魅力的です。しかし、つながるセルを密集させると、別の問題が起きます。多くのセルが同じ空間を奪い合うのです。",
+      "ko": "짧은 연결은 좋아 보입니다. 하지만 연결된 셀들을 너무 모으면 다른 문제가 생깁니다. 너무 많은 셀이 같은 공간을 차지하려고 합니다."
+    },
+    "points": {
+      "fr": "Réduisons le problème à six points, de A à F. Dans ce modèle pédagogique, un point représente une cellule ou une borne.",
+      "es": "Reduzcamos el problema a seis puntos, de A a F. En este modelo didáctico, cada punto representa una celda o un terminal.",
+      "de": "Vereinfachen wir das Problem auf sechs Punkte, A bis F. In diesem Lehrmodell steht jeder Punkt für eine Zelle oder einen Anschluss.",
+      "ja": "問題を A から F までの六つの点に縮めてみましょう。この教材のモデルでは、一つの点がセルや端子を表します。",
+      "ko": "문제를 A부터 F까지 여섯 점으로 줄여 봅시다. 이 교육용 모델에서 각 점은 셀이나 단자를 나타냅니다."
+    },
+    "nets": {
+      "fr": "Un net est un groupe de bornes à connecter. Ici, la plupart des nets relient deux points ; l'un relie A, B, C et D.",
+      "es": "Una red, o net, es un grupo de terminales que deben conectarse. Aquí casi todas unen dos puntos; una conecta A, B, C y D.",
+      "de": "Ein Netz ist eine Gruppe von Anschlüssen, die verbunden werden müssen. Die meisten Netze verbinden hier zwei Punkte; eines verbindet A, B, C und D.",
+      "ja": "ネットとは、接続すべき端子の集まりです。ここでは大半のネットが二点を結び、一つのネットは A、B、C、D を結びます。",
+      "ko": "넷은 서로 연결해야 하는 단자들의 집합입니다. 여기서는 대부분의 넷이 두 점을 연결하고, 하나는 A, B, C, D를 함께 연결합니다."
+    },
+    "anchors": {
+      "fr": "A et D sont des points fixes. Nous pouvons déplacer B, C, E et F, mais nous ne devons pas abaisser le score en déplaçant ces points fixes.",
+      "es": "A y D son anclajes fijos. Podemos mover B, C, E y F, pero no debemos obtener una puntuación menor desplazando los anclajes.",
+      "de": "A und D sind feste Anker. B, C, E und F dürfen wir bewegen. Ein niedrigerer Wert darf aber nicht dadurch entstehen, dass wir die Anker verschieben.",
+      "ja": "A と D は固定された点です。B、C、E、F は動かせますが、固定点を動かして評価値を下げてはいけません。",
+      "ko": "A와 D는 고정된 기준점입니다. B, C, E, F는 움직일 수 있지만, 고정점을 옮겨서 더 낮은 점수를 얻어서는 안 됩니다."
+    },
+    "model_limit": {
+      "fr": "Les cellules réelles ont une largeur, une hauteur et des règles de placement. Nos points omettent ces détails : cette expérience ne vérifie donc pas la légalisation.",
+      "es": "Las celdas reales tienen anchura, altura y reglas de colocación. Nuestros puntos omiten esos detalles, así que este experimento no comprueba la legalización.",
+      "de": "Echte Zellen haben Breite, Höhe und Platzierungsregeln. Unsere Punkte lassen diese Details weg. Dieses Experiment prüft daher keine physische Legalisierung.",
+      "ja": "実際のセルには幅、高さ、配置規則があります。この点モデルでは省略しているため、実際のセルの合法化を確認する実験ではありません。",
+      "ko": "실제 셀에는 너비, 높이, 배치 규칙이 있습니다. 점 모델은 이런 세부 사항을 생략하므로, 이 실험은 실제 셀의 합법화를 검사하지 않습니다."
+    },
+    "hpwl_box": {
+      "fr": "Comment estimer rapidement la longueur d'une connexion ? Prenons le net B–D. Dessinons le plus petit rectangle parallèle aux axes qui contient ses deux extrémités.",
+      "es": "¿Cómo estimar rápidamente la longitud de una conexión? Empecemos por la red B–D. Dibujemos el rectángulo más pequeño, alineado con los ejes, que contenga ambos extremos.",
+      "de": "Wie lässt sich die Verbindungslänge schnell schätzen? Beginnen wir mit dem Netz B–D. Zeichnen wir das kleinste achsenparallele Rechteck, das beide Endpunkte enthält.",
+      "ja": "接続の長さを素早く見積もるにはどうすればよいでしょうか。B–D のネットを、座標軸に平行な最小の長方形で囲みます。",
+      "ko": "연결 길이를 빠르게 추정하려면 어떻게 해야 할까요? B–D 넷부터 봅시다. 두 끝점을 포함하고 좌표축과 평행한 가장 작은 직사각형을 그립니다."
+    },
+    "hpwl_measure": {
+      "fr": "Sa largeur vaut sept et sa hauteur vaut sept. Leur somme vaut quatorze. C'est la longueur de fil au demi-périmètre, généralement appelée HPWL.",
+      "es": "Su anchura es siete y su altura también es siete. Al sumarlas obtenemos catorce. Es la longitud estimada por semiperímetro, normalmente llamada HPWL.",
+      "de": "Die Breite ist sieben, die Höhe ebenfalls sieben. Zusammen ergibt das vierzehn. Diese Leitungslängenschätzung über den halben Umfang heißt meist HPWL.",
+      "ja": "幅は七、高さも七です。足すと十四になります。これが半周長配線長で、通常 HPWL と呼ばれます。",
+      "ko": "너비는 7, 높이도 7입니다. 합하면 14가 됩니다. 이것이 반둘레 배선 길이이며, 보통 HPWL이라고 부릅니다."
+    },
+    "hpwl_multi": {
+      "fr": "Pour un net à plusieurs bornes, la règle reste la même. Trouvez les bornes les plus à gauche, à droite, en bas et en haut ; additionnez largeur et hauteur.",
+      "es": "Para una red con varios terminales, la regla no cambia. Busca los extremos izquierdo, derecho, inferior y superior, y suma la anchura y la altura del rectángulo.",
+      "de": "Für ein Netz mit mehreren Anschlüssen gilt dieselbe Regel. Bestimmen Sie die äußersten Anschlüsse links, rechts, unten und oben; addieren Sie Breite und Höhe.",
+      "ja": "端子が複数あるネットでも規則は同じです。最も左、右、下、上の端子を求め、包囲長方形の幅と高さを足します。",
+      "ko": "단자가 여러 개인 넷도 규칙은 같습니다. 가장 왼쪽, 오른쪽, 아래쪽, 위쪽 단자를 찾고, 경계 상자의 너비와 높이를 더합니다."
+    },
+    "hpwl_inside": {
+      "fr": "Regardez une borne intérieure bouger tandis que les extrêmes restent fixes. Le rectangle ne change pas ; l'estimation de ce net reste donc identique.",
+      "es": "Observa cómo se mueve un terminal interior mientras los extremos permanecen fijos. El rectángulo no cambia, así que la estimación de esta red tampoco cambia.",
+      "de": "Ein innerer Anschluss bewegt sich, während die äußersten Positionen fest bleiben. Das Rechteck ändert sich nicht, also auch nicht die Längenschätzung dieses Netzes.",
+      "ja": "端の位置を固定したまま、内部の端子を動かしてみます。包囲長方形が変わらないので、このネットの見積もりも変わりません。",
+      "ko": "가장 바깥쪽 위치는 고정한 채 내부 단자를 움직여 보세요. 경계 상자가 변하지 않으므로 이 넷의 추정 길이도 변하지 않습니다."
+    },
+    "hpwl_total": {
+      "fr": "Répétez le calcul pour les six nets et additionnez les estimations. Dans cette disposition encombrée, le total vaut quarante-huit virgule cinq, et non quatorze.",
+      "es": "Repite el cálculo para las seis redes y suma las estimaciones. En esta disposición congestionada, el total es cuarenta y ocho coma cinco, no catorce.",
+      "de": "Wiederholen Sie die Rechnung für alle sechs Netze und addieren Sie die Werte. In dieser gedrängten Anordnung beträgt die Summe 48,5, nicht vierzehn.",
+      "ja": "六つのネットすべてで計算し、見積もりを合計します。この密集配置での合計は十四ではなく、48.5 です。",
+      "ko": "여섯 넷 모두에 대해 계산한 뒤 추정값을 합합니다. 이 밀집된 배치에서 합계는 14가 아니라 48.5입니다."
+    },
+    "hpwl_limit": {
+      "fr": "HPWL est une estimation pratique, pas un tracé de fil définitif. Elle ne représente pas tous les obstacles ni toutes les contraintes du routage détaillé.",
+      "es": "HPWL es una estimación útil, no una ruta de cable ya terminada. No representa todos los obstáculos ni todas las restricciones del enrutamiento detallado.",
+      "de": "HPWL ist eine praktische Schätzung, kein fertiger Leitungsverlauf. Sie berücksichtigt nicht jedes Hindernis und jede Einschränkung des detaillierten Routings.",
+      "ja": "HPWL は便利な見積もりですが、完成した配線経路ではありません。すべての障害物や詳細な配線制約を表すものではありません。",
+      "ko": "HPWL은 편리한 추정값이지, 완성된 배선 경로가 아닙니다. 모든 장애물이나 상세 배선 제약을 반영하지는 않습니다."
+    },
+    "bins": {
+      "fr": "Évaluons maintenant l'espace. Divisons la zone de placement en quatre régions, souvent appelées bins. Comptons les points dans chacune d'elles.",
+      "es": "Ahora evaluemos el espacio. Dividamos el área de colocación en cuatro regiones, llamadas bins, y contemos cuántos puntos caen en cada una.",
+      "de": "Bewerten wir nun die Raumnutzung. Teilen wir die Platzierungsfläche in vier Bereiche, oft Bins genannt, und zählen die Punkte in jedem Bereich.",
+      "ja": "次は空間の使い方を評価します。配置領域を、ビンと呼ばれる四つの小領域に分け、それぞれに入る点の数を数えます。",
+      "ko": "이제 공간 사용을 평가합시다. 배치 영역을 빈이라고 부르는 네 구역으로 나누고, 각 구역에 들어가는 점의 수를 셉니다."
+    },
+    "capacity": {
+      "fr": "Pour cette première comparaison, chaque région a une capacité de deux. La couleur indique l'occupation, pas la température. Les points fixes sont également comptés.",
+      "es": "En esta primera comparación, cada región tiene capacidad para dos puntos. El color indica ocupación, no temperatura. Los puntos fijos también cuentan.",
+      "de": "Für diesen ersten Vergleich hat jeder Bereich eine Kapazität von zwei. Die Farbe zeigt die Belegung, nicht die Temperatur. Auch die festen Punkte zählen mit.",
+      "ja": "最初の比較では、各領域の容量は二点です。色は温度ではなく占有状態を示します。固定点も数に含めます。",
+      "ko": "첫 번째 비교에서 각 구역의 용량은 두 점입니다. 색은 온도가 아니라 점유 상태를 나타냅니다. 고정점도 개수에 포함됩니다."
+    },
+    "overflow": {
+      "fr": "Cinq points occupent la région en bas à gauche. Deux tiennent, trois sont en trop. Additionnez les excédents de toutes les régions pour obtenir l'overflow total.",
+      "es": "Cinco puntos comparten la región inferior izquierda. Caben dos y sobran tres. Suma los excesos de todas las regiones para obtener el overflow total.",
+      "de": "Fünf Punkte teilen sich den Bereich unten links. Zwei passen hinein, drei sind zu viel. Die Summe aller Überschüsse ergibt den gesamten Overflow.",
+      "ja": "左下の領域には五点あります。二点は収まり、三点は余ります。各領域の超過数を足したものが、総オーバーフローです。",
+      "ko": "왼쪽 아래 구역에 다섯 점이 모여 있습니다. 두 점은 들어가고 세 점은 초과합니다. 모든 구역의 초과분을 합하면 총 오버플로가 됩니다."
+    },
+    "predict": {
+      "fr": "Si nous répartissons les points dans l'espace disponible, que deviendra la longueur estimée ? Prenez un instant pour faire votre prédiction.",
+      "es": "Si repartimos los puntos por el espacio disponible, ¿qué pasará con la longitud estimada? Tómate un momento para hacer tu predicción.",
+      "de": "Wenn wir die Punkte auf freien Platz verteilen, was passiert mit der geschätzten Leitungslänge? Nehmen Sie sich einen Moment für Ihre Vorhersage.",
+      "ja": "空いている領域へ点を分散させると、推定配線長はどうなるでしょうか。少し時間を取って予想してみてください。",
+      "ko": "빈 공간으로 점들을 분산시키면 추정 배선 길이는 어떻게 될까요? 잠시 시간을 갖고 예측해 보세요."
+    },
+    "spread_demo": {
+      "fr": "Voici une disposition possible. Chaque région respecte sa capacité. L'overflow passe de trois à zéro, tandis que la longueur estimée monte à cinquante-deux.",
+      "es": "Esta es una disposición posible. Ahora todas las regiones respetan su capacidad. El overflow baja de tres a cero, mientras que la longitud estimada sube a cincuenta y dos.",
+      "de": "Hier ist eine mögliche Anordnung. Jeder Bereich hält nun seine Kapazität ein. Der Overflow fällt von drei auf null, während die geschätzte Leitungslänge auf 52 steigt.",
+      "ja": "これは配置の一例です。すべての領域が容量内に収まりました。オーバーフローは三からゼロへ減り、推定配線長は 52 に増えます。",
+      "ko": "가능한 배치의 한 예입니다. 이제 모든 구역이 용량을 지킵니다. 오버플로는 3에서 0으로 줄고, 추정 배선 길이는 52로 늘어납니다."
+    },
+    "tradeoff": {
+      "fr": "C'est un compromis. Si la capacité doit être respectée, des fils courts ne suffisent pas. Cette comparaison est conçue à la main, ce n'est pas une exécution d'algorithme.",
+      "es": "Eso es un compromiso. Si la capacidad es un requisito, no basta con acortar las conexiones. Esta comparación está diseñada a mano; no es una ejecución del algoritmo.",
+      "de": "Das ist eine Abwägung. Wenn die Kapazität eingehalten werden muss, reichen kurze Leitungen allein nicht aus. Dies ist ein entworfener Vergleich, kein Algorithmuslauf.",
+      "ja": "これがトレードオフです。容量を守る必要があるなら、配線が短いだけでは十分ではありません。これは手作りの比較で、アルゴリズムの実行結果ではありません。",
+      "ko": "이것이 트레이드오프입니다. 용량을 반드시 지켜야 한다면 연결이 짧은 것만으로는 충분하지 않습니다. 이 비교는 직접 설계한 예시이며 알고리즘 실행 결과는 아닙니다."
+    },
+    "reference_start": {
+      "fr": "Passons à l'expérience du cours. Elle conserve les six points, les nets et les points fixes, mais la capacité est d'un point par région. Observez le nouveau libellé.",
+      "es": "Pasemos al experimento del curso. Mantiene la misma red de seis puntos y los anclajes fijos, pero la capacidad es uno por región. Fíjate en la etiqueta nueva.",
+      "de": "Wechseln wir zum Kursexperiment. Die sechs Punkte, die Netzliste und die festen Anker bleiben gleich. Die Kapazität beträgt nun aber eins pro Bereich. Beachten Sie die neue Beschriftung.",
+      "ja": "ここからは講義の実験です。六点のネットリストと固定点は同じですが、各領域の容量は一点になります。ラベルの変化に注目してください。",
+      "ko": "이제 강의의 원래 실험으로 넘어갑니다. 여섯 점의 넷리스트와 고정점은 같지만, 구역당 용량은 1입니다. 바뀐 표시를 확인하세요."
+    },
+    "algorithm_map": {
+      "fr": "Le petit placeur pédagogique rapproche d'abord les points connectés, puis disperse les régions surchargées. Une légère étape de reconnexion suit chaque étape de dispersion.",
+      "es": "El pequeño colocador didáctico primero acerca los puntos conectados y después dispersa las regiones sobrecargadas. Tras cada dispersión viene un paso suave de reconexión.",
+      "de": "Der kleine Lehr-Placer zieht verbundene Punkte zunächst zusammen und verteilt dann überfüllte Bereiche. Auf jeden Verteilungsschritt folgt sofort eine leichte Wiederannäherung entlang der Verbindungen.",
+      "ja": "この小さな教材用配置器は、まず接続された点を近づけ、次に混み合った領域を分散させます。分散のたびに、接続を軽く引き戻す処理を続けます。",
+      "ko": "이 작은 교육용 배치기는 연결된 점을 먼저 당긴 뒤, 과밀한 구역을 분산시킵니다. 분산할 때마다 연결을 가볍게 다시 당기는 단계가 이어집니다."
+    },
+    "force": {
+      "fr": "Les six premières mises à jour attirent les points mobiles vers leurs voisins, avec un faible terme de recentrage. A et D restent fixes pendant tout le processus.",
+      "es": "Las primeras seis actualizaciones acercan los puntos móviles a sus vecinos, con un pequeño término de centrado. A y D permanecen fijos durante todo el proceso.",
+      "de": "Die ersten sechs Aktualisierungen ziehen bewegliche Punkte zu ihren Nachbarn, ergänzt um einen kleinen Zentrierungsterm. A und D bleiben dabei immer fest.",
+      "ja": "最初の六回の更新では、可動点を隣接点へ近づけ、弱い中央への引力も加えます。A と D は全過程で固定されたままです。",
+      "ko": "처음 여섯 번의 갱신은 작은 중심화 항을 더하면서 이동 가능한 점을 이웃 쪽으로 당깁니다. A와 D는 내내 고정됩니다."
+    },
+    "quadratic": {
+      "fr": "Trois mises à jour supplémentaires par moyenne affinent l'étape de longueur des fils. Pas besoin de résoudre une grande équation : les points connectés influencent mutuellement leurs positions.",
+      "es": "Otras tres actualizaciones por promediado refinan la etapa de longitud. No necesitas resolver una gran ecuación para captar la idea: los puntos conectados influyen mutuamente en sus posiciones.",
+      "de": "Drei weitere Mittelwert-Aktualisierungen verfeinern die Leitungslängenphase. Dafür müssen Sie kein großes Gleichungssystem lösen: Verbundene Punkte beeinflussen gegenseitig ihre Positionen.",
+      "ja": "続く三回の平均化更新で、配線長の段階を調整します。大きな方程式を解けなくても大丈夫です。接続された点は互いの位置に影響する、という考え方です。",
+      "ko": "이후 세 번의 평균 갱신으로 배선 길이 단계를 다듬습니다. 큰 방정식을 풀 줄 몰라도 핵심은 이해할 수 있습니다. 연결된 점들이 서로의 위치에 영향을 줍니다."
+    },
+    "density_push": {
+      "fr": "Examinons ensuite les bins surchargés. Leurs points mobiles sont repoussés loin du centre du bin. Le poids de densité règle l'intensité de cette poussée.",
+      "es": "Después examinamos las regiones sobrecargadas. Los puntos móviles de una región con exceso se alejan de su centro. El peso de densidad controla la intensidad de ese empuje.",
+      "de": "Als Nächstes prüfen wir die überfüllten Bins. Bewegliche Punkte darin werden vom Bin-Zentrum weggeschoben. Das Dichtegewicht bestimmt die Stärke dieses Schubs.",
+      "ja": "次に、混み合ったビンを調べます。容量を超えたビンの可動点を、その中心から遠ざけます。密度重みで、この押す強さを調整します。",
+      "ko": "다음으로 과밀한 빈을 살펴봅니다. 용량을 초과한 빈의 이동 가능한 점을 빈 중심에서 멀어지도록 밀어냅니다. 밀도의 가중치가 이 힘의 세기를 조절합니다."
+    },
+    "reconnect": {
+      "fr": "La dispersion peut allonger les connexions. Une légère mise à jour de longueur suit donc immédiatement. Rapprocher et disperser ont des rôles différents ; ils ne se remplacent pas.",
+      "es": "Dispersar puede alargar las conexiones, así que inmediatamente sigue una actualización ligera de longitud. Acercar y dispersar cumplen funciones distintas; una no sustituye a la otra.",
+      "de": "Das Verteilen kann Verbindungen verlängern. Deshalb folgt sofort eine leichte Leitungslängen-Aktualisierung. Zusammenziehen und Verteilen haben verschiedene Aufgaben; keines ersetzt das andere.",
+      "ja": "分散させると接続が長くなることがあるため、すぐに軽い配線長更新を行います。引き寄せと分散は役割が異なり、互いの代わりにはなりません。",
+      "ko": "분산시키면 연결이 길어질 수 있으므로, 곧바로 가벼운 배선 길이 갱신을 합니다. 당기기와 분산은 역할이 다르며 서로를 대체하지 않습니다."
+    },
+    "repeat": {
+      "fr": "La référence effectue douze cycles de dispersion et de reconnexion. Ce sont des états enregistrés de l'algorithme, pas le mouvement conçu à la main. Observez les deux scores à chaque étape.",
+      "es": "La referencia realiza doce rondas de dispersión y reconexión. Estos son estados registrados del algoritmo, no el movimiento diseñado antes. Observa las dos métricas en cada paso.",
+      "de": "Die Referenz führt zwölf Runden aus Verteilen und Wiederannähern aus. Das sind aufgezeichnete Algorithmuszustände, nicht die zuvor entworfene Bewegung. Beobachten Sie beide Werte bei jedem Schritt.",
+      "ja": "参考プログラムでは、分散と引き戻しを十二回繰り返します。ここで示すのはアルゴリズムの記録された状態です。各段階で二つの評価値を見てください。",
+      "ko": "참조 프로그램은 분산과 재연결을 열두 번 반복합니다. 이것은 앞서 직접 만든 움직임이 아니라, 알고리즘에서 기록한 상태입니다. 단계마다 두 지표를 확인하세요."
+    },
+    "heuristic": {
+      "fr": "Cette procédure compacte illustre un placement tenant compte de la densité. C'est une heuristique pédagogique, pas un placeur industriel complet ni une garantie d'optimalité.",
+      "es": "Este procedimiento sencillo ilustra un placement que considera la densidad. Es una heurística didáctica, no un colocador industrial completo ni una garantía de obtener el óptimo.",
+      "de": "Dieses kompakte Verfahren zeigt dichtebewusstes Placement. Es ist eine Lehrheuristik, kein vollständiger industrieller Placer und keine Garantie für eine optimale Lösung.",
+      "ja": "この簡潔な手順は、密度を考慮する配置を示しています。教材用のヒューリスティックであり、完全な産業用配置器でも、最適解の保証でもありません。",
+      "ko": "이 간단한 절차는 밀도를 고려한 배치를 보여 줍니다. 교육용 휴리스틱이며, 완전한 산업용 배치기도 최적해를 보장하는 방법도 아닙니다."
+    },
+    "results": {
+      "fr": "Avec les réglages par défaut, la longueur estimée passe de cinquante-deux à environ quarante-huit virgule un. L'overflow commence à deux et termine à deux.",
+      "es": "Con los ajustes predeterminados, la longitud estimada pasa de cincuenta y dos a unos cuarenta y ocho coma uno. El overflow empieza en dos y termina en dos.",
+      "de": "Mit den Standardeinstellungen sinkt die geschätzte Leitungslänge von 52 auf etwa 48,1. Der Overflow liegt am Anfang bei zwei und am Ende ebenfalls bei zwei.",
+      "ja": "既定の設定では、推定配線長が 52 から約 48.1 へ変わります。オーバーフローは開始時も終了時も二です。",
+      "ko": "기본 설정에서 추정 배선 길이는 52에서 약 48.1로 바뀝니다. 오버플로는 시작할 때도 2, 끝날 때도 2입니다."
+    },
+    "capacity_bound": {
+      "fr": "Pourquoi pas zéro ? Six points se partagent quatre bins d'une place chacun. Au moins deux points doivent dépasser la capacité, quelles que soient leurs positions.",
+      "es": "¿Por qué no puede ser cero? Seis puntos comparten cuatro regiones con una plaza cada una. Al menos dos puntos deben superar la capacidad, elijamos las posiciones que elijamos.",
+      "de": "Warum nicht null? Sechs Punkte teilen sich vier Bins mit je einem Platz. Mindestens zwei Punkte überschreiten die Kapazität, ganz gleich, welche Positionen wir wählen.",
+      "ja": "なぜゼロにならないのでしょうか。六点に対し、四つのビンには各一点しか入りません。どの位置を選んでも、少なくとも二点は容量を超えます。",
+      "ko": "왜 0이 될 수 없을까요? 여섯 점을 각각 한 자리인 네 빈에 넣어야 합니다. 위치를 어떻게 정하든 적어도 두 점은 용량을 초과합니다."
+    },
+    "diagnosis": {
+      "fr": "Cette borne inférieure compte aussi A et D. Davantage d'itérations ne crée pas de capacité supplémentaire. Vérifiez le modèle et l'espace disponible avant d'accuser l'optimiseur.",
+      "es": "Esta cota inferior también cuenta A y D. Más iteraciones no crean la capacidad que falta. Revisa el modelo y el espacio disponible antes de culpar al optimizador.",
+      "de": "Diese Untergrenze zählt auch A und D mit. Mehr Iterationen schaffen keine fehlende Kapazität. Prüfen Sie Modell und verfügbaren Platz, bevor Sie den Optimierer verantwortlich machen.",
+      "ja": "この下限には A と D も含みます。反復回数を増やしても容量は増えません。最適化器を疑う前に、モデルと利用可能な空間を確認しましょう。",
+      "ko": "이 하한에는 A와 D도 포함됩니다. 반복을 늘려도 부족한 용량이 생기지는 않습니다. 최적화기를 탓하기 전에 모델과 가용 공간부터 확인하세요."
+    },
+    "fair_compare": {
+      "fr": "Pour comparer les réglages, gardez les mêmes nets, points fixes et capacités. Un score beaucoup plus faible obtenu en déplaçant les points fixes répond à une autre question.",
+      "es": "Al comparar ajustes, mantén iguales la lista de redes, los anclajes fijos y la capacidad. Una puntuación mucho menor al mover los anclajes responde a una pregunta distinta.",
+      "de": "Halten Sie beim Vergleich von Einstellungen Netzliste, feste Anker und Kapazität unverändert. Ein viel kleinerer Wert durch bewegte Anker beantwortet eine andere Frage.",
+      "ja": "設定を比較するときは、ネットリスト、固定点、容量を同じに保ちます。固定点を動かして大幅に下がった評価値は、別の問題に対する答えです。",
+      "ko": "설정을 비교할 때는 넷리스트, 고정점, 용량을 동일하게 유지하세요. 고정점을 옮겨 훨씬 작은 점수를 얻었다면, 그것은 다른 문제의 답입니다."
+    },
+    "weight": {
+      "fr": "Essayez un autre poids de densité, puis rapportez les deux résultats. Une poussée plus forte ne promet pas un meilleur résultat, et la limite de capacité reste valable.",
+      "es": "Prueba otro peso de densidad y después informa de ambos resultados. Un empuje más fuerte no garantiza una mejora, y el límite de capacidad sigue vigente.",
+      "de": "Probieren Sie ein anderes Dichtegewicht und berichten Sie beide Ergebnisse. Ein stärkerer Schub verspricht keine Verbesserung, und die Kapazitätsgrenze gilt weiterhin.",
+      "ja": "密度重みを変え、二つの結果を報告してみましょう。強く押せば良くなるとは限りません。容量による下限も、そのまま当てはまります。",
+      "ko": "밀도 가중치를 바꿔 보고 두 결과를 함께 기록하세요. 더 강하게 민다고 더 좋아지는 것은 아니며, 용량의 한계도 그대로 적용됩니다."
+    },
+    "lab_transfer": {
+      "fr": "Mettez la vidéo en pause et transférez sa disposition exacte au laboratoire. L'atelier conserve la bonne capacité, et notre compagnon lit les mêmes métriques.",
+      "es": "Pausa el vídeo y lleva su disposición exacta al laboratorio. El banco de trabajo conserva la capacidad correcta, y nuestro compañero lee las mismas métricas.",
+      "de": "Pausieren Sie das Video und übernehmen Sie genau diese Anordnung ins Labor. Die Werkbank behält die richtige Kapazität bei, und unser Begleiter liest dieselben Messwerte.",
+      "ja": "動画を止めて、その瞬間の配置を実験室へ移してみましょう。作業台には正しい容量が引き継がれ、科学者の相棒も同じ評価値を読み取ります。",
+      "ko": "영상을 멈추고 그 순간의 배치를 실험실로 가져오세요. 작업대는 올바른 용량을 유지하고, 과학자 동료도 같은 지표를 읽습니다."
+    },
+    "lab_predict": {
+      "fr": "Prévoyez d'abord l'effet d'un déplacement. Faites ensuite glisser un point et comparez. Si les scores ne changent pas, demandez-vous quel rectangle ou bin est resté inchangé.",
+      "es": "Primero predice el efecto de un movimiento. Después arrastra un punto y compara. Si las métricas no cambian, piensa qué rectángulo o región se mantuvo igual.",
+      "de": "Sagen Sie zuerst die Wirkung einer Bewegung voraus. Ziehen Sie dann einen Punkt und vergleichen Sie. Bleiben die Werte gleich, fragen Sie: Welches Rechteck oder welcher Bin blieb unverändert?",
+      "ja": "まず一点を動かした効果を予想し、それからドラッグして比較します。評価値が変わらなければ、どの包囲長方形やビンが変わらなかったのか考えましょう。",
+      "ko": "먼저 한 번의 이동이 미칠 영향을 예측하세요. 그런 다음 점을 드래그해 비교합니다. 점수가 같다면 어떤 경계 상자나 빈의 상태가 그대로인지 생각해 보세요."
+    },
+    "lab_reference": {
+      "fr": "En mode référence, avancez étape par étape dans la boucle réelle ou modifiez son poids de densité. Repartez de la même disposition initiale pour une comparaison équitable.",
+      "es": "En el modo de referencia, recorre el bucle real paso a paso o cambia su peso de densidad. Restablece la misma disposición inicial para comparar de forma justa.",
+      "de": "Im Referenzmodus können Sie die echte Schleife schrittweise durchlaufen oder das Dichtegewicht ändern. Setzen Sie für einen fairen Vergleich auf dieselbe Startanordnung zurück.",
+      "ja": "参照モードでは、実際のループを一段ずつ進めたり、密度重みを変えたりできます。公平に比較するため、同じ初期配置へ戻してから始めましょう。",
+      "ko": "참조 모드에서는 실제 반복을 단계별로 실행하거나 밀도 가중치를 바꿀 수 있습니다. 공정하게 비교하려면 같은 초기 배치로 되돌린 뒤 시작하세요."
+    },
+    "challenge": {
+      "fr": "Les exercices vous demandent de mesurer un net, de compter l'overflow, de choisir une disposition admissible et d'expliquer pourquoi l'expérience par défaut ne peut pas atteindre zéro overflow.",
+      "es": "Los ejercicios piden medir una red, contar el overflow, elegir una disposición factible y explicar por qué el experimento predeterminado no puede alcanzar un overflow de cero.",
+      "de": "In den Übungen messen Sie ein Netz, zählen den Overflow, wählen eine zulässige Anordnung und erklären, warum das Standardexperiment keinen Overflow von null erreichen kann.",
+      "ja": "演習では、ネットの長さとオーバーフローを計算し、容量を守る配置を選びます。また、既定の実験でオーバーフローがゼロにならない理由を説明します。",
+      "ko": "연습 문제에서는 한 넷의 길이와 오버플로를 계산하고, 용량을 만족하는 배치를 고릅니다. 기본 실험에서 오버플로가 0이 될 수 없는 이유도 설명합니다."
+    },
+    "takeaway": {
+      "fr": "Le placement donne au circuit sa disposition physique. La longueur des connexions et l'espace disponible comptent tous deux. Un résultat utile s'interprète avec ses contraintes réelles.",
+      "es": "El placement da al circuito su disposición física. Importan tanto la longitud de las conexiones como el espacio disponible, y un resultado útil debe interpretarse con sus restricciones reales.",
+      "de": "Placement gibt einer Schaltung ihre physische Anordnung. Verbindungslänge und verfügbarer Platz sind beide wichtig. Ein sinnvolles Ergebnis muss unter seinen tatsächlichen Bedingungen gelesen werden.",
+      "ja": "配置は回路に物理的な並びを与えます。接続の長さも、利用可能な空間も重要です。結果は、実際に使った制約と合わせて読み解きましょう。",
+      "ko": "배치는 회로의 물리적 구성을 정합니다. 연결 길이와 가용 공간 모두 중요합니다. 결과는 실제로 적용한 제약 조건과 함께 해석해야 합니다."
+    },
+    "ending": {
+      "fr": "Gardez deux questions en tête : les connexions sont-elles plus courtes, et les points ont-ils assez de place ? Testez ensuite votre réponse. Le studio est à vous.",
+      "es": "Sigue haciéndote dos preguntas: ¿son más cortas las conexiones y tienen los puntos suficiente espacio? Después comprueba tu respuesta. El estudio es tuyo.",
+      "de": "Stellen Sie immer zwei Fragen: Sind die Verbindungen kürzer, und haben die Punkte genug Platz? Prüfen Sie dann Ihre Antwort. Das Studio gehört Ihnen.",
+      "ja": "二つの問いを持ち続けてください。接続は短くなりましたか。点には十分な空間がありますか。そして自分の答えを試しましょう。ここからは、あなたの実験です。",
+      "ko": "계속 두 가지를 물어보세요. 연결은 더 짧아졌나요? 점들에게 충분한 공간이 있나요? 이제 답을 직접 시험해 보세요. 작업실은 여러분의 것입니다."
+    }
+  }
+}

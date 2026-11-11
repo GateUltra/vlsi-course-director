@@ -1,0 +1,25 @@
+{
+  "narration": {
+    "service": "edge-tts 7.3.1 / Microsoft online neural voice service",
+    "authorisation": "User explicitly authorised online speech and requested four full narration choices.",
+    "voices": {"en_gb":"en-GB-ThomasNeural","en_us":"en-US-GuyNeural","en_in":"en-IN-PrabhatNeural","zh":"zh-CN-YunxiNeural"},
+    "rate": "+0%",
+    "pitch": "default",
+    "identity": "Synthetic named service voices; no public-person voice clone or endorsement.",
+    "script": "content/script.json",
+    "cache": "Exact text, voice, rate and pitch fingerprints; measured clips retained in production/{voice}/clips outside the deployable site.",
+    "timing": "Voice-specific cue clocks measured from the generated audio. 0.8s opening, 0.3s between cues plus scripted prediction holds, 0.8s ending."
+  },
+  "music": {
+    "source": "Original programmatically composed sparse plucked motif, retained from the approved Studio v3 sound design; no third-party recording or downloaded music sample.",
+    "generator": "scripts/make_course_audio.py: original_bed",
+    "mix": "Narration normalised to -17 LUFS target / -2 dBTP target. Very quiet original bed mixed underneath with opening and ending fades. Actual peak and RMS checks recorded in review-course/audio-checks.json."
+  },
+  "subtitles": {
+    "languages": ["en","zh","fr","es","de","ja","ko"],
+    "translations": "content/translations.json",
+    "glossary": "content/caption-glossary.json",
+    "alignment": "Measured semantic cue boundaries for each selected voice. Balanced short caption chunks receive proportional reading time with a minimum display-time allowance. This is not word-level translation alignment.",
+    "review": "AI translation with numerical and terminology checks; no native-language human review claimed."
+  }
+}

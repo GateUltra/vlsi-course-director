@@ -1,0 +1,590 @@
+WEBVTT
+
+welcome-1
+00:00:00.800 --> 00:00:03.465
+Eine Schaltung kann logisch korrekt sein
+und
+
+welcome-2
+00:00:03.465 --> 00:00:06.306
+trotzdem noch eine physische Anordnung
+benötigen.
+
+welcome-3
+00:00:06.306 --> 00:00:08.936
+Wo sollen ihre Zellen auf dem Chip liegen?
+
+city-1
+00:00:09.236 --> 00:00:12.385
+Stellen Sie sich eine kleine Stadt vor.
+
+city-2
+00:00:12.385 --> 00:00:16.250
+Gebäude brauchen Adressen, Verbindungen
+brauchen Wege.
+
+city-3
+00:00:16.250 --> 00:00:21.500
+Das Placement legt die Positionen fest,
+bevor die genauen Leitungswege entstehen.
+
+flow-1
+00:00:21.800 --> 00:00:24.898
+Das Floorplanning bestimmt die grobe
+Anordnung.
+
+flow-2
+00:00:24.898 --> 00:00:27.489
+Placement positioniert die Zellen.
+
+flow-3
+00:00:27.489 --> 00:00:30.968
+Die Legalisierung setzt physische
+Platzierungsregeln um,
+
+flow-4
+00:00:30.968 --> 00:00:34.448
+und das Routing erstellt die detaillierten
+Verbindungen.
+
+temptation-1
+00:00:34.748 --> 00:00:37.731
+Kurze Verbindungen klingen vorteilhaft.
+
+temptation-2
+00:00:37.731 --> 00:00:41.795
+Doch wenn verbundene Zellen zu eng
+zusammenrücken, entsteht ein
+
+temptation-3
+00:00:41.795 --> 00:00:45.812
+anderes Problem: Zu viele Zellen
+beanspruchen denselben Platz.
+
+points-1
+00:00:46.112 --> 00:00:50.261
+Vereinfachen wir das Problem auf sechs
+Punkte, A bis F.
+
+points-2
+00:00:50.261 --> 00:00:55.520
+In diesem Lehrmodell steht jeder Punkt für
+eine Zelle oder einen Anschluss.
+
+nets-1
+00:00:55.820 --> 00:01:00.007
+Ein Netz ist eine Gruppe von Anschlüssen,
+die verbunden werden müssen.
+
+nets-2
+00:01:00.007 --> 00:01:03.094
+Die meisten Netze verbinden hier zwei
+Punkte;
+
+nets-3
+00:01:03.094 --> 00:01:05.564
+eines verbindet A, B, C und D.
+
+anchors-1
+00:01:05.864 --> 00:01:08.064
+A und D sind feste Anker.
+
+anchors-2
+00:01:08.064 --> 00:01:10.601
+B, C, E und F dürfen wir bewegen.
+
+anchors-3
+00:01:10.601 --> 00:01:13.557
+Ein niedrigerer Wert darf aber nicht
+dadurch
+
+anchors-4
+00:01:13.557 --> 00:01:16.472
+entstehen, dass wir die Anker verschieben.
+
+model_limit-1
+00:01:16.772 --> 00:01:20.636
+Echte Zellen haben Breite, Höhe und
+Platzierungsregeln.
+
+model_limit-2
+00:01:20.636 --> 00:01:23.745
+Unsere Punkte lassen diese Details weg.
+
+model_limit-3
+00:01:23.745 --> 00:01:27.860
+Dieses Experiment prüft daher keine
+physische Legalisierung.
+
+hpwl_box-1
+00:01:28.160 --> 00:01:31.614
+Wie lässt sich die Verbindungslänge schnell
+schätzen?
+
+hpwl_box-2
+00:01:31.614 --> 00:01:34.093
+Beginnen wir mit dem Netz B–D.
+
+hpwl_box-3
+00:01:34.093 --> 00:01:38.744
+Zeichnen wir das kleinste achsenparallele
+Rechteck, das beide Endpunkte enthält.
+
+hpwl_measure-1
+00:01:39.044 --> 00:01:43.005
+Die Breite ist sieben, die Höhe ebenfalls
+sieben.
+
+hpwl_measure-2
+00:01:43.005 --> 00:01:45.853
+Zusammen ergibt das vierzehn.
+
+hpwl_measure-3
+00:01:45.853 --> 00:01:51.044
+Diese Leitungslängenschätzung über den
+halben Umfang heißt meist HPWL.
+
+hpwl_multi-1
+00:01:51.344 --> 00:01:55.676
+Für ein Netz mit mehreren Anschlüssen gilt
+dieselbe Regel.
+
+hpwl_multi-2
+00:01:55.676 --> 00:02:00.623
+Bestimmen Sie die äußersten Anschlüsse
+links, rechts, unten und oben;
+
+hpwl_multi-3
+00:02:00.623 --> 00:02:03.392
+addieren Sie Breite und Höhe.
+
+hpwl_inside-1
+00:02:03.692 --> 00:02:09.137
+Ein innerer Anschluss bewegt sich, während
+die äußersten Positionen fest bleiben.
+
+hpwl_inside-2
+00:02:09.137 --> 00:02:14.636
+Das Rechteck ändert sich nicht, also auch
+nicht die Längenschätzung dieses Netzes.
+
+hpwl_total-1
+00:02:14.936 --> 00:02:20.327
+Wiederholen Sie die Rechnung für alle sechs
+Netze und addieren Sie die Werte.
+
+hpwl_total-2
+00:02:20.327 --> 00:02:25.328
+In dieser gedrängten Anordnung beträgt die
+Summe 48,5, nicht vierzehn.
+
+hpwl_limit-1
+00:02:25.628 --> 00:02:30.084
+HPWL ist eine praktische Schätzung, kein
+fertiger Leitungsverlauf.
+
+hpwl_limit-2
+00:02:30.084 --> 00:02:33.421
+Sie berücksichtigt nicht jedes Hindernis
+und
+
+hpwl_limit-3
+00:02:33.421 --> 00:02:36.860
+jede Einschränkung des detaillierten
+Routings.
+
+bins-1
+00:02:37.160 --> 00:02:40.186
+Bewerten wir nun die Raumnutzung.
+
+bins-2
+00:02:40.186 --> 00:02:44.406
+Teilen wir die Platzierungsfläche in vier
+Bereiche, oft
+
+bins-3
+00:02:44.406 --> 00:02:48.512
+Bins genannt, und zählen die Punkte in
+jedem Bereich.
+
+capacity-1
+00:02:48.812 --> 00:02:53.450
+Für diesen ersten Vergleich hat jeder
+Bereich eine Kapazität von zwei.
+
+capacity-2
+00:02:53.450 --> 00:02:57.127
+Die Farbe zeigt die Belegung, nicht die
+Temperatur.
+
+capacity-3
+00:02:57.127 --> 00:02:59.996
+Auch die festen Punkte zählen mit.
+
+overflow-1
+00:03:00.296 --> 00:03:04.184
+Fünf Punkte teilen sich den Bereich unten
+links.
+
+overflow-2
+00:03:04.184 --> 00:03:07.548
+Zwei passen hinein, drei sind zu viel.
+
+overflow-3
+00:03:07.548 --> 00:03:11.960
+Die Summe aller Überschüsse ergibt den
+gesamten Overflow.
+
+predict-1
+00:03:12.260 --> 00:03:15.399
+Wenn wir die Punkte auf freien Platz
+verteilen,
+
+predict-2
+00:03:15.399 --> 00:03:18.538
+was passiert mit der geschätzten
+Leitungslänge?
+
+predict-3
+00:03:18.538 --> 00:03:21.764
+Nehmen Sie sich einen Moment für Ihre
+Vorhersage.
+
+spread_demo-1
+00:03:24.564 --> 00:03:27.183
+Hier ist eine mögliche Anordnung.
+
+spread_demo-2
+00:03:27.183 --> 00:03:30.247
+Jeder Bereich hält nun seine Kapazität ein.
+
+spread_demo-3
+00:03:30.247 --> 00:03:33.356
+Der Overflow fällt von drei auf null,
+während
+
+spread_demo-4
+00:03:33.356 --> 00:03:36.420
+die geschätzte Leitungslänge auf 52 steigt.
+
+tradeoff-1
+00:03:36.720 --> 00:03:39.073
+Das ist eine Abwägung.
+
+tradeoff-2
+00:03:39.073 --> 00:03:44.819
+Wenn die Kapazität eingehalten werden muss,
+reichen kurze Leitungen allein nicht aus.
+
+tradeoff-3
+00:03:44.819 --> 00:03:49.032
+Dies ist ein entworfener Vergleich, kein
+Algorithmuslauf.
+
+reference_start-1
+00:03:49.332 --> 00:03:51.922
+Wechseln wir zum Kursexperiment.
+
+reference_start-2
+00:03:51.922 --> 00:03:56.086
+Die sechs Punkte, die Netzliste und die
+festen Anker bleiben gleich.
+
+reference_start-3
+00:03:56.086 --> 00:03:59.351
+Die Kapazität beträgt nun aber eins pro
+Bereich.
+
+reference_start-4
+00:03:59.351 --> 00:04:02.076
+Beachten Sie die neue Beschriftung.
+
+algorithm_map-1
+00:04:02.376 --> 00:04:05.103
+Der kleine Lehr-Placer zieht verbundene
+Punkte
+
+algorithm_map-2
+00:04:05.103 --> 00:04:08.181
+zunächst zusammen und verteilt dann
+überfüllte Bereiche.
+
+algorithm_map-3
+00:04:08.181 --> 00:04:10.908
+Auf jeden Verteilungsschritt folgt sofort
+eine
+
+algorithm_map-4
+00:04:10.908 --> 00:04:13.776
+leichte Wiederannäherung entlang der
+Verbindungen.
+
+force-1
+00:04:14.076 --> 00:04:17.736
+Die ersten sechs Aktualisierungen ziehen
+bewegliche Punkte
+
+force-2
+00:04:17.736 --> 00:04:21.529
+zu ihren Nachbarn, ergänzt um einen kleinen
+Zentrierungsterm.
+
+force-3
+00:04:21.529 --> 00:04:24.132
+A und D bleiben dabei immer fest.
+
+quadratic-1
+00:04:24.432 --> 00:04:29.488
+Drei weitere Mittelwert-Aktualisierungen
+verfeinern die Leitungslängenphase.
+
+quadratic-2
+00:04:29.488 --> 00:04:33.294
+Dafür müssen Sie kein großes
+Gleichungssystem lösen:
+
+quadratic-3
+00:04:33.294 --> 00:04:37.464
+Verbundene Punkte beeinflussen gegenseitig
+ihre Positionen.
+
+density_push-1
+00:04:37.764 --> 00:04:41.233
+Als Nächstes prüfen wir die überfüllten
+Bins.
+
+density_push-2
+00:04:41.233 --> 00:04:45.494
+Bewegliche Punkte darin werden vom
+Bin-Zentrum weggeschoben.
+
+density_push-3
+00:04:45.494 --> 00:04:49.332
+Das Dichtegewicht bestimmt die Stärke
+dieses Schubs.
+
+reconnect-1
+00:04:49.632 --> 00:04:52.442
+Das Verteilen kann Verbindungen verlängern.
+
+reconnect-2
+00:04:52.442 --> 00:04:56.023
+Deshalb folgt sofort eine leichte
+Leitungslängen-Aktualisierung.
+
+reconnect-3
+00:04:56.023 --> 00:04:59.335
+Zusammenziehen und Verteilen haben
+verschiedene Aufgaben;
+
+reconnect-4
+00:04:59.335 --> 00:05:01.488
+keines ersetzt das andere.
+
+repeat-1
+00:05:01.788 --> 00:05:06.051
+Die Referenz führt zwölf Runden aus
+Verteilen und Wiederannähern aus.
+
+repeat-2
+00:05:06.051 --> 00:05:09.170
+Das sind aufgezeichnete
+Algorithmuszustände,
+
+repeat-3
+00:05:09.170 --> 00:05:11.968
+nicht die zuvor entworfene Bewegung.
+
+repeat-4
+00:05:11.968 --> 00:05:15.132
+Beobachten Sie beide Werte bei jedem
+Schritt.
+
+heuristic-1
+00:05:15.432 --> 00:05:19.602
+Dieses kompakte Verfahren zeigt
+dichtebewusstes Placement.
+
+heuristic-2
+00:05:19.602 --> 00:05:23.825
+Es ist eine Lehrheuristik, kein
+vollständiger industrieller
+
+heuristic-3
+00:05:23.825 --> 00:05:27.624
+Placer und keine Garantie für eine optimale
+Lösung.
+
+results-1
+00:05:27.924 --> 00:05:31.052
+Mit den Standardeinstellungen sinkt die
+
+results-2
+00:05:31.052 --> 00:05:34.485
+geschätzte Leitungslänge von 52 auf etwa
+48,1.
+
+results-3
+00:05:34.485 --> 00:05:39.084
+Der Overflow liegt am Anfang bei zwei und
+am Ende ebenfalls bei zwei.
+
+capacity_bound-1
+00:05:39.384 --> 00:05:41.414
+Warum nicht null?
+
+capacity_bound-2
+00:05:41.414 --> 00:05:45.307
+Sechs Punkte teilen sich vier Bins mit je
+einem Platz.
+
+capacity_bound-3
+00:05:45.307 --> 00:05:49.044
+Mindestens zwei Punkte überschreiten die
+Kapazität,
+
+capacity_bound-4
+00:05:49.044 --> 00:05:52.368
+ganz gleich, welche Positionen wir wählen.
+
+diagnosis-1
+00:05:52.668 --> 00:05:55.710
+Diese Untergrenze zählt auch A und D mit.
+
+diagnosis-2
+00:05:55.710 --> 00:05:59.167
+Mehr Iterationen schaffen keine fehlende
+Kapazität.
+
+diagnosis-3
+00:05:59.167 --> 00:06:02.163
+Prüfen Sie Modell und verfügbaren Platz,
+
+diagnosis-4
+00:06:02.163 --> 00:06:05.436
+bevor Sie den Optimierer verantwortlich
+machen.
+
+fair_compare-1
+00:06:05.736 --> 00:06:09.115
+Halten Sie beim Vergleich von Einstellungen
+
+fair_compare-2
+00:06:09.115 --> 00:06:12.754
+Netzliste, feste Anker und Kapazität
+unverändert.
+
+fair_compare-3
+00:06:12.754 --> 00:06:17.688
+Ein viel kleinerer Wert durch bewegte Anker
+beantwortet eine andere Frage.
+
+weight-1
+00:06:17.988 --> 00:06:22.769
+Probieren Sie ein anderes Dichtegewicht und
+berichten Sie beide Ergebnisse.
+
+weight-2
+00:06:22.769 --> 00:06:26.323
+Ein stärkerer Schub verspricht keine
+Verbesserung,
+
+weight-3
+00:06:26.323 --> 00:06:29.436
+und die Kapazitätsgrenze gilt weiterhin.
+
+lab_transfer-1
+00:06:29.736 --> 00:06:34.139
+Pausieren Sie das Video und übernehmen Sie
+genau diese Anordnung ins Labor.
+
+lab_transfer-2
+00:06:34.139 --> 00:06:37.312
+Die Werkbank behält die richtige Kapazität
+bei,
+
+lab_transfer-3
+00:06:37.312 --> 00:06:40.440
+und unser Begleiter liest dieselben
+Messwerte.
+
+lab_predict-1
+00:06:40.740 --> 00:06:43.966
+Sagen Sie zuerst die Wirkung einer Bewegung
+voraus.
+
+lab_predict-2
+00:06:43.966 --> 00:06:47.068
+Ziehen Sie dann einen Punkt und vergleichen
+Sie.
+
+lab_predict-3
+00:06:47.068 --> 00:06:50.045
+Bleiben die Werte gleich, fragen Sie:
+Welches
+
+lab_predict-4
+00:06:50.045 --> 00:06:52.980
+Rechteck oder welcher Bin blieb
+unverändert?
+
+lab_reference-1
+00:06:53.280 --> 00:06:56.187
+Im Referenzmodus können Sie die echte
+Schleife
+
+lab_reference-2
+00:06:56.187 --> 00:06:59.446
+schrittweise durchlaufen oder das
+Dichtegewicht ändern.
+
+lab_reference-3
+00:06:59.446 --> 00:07:03.408
+Setzen Sie für einen fairen Vergleich auf
+dieselbe Startanordnung zurück.
+
+challenge-1
+00:07:03.708 --> 00:07:06.870
+In den Übungen messen Sie ein Netz, zählen
+
+challenge-2
+00:07:06.870 --> 00:07:10.127
+den Overflow, wählen eine zulässige
+Anordnung
+
+challenge-3
+00:07:10.127 --> 00:07:15.204
+und erklären, warum das Standardexperiment
+keinen Overflow von null erreichen kann.
+
+takeaway-1
+00:07:16.504 --> 00:07:20.255
+Placement gibt einer Schaltung ihre
+physische Anordnung.
+
+takeaway-2
+00:07:20.255 --> 00:07:24.100
+Verbindungslänge und verfügbarer Platz sind
+beide wichtig.
+
+takeaway-3
+00:07:24.100 --> 00:07:29.128
+Ein sinnvolles Ergebnis muss unter seinen
+tatsächlichen Bedingungen gelesen werden.
+
+ending-1
+00:07:29.428 --> 00:07:32.860
+Stellen Sie immer zwei Fragen: Sind die
+Verbindungen
+
+ending-2
+00:07:32.860 --> 00:07:35.845
+kürzer, und haben die Punkte genug Platz?
+
+ending-3
+00:07:35.845 --> 00:07:38.292
+Prüfen Sie dann Ihre Antwort.
+
+ending-4
+00:07:38.292 --> 00:07:40.516
+Das Studio gehört Ihnen.

@@ -1,0 +1,260 @@
+{
+  "voices": {
+    "en_gb": {
+      "voice": "en-GB-ThomasNeural",
+      "duration": 398.196,
+      "peak": 0.80118,
+      "rms": 0.12086,
+      "captionChecks": {
+        "en": {
+          "cues": 111,
+          "minimumSeconds": 1.952,
+          "maximumLineCharacters": 43
+        },
+        "zh": {
+          "cues": 89,
+          "minimumSeconds": 2.193,
+          "maximumLineCharacters": 24
+        },
+        "fr": {
+          "cues": 125,
+          "minimumSeconds": 1.813,
+          "maximumLineCharacters": 43
+        },
+        "es": {
+          "cues": 122,
+          "minimumSeconds": 1.815,
+          "maximumLineCharacters": 43
+        },
+        "de": {
+          "cues": 125,
+          "minimumSeconds": 1.811,
+          "maximumLineCharacters": 43
+        },
+        "ja": {
+          "cues": 99,
+          "minimumSeconds": 1.809,
+          "maximumLineCharacters": 24
+        },
+        "ko": {
+          "cues": 97,
+          "minimumSeconds": 1.792,
+          "maximumLineCharacters": 28
+        }
+      },
+      "measuredClipTiming": "pass",
+      "exactScriptCache": "pass",
+      "fullDecode": "pass",
+      "beginningMiddleEndMasterAlignment": [
+        {
+          "cue": "welcome",
+          "atSeconds": 0.8,
+          "correlation": 0.99227
+        },
+        {
+          "cue": "tradeoff",
+          "atSeconds": 187.272,
+          "correlation": 0.99677
+        },
+        {
+          "cue": "ending",
+          "atSeconds": 385.78,
+          "correlation": 0.99569
+        }
+      ]
+    },
+    "en_us": {
+      "voice": "en-US-GuyNeural",
+      "duration": 394.236,
+      "peak": 0.80045,
+      "rms": 0.12249,
+      "captionChecks": {
+        "en": {
+          "cues": 111,
+          "minimumSeconds": 1.941,
+          "maximumLineCharacters": 43
+        },
+        "zh": {
+          "cues": 89,
+          "minimumSeconds": 2.179,
+          "maximumLineCharacters": 24
+        },
+        "fr": {
+          "cues": 125,
+          "minimumSeconds": 1.796,
+          "maximumLineCharacters": 43
+        },
+        "es": {
+          "cues": 122,
+          "minimumSeconds": 1.799,
+          "maximumLineCharacters": 43
+        },
+        "de": {
+          "cues": 125,
+          "minimumSeconds": 1.78,
+          "maximumLineCharacters": 43
+        },
+        "ja": {
+          "cues": 99,
+          "minimumSeconds": 1.797,
+          "maximumLineCharacters": 24
+        },
+        "ko": {
+          "cues": 97,
+          "minimumSeconds": 1.781,
+          "maximumLineCharacters": 28
+        }
+      },
+      "measuredClipTiming": "pass",
+      "exactScriptCache": "pass",
+      "fullDecode": "pass",
+      "beginningMiddleEndMasterAlignment": [
+        {
+          "cue": "welcome",
+          "atSeconds": 0.8,
+          "correlation": 0.99461
+        },
+        {
+          "cue": "tradeoff",
+          "atSeconds": 184.656,
+          "correlation": 0.98608
+        },
+        {
+          "cue": "ending",
+          "atSeconds": 381.892,
+          "correlation": 0.9956
+        }
+      ]
+    },
+    "en_in": {
+      "voice": "en-IN-PrabhatNeural",
+      "duration": 463.116,
+      "peak": 0.79581,
+      "rms": 0.13293,
+      "captionChecks": {
+        "en": {
+          "cues": 111,
+          "minimumSeconds": 2.148,
+          "maximumLineCharacters": 43
+        },
+        "zh": {
+          "cues": 89,
+          "minimumSeconds": 2.448,
+          "maximumLineCharacters": 24
+        },
+        "fr": {
+          "cues": 125,
+          "minimumSeconds": 2.002,
+          "maximumLineCharacters": 43
+        },
+        "es": {
+          "cues": 122,
+          "minimumSeconds": 1.977,
+          "maximumLineCharacters": 43
+        },
+        "de": {
+          "cues": 125,
+          "minimumSeconds": 2.03,
+          "maximumLineCharacters": 43
+        },
+        "ja": {
+          "cues": 99,
+          "minimumSeconds": 2.016,
+          "maximumLineCharacters": 24
+        },
+        "ko": {
+          "cues": 97,
+          "minimumSeconds": 1.992,
+          "maximumLineCharacters": 28
+        }
+      },
+      "measuredClipTiming": "pass",
+      "exactScriptCache": "pass",
+      "fullDecode": "pass",
+      "beginningMiddleEndMasterAlignment": [
+        {
+          "cue": "welcome",
+          "atSeconds": 0.8,
+          "correlation": 0.99748
+        },
+        {
+          "cue": "tradeoff",
+          "atSeconds": 216.72,
+          "correlation": 0.99988
+        },
+        {
+          "cue": "ending",
+          "atSeconds": 449.428,
+          "correlation": 0.99995
+        }
+      ]
+    },
+    "zh": {
+      "voice": "zh-CN-YunxiNeural",
+      "duration": 415.476,
+      "peak": 0.79932,
+      "rms": 0.11286,
+      "captionChecks": {
+        "en": {
+          "cues": 111,
+          "minimumSeconds": 1.896,
+          "maximumLineCharacters": 43
+        },
+        "zh": {
+          "cues": 89,
+          "minimumSeconds": 2.357,
+          "maximumLineCharacters": 24
+        },
+        "fr": {
+          "cues": 125,
+          "minimumSeconds": 1.848,
+          "maximumLineCharacters": 43
+        },
+        "es": {
+          "cues": 122,
+          "minimumSeconds": 1.865,
+          "maximumLineCharacters": 43
+        },
+        "de": {
+          "cues": 125,
+          "minimumSeconds": 1.846,
+          "maximumLineCharacters": 43
+        },
+        "ja": {
+          "cues": 99,
+          "minimumSeconds": 2.097,
+          "maximumLineCharacters": 24
+        },
+        "ko": {
+          "cues": 97,
+          "minimumSeconds": 2.072,
+          "maximumLineCharacters": 28
+        }
+      },
+      "measuredClipTiming": "pass",
+      "exactScriptCache": "pass",
+      "fullDecode": "pass",
+      "beginningMiddleEndMasterAlignment": [
+        {
+          "cue": "welcome",
+          "atSeconds": 0.8,
+          "correlation": 0.98628
+        },
+        {
+          "cue": "tradeoff",
+          "atSeconds": 194.544,
+          "correlation": 0.97082
+        },
+        {
+          "cue": "ending",
+          "atSeconds": 401.284,
+          "correlation": 0.9983
+        }
+      ]
+    }
+  },
+  "captionPairs": 28,
+  "nativeTranslationReview": false,
+  "subjectiveListeningReview": false,
+  "numericTokenRegression": "48.1 / 48.5 / 48,1 remain intact across sentence, caption and line boundaries; all 39 cues × seven languages checked"
+}

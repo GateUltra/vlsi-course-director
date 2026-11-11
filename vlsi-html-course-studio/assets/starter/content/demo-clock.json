@@ -1,0 +1,11 @@
+{
+  "id": "storyboard",
+  "provisional": true,
+  "note": "Manually chosen preview timing. No generated audio is included. Replace with measured narration clocks before producing a finished film.",
+  "duration": 32,
+  "segments": [
+    {"id": "notice", "start": 0, "end": 8, "sceneEnd": 8},
+    {"id": "measure", "start": 8, "end": 20, "sceneEnd": 20},
+    {"id": "move", "start": 20, "end": 32, "sceneEnd": 32}
+  ]
+}

@@ -1,0 +1,1036 @@
+{
+  "fps": 30,
+  "validation": "Actual final MP4s, actual retimed clips, complete decoding and master-to-export audio comparison. Does not claim human audition.",
+  "voices": {
+    "en_gb": {
+      "file": "media/lesson-en_gb.mp4",
+      "sizeBytes": 65656806,
+      "video": {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "30/1",
+        "time_base": "1/15360",
+        "start_time": "0.000000",
+        "duration": "398.200000",
+        "nb_frames": "11946",
+        "side_data_list": [
+          {}
+        ]
+      },
+      "audio": {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_time": "0.000000",
+        "duration": "398.196000",
+        "nb_frames": "18667"
+      },
+      "clockDuration": 398.196,
+      "formatDuration": 398.2,
+      "fullDecode": {
+        "frames": 11946,
+        "errors": []
+      },
+      "pictureBoundaries": {
+        "method": "Primary frame-by-frame Chromium render",
+        "frames": 11946,
+        "renderErrors": []
+      },
+      "exportedAudio": {
+        "peak": 0.806638,
+        "rms": 0.120748,
+        "alignmentWindows": [
+          {
+            "cue": "welcome",
+            "start": 1.1,
+            "length": 3,
+            "zeroOffsetCorrelation": 0.999989,
+            "bestCorrelation": 0.999989,
+            "exportedDelaySeconds": 0.0
+          },
+          {
+            "cue": "tradeoff",
+            "start": 187.572,
+            "length": 3,
+            "zeroOffsetCorrelation": 0.99997,
+            "bestCorrelation": 0.99997,
+            "exportedDelaySeconds": 0.0
+          },
+          {
+            "cue": "ending",
+            "start": 386.08,
+            "length": 3,
+            "zeroOffsetCorrelation": 0.999988,
+            "bestCorrelation": 0.999988,
+            "exportedDelaySeconds": 0.0
+          }
+        ]
+      }
+    },
+    "en_us": {
+      "file": "media/lesson-en_us.mp4",
+      "sizeBytes": 64513487,
+      "video": {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "30/1",
+        "time_base": "1/15360",
+        "start_time": "0.000000",
+        "duration": "394.266667",
+        "nb_frames": "11828",
+        "side_data_list": [
+          {}
+        ]
+      },
+      "audio": {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_time": "0.000000",
+        "duration": "394.236000",
+        "nb_frames": "18481"
+      },
+      "clockDuration": 394.236,
+      "formatDuration": 394.266667,
+      "fullDecode": {
+        "frames": 11828,
+        "errors": []
+      },
+      "pictureBoundaries": {
+        "method": "Each semantic picture cue retimed to its measured narration window; speech unchanged. Frame-boundary error <1 frame.",
+        "actualClipsChecked": 41,
+        "frames": 11828,
+        "maximumBoundaryErrorSeconds": 0.030667,
+        "accumulatedFrameError": 0,
+        "cuts": [
+          {
+            "cue": "intro",
+            "frames": 24,
+            "cumulativeEndFrame": 24,
+            "boundaryErrorSeconds": 0.0
+          },
+          {
+            "cue": "welcome",
+            "frames": 224,
+            "cumulativeEndFrame": 248,
+            "boundaryErrorSeconds": 0.009333
+          },
+          {
+            "cue": "city",
+            "frames": 312,
+            "cumulativeEndFrame": 560,
+            "boundaryErrorSeconds": 0.013333
+          },
+          {
+            "cue": "flow",
+            "frames": 343,
+            "cumulativeEndFrame": 903,
+            "boundaryErrorSeconds": 0.016
+          },
+          {
+            "cue": "temptation",
+            "frames": 295,
+            "cumulativeEndFrame": 1198,
+            "boundaryErrorSeconds": 0.016
+          },
+          {
+            "cue": "points",
+            "frames": 257,
+            "cumulativeEndFrame": 1455,
+            "boundaryErrorSeconds": 0.013333
+          },
+          {
+            "cue": "nets",
+            "frames": 249,
+            "cumulativeEndFrame": 1704,
+            "boundaryErrorSeconds": 0.016
+          },
+          {
+            "cue": "anchors",
+            "frames": 264,
+            "cumulativeEndFrame": 1968,
+            "boundaryErrorSeconds": 0.016
+          },
+          {
+            "cue": "model_limit",
+            "frames": 279,
+            "cumulativeEndFrame": 2247,
+            "boundaryErrorSeconds": 0.012
+          },
+          {
+            "cue": "hpwl_box",
+            "frames": 275,
+            "cumulativeEndFrame": 2522,
+            "boundaryErrorSeconds": 0.012
+          },
+          {
+            "cue": "hpwl_measure",
+            "frames": 322,
+            "cumulativeEndFrame": 2844,
+            "boundaryErrorSeconds": 0.008
+          },
+          {
+            "cue": "hpwl_multi",
+            "frames": 299,
+            "cumulativeEndFrame": 3143,
+            "boundaryErrorSeconds": 0.013333
+          },
+          {
+            "cue": "hpwl_inside",
+            "frames": 272,
+            "cumulativeEndFrame": 3415,
+            "boundaryErrorSeconds": 0.013333
+          },
+          {
+            "cue": "hpwl_total",
+            "frames": 268,
+            "cumulativeEndFrame": 3683,
+            "boundaryErrorSeconds": 0.013333
+          },
+          {
+            "cue": "hpwl_limit",
+            "frames": 289,
+            "cumulativeEndFrame": 3972,
+            "boundaryErrorSeconds": 0.016
+          },
+          {
+            "cue": "bins",
+            "frames": 308,
+            "cumulativeEndFrame": 4280,
+            "boundaryErrorSeconds": 0.016
+          },
+          {
+            "cue": "capacity",
+            "frames": 289,
+            "cumulativeEndFrame": 4569,
+            "boundaryErrorSeconds": 0.012
+          },
+          {
+            "cue": "overflow",
+            "frames": 307,
+            "cumulativeEndFrame": 4876,
+            "boundaryErrorSeconds": 0.012
+          },
+          {
+            "cue": "predict",
+            "frames": 335,
+            "cumulativeEndFrame": 5211,
+            "boundaryErrorSeconds": 0.009333
+          },
+          {
+            "cue": "spread_demo",
+            "frames": 329,
+            "cumulativeEndFrame": 5540,
+            "boundaryErrorSeconds": 0.010667
+          },
+          {
+            "cue": "tradeoff",
+            "frames": 333,
+            "cumulativeEndFrame": 5873,
+            "boundaryErrorSeconds": 0.013333
+          },
+          {
+            "cue": "reference_start",
+            "frames": 338,
+            "cumulativeEndFrame": 6211,
+            "boundaryErrorSeconds": 0.013333
+          },
+          {
+            "cue": "algorithm_map",
+            "frames": 303,
+            "cumulativeEndFrame": 6514,
+            "boundaryErrorSeconds": 0.009333
+          },
+          {
+            "cue": "force",
+            "frames": 268,
+            "cumulativeEndFrame": 6782,
+            "boundaryErrorSeconds": 0.013333
+          },
+          {
+            "cue": "quadratic",
+            "frames": 321,
+            "cumulativeEndFrame": 7103,
+            "boundaryErrorSeconds": 0.013333
+          },
+          {
+            "cue": "density_push",
+            "frames": 320,
+            "cumulativeEndFrame": 7423,
+            "boundaryErrorSeconds": 0.006667
+          },
+          {
+            "cue": "reconnect",
+            "frames": 294,
+            "cumulativeEndFrame": 7717,
+            "boundaryErrorSeconds": 0.013333
+          },
+          {
+            "cue": "repeat",
+            "frames": 347,
+            "cumulativeEndFrame": 8064,
+            "boundaryErrorSeconds": 0.013333
+          },
+          {
+            "cue": "heuristic",
+            "frames": 336,
+            "cumulativeEndFrame": 8400,
+            "boundaryErrorSeconds": 0.004
+          },
+          {
+            "cue": "results",
+            "frames": 293,
+            "cumulativeEndFrame": 8693,
+            "boundaryErrorSeconds": 0.009333
+          },
+          {
+            "cue": "capacity_bound",
+            "frames": 328,
+            "cumulativeEndFrame": 9021,
+            "boundaryErrorSeconds": 0.016
+          },
+          {
+            "cue": "diagnosis",
+            "frames": 343,
+            "cumulativeEndFrame": 9364,
+            "boundaryErrorSeconds": 0.016
+          },
+          {
+            "cue": "fair_compare",
+            "frames": 300,
+            "cumulativeEndFrame": 9664,
+            "boundaryErrorSeconds": 0.013333
+          },
+          {
+            "cue": "weight",
+            "frames": 297,
+            "cumulativeEndFrame": 9961,
+            "boundaryErrorSeconds": 0.006667
+          },
+          {
+            "cue": "lab_transfer",
+            "frames": 283,
+            "cumulativeEndFrame": 10244,
+            "boundaryErrorSeconds": 0.006667
+          },
+          {
+            "cue": "lab_predict",
+            "frames": 315,
+            "cumulativeEndFrame": 10559,
+            "boundaryErrorSeconds": 0.006667
+          },
+          {
+            "cue": "lab_reference",
+            "frames": 273,
+            "cumulativeEndFrame": 10832,
+            "boundaryErrorSeconds": 0.006667
+          },
+          {
+            "cue": "challenge",
+            "frames": 303,
+            "cumulativeEndFrame": 11135,
+            "boundaryErrorSeconds": 0.014667
+          },
+          {
+            "cue": "takeaway",
+            "frames": 322,
+            "cumulativeEndFrame": 11457,
+            "boundaryErrorSeconds": 0.014667
+          },
+          {
+            "cue": "ending",
+            "frames": 346,
+            "cumulativeEndFrame": 11803,
+            "boundaryErrorSeconds": 0.008
+          },
+          {
+            "cue": "tail",
+            "frames": 25,
+            "cumulativeEndFrame": 11828,
+            "boundaryErrorSeconds": 0.030667
+          }
+        ]
+      },
+      "exportedAudio": {
+        "peak": 0.802005,
+        "rms": 0.122398,
+        "alignmentWindows": [
+          {
+            "cue": "welcome",
+            "start": 1.1,
+            "length": 3,
+            "zeroOffsetCorrelation": 0.999984,
+            "bestCorrelation": 0.999984,
+            "exportedDelaySeconds": 0.0
+          },
+          {
+            "cue": "tradeoff",
+            "start": 184.956,
+            "length": 3,
+            "zeroOffsetCorrelation": 0.999968,
+            "bestCorrelation": 0.999968,
+            "exportedDelaySeconds": 0.0
+          },
+          {
+            "cue": "ending",
+            "start": 382.192,
+            "length": 3,
+            "zeroOffsetCorrelation": 0.999993,
+            "bestCorrelation": 0.999993,
+            "exportedDelaySeconds": 0.0
+          }
+        ]
+      }
+    },
+    "en_in": {
+      "file": "media/lesson-en_in.mp4",
+      "sizeBytes": 75106242,
+      "video": {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "30/1",
+        "time_base": "1/15360",
+        "start_time": "0.000000",
+        "duration": "463.133333",
+        "nb_frames": "13894",
+        "side_data_list": [
+          {}
+        ]
+      },
+      "audio": {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_time": "0.000000",
+        "duration": "463.116000",
+        "nb_frames": "21710"
+      },
+      "clockDuration": 463.116,
+      "formatDuration": 463.133333,
+      "fullDecode": {
+        "frames": 13894,
+        "errors": []
+      },
+      "pictureBoundaries": {
+        "method": "Each semantic picture cue retimed to its measured narration window; speech unchanged. Frame-boundary error <1 frame.",
+        "actualClipsChecked": 41,
+        "frames": 13894,
+        "maximumBoundaryErrorSeconds": 0.017333,
+        "accumulatedFrameError": 0,
+        "cuts": [
+          {
+            "cue": "intro",
+            "frames": 24,
+            "cumulativeEndFrame": 24,
+            "boundaryErrorSeconds": 0.0
+          },
+          {
+            "cue": "welcome",
+            "frames": 253,
+            "cumulativeEndFrame": 277,
+            "boundaryErrorSeconds": 0.002667
+          },
+          {
+            "cue": "city",
+            "frames": 377,
+            "cumulativeEndFrame": 654,
+            "boundaryErrorSeconds": 0.002667
+          },
+          {
+            "cue": "flow",
+            "frames": 388,
+            "cumulativeEndFrame": 1042,
+            "boundaryErrorSeconds": 0.014667
+          },
+          {
+            "cue": "temptation",
+            "frames": 341,
+            "cumulativeEndFrame": 1383,
+            "boundaryErrorSeconds": 0.014667
+          },
+          {
+            "cue": "points",
+            "frames": 292,
+            "cumulativeEndFrame": 1675,
+            "boundaryErrorSeconds": 0.013333
+          },
+          {
+            "cue": "nets",
+            "frames": 301,
+            "cumulativeEndFrame": 1976,
+            "boundaryErrorSeconds": 0.013333
+          },
+          {
+            "cue": "anchors",
+            "frames": 327,
+            "cumulativeEndFrame": 2303,
+            "boundaryErrorSeconds": 0.005333
+          },
+          {
+            "cue": "model_limit",
+            "frames": 342,
+            "cumulativeEndFrame": 2645,
+            "boundaryErrorSeconds": 0.006667
+          },
+          {
+            "cue": "hpwl_box",
+            "frames": 326,
+            "cumulativeEndFrame": 2971,
+            "boundaryErrorSeconds": 0.010667
+          },
+          {
+            "cue": "hpwl_measure",
+            "frames": 369,
+            "cumulativeEndFrame": 3340,
+            "boundaryErrorSeconds": 0.010667
+          },
+          {
+            "cue": "hpwl_multi",
+            "frames": 371,
+            "cumulativeEndFrame": 3711,
+            "boundaryErrorSeconds": 0.010667
+          },
+          {
+            "cue": "hpwl_inside",
+            "frames": 337,
+            "cumulativeEndFrame": 4048,
+            "boundaryErrorSeconds": 0.008
+          },
+          {
+            "cue": "hpwl_total",
+            "frames": 321,
+            "cumulativeEndFrame": 4369,
+            "boundaryErrorSeconds": 0.005333
+          },
+          {
+            "cue": "hpwl_limit",
+            "frames": 346,
+            "cumulativeEndFrame": 4715,
+            "boundaryErrorSeconds": 0.006667
+          },
+          {
+            "cue": "bins",
+            "frames": 349,
+            "cumulativeEndFrame": 5064,
+            "boundaryErrorSeconds": 0.012
+          },
+          {
+            "cue": "capacity",
+            "frames": 345,
+            "cumulativeEndFrame": 5409,
+            "boundaryErrorSeconds": 0.012
+          },
+          {
+            "cue": "overflow",
+            "frames": 359,
+            "cumulativeEndFrame": 5768,
+            "boundaryErrorSeconds": 0.006667
+          },
+          {
+            "cue": "predict",
+            "frames": 369,
+            "cumulativeEndFrame": 6137,
+            "boundaryErrorSeconds": 0.006667
+          },
+          {
+            "cue": "spread_demo",
+            "frames": 365,
+            "cumulativeEndFrame": 6502,
+            "boundaryErrorSeconds": 0.013333
+          },
+          {
+            "cue": "tradeoff",
+            "frames": 378,
+            "cumulativeEndFrame": 6880,
+            "boundaryErrorSeconds": 0.013333
+          },
+          {
+            "cue": "reference_start",
+            "frames": 391,
+            "cumulativeEndFrame": 7271,
+            "boundaryErrorSeconds": 0.009333
+          },
+          {
+            "cue": "algorithm_map",
+            "frames": 351,
+            "cumulativeEndFrame": 7622,
+            "boundaryErrorSeconds": 0.009333
+          },
+          {
+            "cue": "force",
+            "frames": 311,
+            "cumulativeEndFrame": 7933,
+            "boundaryErrorSeconds": 0.009333
+          },
+          {
+            "cue": "quadratic",
+            "frames": 400,
+            "cumulativeEndFrame": 8333,
+            "boundaryErrorSeconds": 0.002667
+          },
+          {
+            "cue": "density_push",
+            "frames": 356,
+            "cumulativeEndFrame": 8689,
+            "boundaryErrorSeconds": 0.002667
+          },
+          {
+            "cue": "reconnect",
+            "frames": 365,
+            "cumulativeEndFrame": 9054,
+            "boundaryErrorSeconds": 0.012
+          },
+          {
+            "cue": "repeat",
+            "frames": 409,
+            "cumulativeEndFrame": 9463,
+            "boundaryErrorSeconds": 0.012
+          },
+          {
+            "cue": "heuristic",
+            "frames": 375,
+            "cumulativeEndFrame": 9838,
+            "boundaryErrorSeconds": 0.009333
+          },
+          {
+            "cue": "results",
+            "frames": 344,
+            "cumulativeEndFrame": 10182,
+            "boundaryErrorSeconds": 0.016
+          },
+          {
+            "cue": "capacity_bound",
+            "frames": 398,
+            "cumulativeEndFrame": 10580,
+            "boundaryErrorSeconds": 0.016
+          },
+          {
+            "cue": "diagnosis",
+            "frames": 392,
+            "cumulativeEndFrame": 10972,
+            "boundaryErrorSeconds": 0.002667
+          },
+          {
+            "cue": "fair_compare",
+            "frames": 368,
+            "cumulativeEndFrame": 11340,
+            "boundaryErrorSeconds": 0.012
+          },
+          {
+            "cue": "weight",
+            "frames": 352,
+            "cumulativeEndFrame": 11692,
+            "boundaryErrorSeconds": 0.012
+          },
+          {
+            "cue": "lab_transfer",
+            "frames": 330,
+            "cumulativeEndFrame": 12022,
+            "boundaryErrorSeconds": 0.006667
+          },
+          {
+            "cue": "lab_predict",
+            "frames": 376,
+            "cumulativeEndFrame": 12398,
+            "boundaryErrorSeconds": 0.013333
+          },
+          {
+            "cue": "lab_reference",
+            "frames": 313,
+            "cumulativeEndFrame": 12711,
+            "boundaryErrorSeconds": 0.013333
+          },
+          {
+            "cue": "challenge",
+            "frames": 384,
+            "cumulativeEndFrame": 13095,
+            "boundaryErrorSeconds": 0.008
+          },
+          {
+            "cue": "takeaway",
+            "frames": 388,
+            "cumulativeEndFrame": 13483,
+            "boundaryErrorSeconds": 0.005333
+          },
+          {
+            "cue": "ending",
+            "frames": 386,
+            "cumulativeEndFrame": 13869,
+            "boundaryErrorSeconds": 0.016
+          },
+          {
+            "cue": "tail",
+            "frames": 25,
+            "cumulativeEndFrame": 13894,
+            "boundaryErrorSeconds": 0.017333
+          }
+        ]
+      },
+      "exportedAudio": {
+        "peak": 0.796805,
+        "rms": 0.132844,
+        "alignmentWindows": [
+          {
+            "cue": "welcome",
+            "start": 1.1,
+            "length": 3,
+            "zeroOffsetCorrelation": 0.99999,
+            "bestCorrelation": 0.99999,
+            "exportedDelaySeconds": 0.0
+          },
+          {
+            "cue": "tradeoff",
+            "start": 217.02,
+            "length": 3,
+            "zeroOffsetCorrelation": 0.999986,
+            "bestCorrelation": 0.999986,
+            "exportedDelaySeconds": 0.0
+          },
+          {
+            "cue": "ending",
+            "start": 449.728,
+            "length": 3,
+            "zeroOffsetCorrelation": 0.99999,
+            "bestCorrelation": 0.99999,
+            "exportedDelaySeconds": 0.0
+          }
+        ]
+      }
+    },
+    "zh": {
+      "file": "media/lesson-zh.mp4",
+      "sizeBytes": 67783224,
+      "video": {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "30/1",
+        "time_base": "1/15360",
+        "start_time": "0.000000",
+        "duration": "415.500000",
+        "nb_frames": "12465",
+        "side_data_list": [
+          {}
+        ]
+      },
+      "audio": {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_time": "0.000000",
+        "duration": "415.476000",
+        "nb_frames": "19477"
+      },
+      "clockDuration": 415.476,
+      "formatDuration": 415.5,
+      "fullDecode": {
+        "frames": 12465,
+        "errors": []
+      },
+      "pictureBoundaries": {
+        "method": "Each semantic picture cue retimed to its measured narration window; speech unchanged. Frame-boundary error <1 frame.",
+        "actualClipsChecked": 41,
+        "frames": 12465,
+        "maximumBoundaryErrorSeconds": 0.024,
+        "accumulatedFrameError": 0,
+        "cuts": [
+          {
+            "cue": "intro",
+            "frames": 24,
+            "cumulativeEndFrame": 24,
+            "boundaryErrorSeconds": 0.0
+          },
+          {
+            "cue": "welcome",
+            "frames": 273,
+            "cumulativeEndFrame": 297,
+            "boundaryErrorSeconds": 0.008
+          },
+          {
+            "cue": "city",
+            "frames": 333,
+            "cumulativeEndFrame": 630,
+            "boundaryErrorSeconds": 0.016
+          },
+          {
+            "cue": "flow",
+            "frames": 281,
+            "cumulativeEndFrame": 911,
+            "boundaryErrorSeconds": 0.016
+          },
+          {
+            "cue": "temptation",
+            "frames": 284,
+            "cumulativeEndFrame": 1195,
+            "boundaryErrorSeconds": 0.010667
+          },
+          {
+            "cue": "points",
+            "frames": 261,
+            "cumulativeEndFrame": 1456,
+            "boundaryErrorSeconds": 0.009333
+          },
+          {
+            "cue": "nets",
+            "frames": 365,
+            "cumulativeEndFrame": 1821,
+            "boundaryErrorSeconds": 0.009333
+          },
+          {
+            "cue": "anchors",
+            "frames": 301,
+            "cumulativeEndFrame": 2122,
+            "boundaryErrorSeconds": 0.009333
+          },
+          {
+            "cue": "model_limit",
+            "frames": 372,
+            "cumulativeEndFrame": 2494,
+            "boundaryErrorSeconds": 0.010667
+          },
+          {
+            "cue": "hpwl_box",
+            "frames": 288,
+            "cumulativeEndFrame": 2782,
+            "boundaryErrorSeconds": 0.010667
+          },
+          {
+            "cue": "hpwl_measure",
+            "frames": 310,
+            "cumulativeEndFrame": 3092,
+            "boundaryErrorSeconds": 0.002667
+          },
+          {
+            "cue": "hpwl_multi",
+            "frames": 320,
+            "cumulativeEndFrame": 3412,
+            "boundaryErrorSeconds": 0.002667
+          },
+          {
+            "cue": "hpwl_inside",
+            "frames": 298,
+            "cumulativeEndFrame": 3710,
+            "boundaryErrorSeconds": 0.010667
+          },
+          {
+            "cue": "hpwl_total",
+            "frames": 308,
+            "cumulativeEndFrame": 4018,
+            "boundaryErrorSeconds": 0.010667
+          },
+          {
+            "cue": "hpwl_limit",
+            "frames": 289,
+            "cumulativeEndFrame": 4307,
+            "boundaryErrorSeconds": 0.009333
+          },
+          {
+            "cue": "bins",
+            "frames": 310,
+            "cumulativeEndFrame": 4617,
+            "boundaryErrorSeconds": 0.009333
+          },
+          {
+            "cue": "capacity",
+            "frames": 302,
+            "cumulativeEndFrame": 4919,
+            "boundaryErrorSeconds": 0.014667
+          },
+          {
+            "cue": "overflow",
+            "frames": 312,
+            "cumulativeEndFrame": 5231,
+            "boundaryErrorSeconds": 0.014667
+          },
+          {
+            "cue": "predict",
+            "frames": 327,
+            "cumulativeEndFrame": 5558,
+            "boundaryErrorSeconds": 0.013333
+          },
+          {
+            "cue": "spread_demo",
+            "frames": 278,
+            "cumulativeEndFrame": 5836,
+            "boundaryErrorSeconds": 0.010667
+          },
+          {
+            "cue": "tradeoff",
+            "frames": 339,
+            "cumulativeEndFrame": 6175,
+            "boundaryErrorSeconds": 0.010667
+          },
+          {
+            "cue": "reference_start",
+            "frames": 343,
+            "cumulativeEndFrame": 6518,
+            "boundaryErrorSeconds": 0.005333
+          },
+          {
+            "cue": "algorithm_map",
+            "frames": 339,
+            "cumulativeEndFrame": 6857,
+            "boundaryErrorSeconds": 0.005333
+          },
+          {
+            "cue": "force",
+            "frames": 296,
+            "cumulativeEndFrame": 7153,
+            "boundaryErrorSeconds": 0.006667
+          },
+          {
+            "cue": "quadratic",
+            "frames": 325,
+            "cumulativeEndFrame": 7478,
+            "boundaryErrorSeconds": 0.014667
+          },
+          {
+            "cue": "density_push",
+            "frames": 333,
+            "cumulativeEndFrame": 7811,
+            "boundaryErrorSeconds": 0.014667
+          },
+          {
+            "cue": "reconnect",
+            "frames": 301,
+            "cumulativeEndFrame": 8112,
+            "boundaryErrorSeconds": 0.014667
+          },
+          {
+            "cue": "repeat",
+            "frames": 374,
+            "cumulativeEndFrame": 8486,
+            "boundaryErrorSeconds": 0.004
+          },
+          {
+            "cue": "heuristic",
+            "frames": 337,
+            "cumulativeEndFrame": 8823,
+            "boundaryErrorSeconds": 0.008
+          },
+          {
+            "cue": "results",
+            "frames": 289,
+            "cumulativeEndFrame": 9112,
+            "boundaryErrorSeconds": 0.010667
+          },
+          {
+            "cue": "capacity_bound",
+            "frames": 346,
+            "cumulativeEndFrame": 9458,
+            "boundaryErrorSeconds": 0.010667
+          },
+          {
+            "cue": "diagnosis",
+            "frames": 335,
+            "cumulativeEndFrame": 9793,
+            "boundaryErrorSeconds": 0.009333
+          },
+          {
+            "cue": "fair_compare",
+            "frames": 314,
+            "cumulativeEndFrame": 10107,
+            "boundaryErrorSeconds": 0.009333
+          },
+          {
+            "cue": "weight",
+            "frames": 329,
+            "cumulativeEndFrame": 10436,
+            "boundaryErrorSeconds": 0.013333
+          },
+          {
+            "cue": "lab_transfer",
+            "frames": 302,
+            "cumulativeEndFrame": 10738,
+            "boundaryErrorSeconds": 0.013333
+          },
+          {
+            "cue": "lab_predict",
+            "frames": 310,
+            "cumulativeEndFrame": 11048,
+            "boundaryErrorSeconds": 0.013333
+          },
+          {
+            "cue": "lab_reference",
+            "frames": 320,
+            "cumulativeEndFrame": 11368,
+            "boundaryErrorSeconds": 0.014667
+          },
+          {
+            "cue": "challenge",
+            "frames": 344,
+            "cumulativeEndFrame": 11712,
+            "boundaryErrorSeconds": 0.014667
+          },
+          {
+            "cue": "takeaway",
+            "frames": 327,
+            "cumulativeEndFrame": 12039,
+            "boundaryErrorSeconds": 0.016
+          },
+          {
+            "cue": "ending",
+            "frames": 401,
+            "cumulativeEndFrame": 12440,
+            "boundaryErrorSeconds": 0.016
+          },
+          {
+            "cue": "tail",
+            "frames": 25,
+            "cumulativeEndFrame": 12465,
+            "boundaryErrorSeconds": 0.024
+          }
+        ]
+      },
+      "exportedAudio": {
+        "peak": 0.800226,
+        "rms": 0.112791,
+        "alignmentWindows": [
+          {
+            "cue": "welcome",
+            "start": 1.1,
+            "length": 3,
+            "zeroOffsetCorrelation": 0.999991,
+            "bestCorrelation": 0.999991,
+            "exportedDelaySeconds": 0.0
+          },
+          {
+            "cue": "tradeoff",
+            "start": 194.844,
+            "length": 3,
+            "zeroOffsetCorrelation": 0.999991,
+            "bestCorrelation": 0.999991,
+            "exportedDelaySeconds": 0.0
+          },
+          {
+            "cue": "ending",
+            "start": 401.584,
+            "length": 3,
+            "zeroOffsetCorrelation": 0.999994,
+            "bestCorrelation": 0.999994,
+            "exportedDelaySeconds": 0.0
+          }
+        ]
+      }
+    }
+  }
+}

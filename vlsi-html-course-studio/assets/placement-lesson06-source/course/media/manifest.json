@@ -1,0 +1,10 @@
+{
+ "defaultVoice":"en_gb",
+ "captionLanguages":["en","zh","fr","es","de","ja","ko"],
+ "tracks":[
+  {"id":"en_gb","label":"British English · Thomas","voice":"en-GB-ThomasNeural","video":"media/lesson-en_gb.mp4","timing":"media/timings/en_gb.json","captions":{"en":"media/captions/en_gb-en.vtt","zh":"media/captions/en_gb-zh.vtt","fr":"media/captions/en_gb-fr.vtt","es":"media/captions/en_gb-es.vtt","de":"media/captions/en_gb-de.vtt","ja":"media/captions/en_gb-ja.vtt","ko":"media/captions/en_gb-ko.vtt"}},
+  {"id":"en_us","label":"American English · Guy","voice":"en-US-GuyNeural","video":"media/lesson-en_us.mp4","timing":"media/timings/en_us.json","captions":{"en":"media/captions/en_us-en.vtt","zh":"media/captions/en_us-zh.vtt","fr":"media/captions/en_us-fr.vtt","es":"media/captions/en_us-es.vtt","de":"media/captions/en_us-de.vtt","ja":"media/captions/en_us-ja.vtt","ko":"media/captions/en_us-ko.vtt"}},
+  {"id":"en_in","label":"Indian English · Prabhat","voice":"en-IN-PrabhatNeural","video":"media/lesson-en_in.mp4","timing":"media/timings/en_in.json","captions":{"en":"media/captions/en_in-en.vtt","zh":"media/captions/en_in-zh.vtt","fr":"media/captions/en_in-fr.vtt","es":"media/captions/en_in-es.vtt","de":"media/captions/en_in-de.vtt","ja":"media/captions/en_in-ja.vtt","ko":"media/captions/en_in-ko.vtt"}},
+  {"id":"zh","label":"中文 · Yunxi","voice":"zh-CN-YunxiNeural","video":"media/lesson-zh.mp4","timing":"media/timings/zh.json","captions":{"en":"media/captions/zh-en.vtt","zh":"media/captions/zh-zh.vtt","fr":"media/captions/zh-fr.vtt","es":"media/captions/zh-es.vtt","de":"media/captions/zh-de.vtt","ja":"media/captions/zh-ja.vtt","ko":"media/captions/zh-ko.vtt"}}
+ ]
+}

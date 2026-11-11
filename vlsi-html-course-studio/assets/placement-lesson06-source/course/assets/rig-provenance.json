@@ -1,0 +1,26 @@
+{
+  "asset": "scientist-rig.js",
+  "head_source": "https://openclipart.org/detail/302755/einstein",
+  "head_artist": "j4p4n",
+  "head_license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_module": "scientist-art.js",
+  "adaptation": [
+    "Crop the CC0 vector portrait to its head and neck using a nested SVG viewBox",
+    "Replace the source toothy smile path14910 with a fixed closed smile and a new two-lobed white moustache; no open mouth, teeth or tongue animation",
+    "Lift the moustache by at most 0.24 source SVG units and curl its tips by at most 0.7 degrees using measured speech amplitude",
+    "Draw an original matching blue jacket, arms, hands, trouser legs and shoes as articulated vector groups",
+    "Solve arms with two-bone inverse kinematics from wrist targets, fixed 73/65 unit bone lengths, and consistent signed elbow bends",
+    "Use a common smooth progress clock and shallow hand arcs; keep support poses stable; use coordinated cycles only for explicit walking and waving",
+    "Offer a compact head-only mode for diagram-dense scenes"
+  ],
+  "animation": "Deterministic functions of pose, optional fromPose, progress, time and measured speech amplitude; waveform affects the moustache only",
+  "historical_claim": "Illustrated teaching character only; not a claim about Einstein's voice or participation",
+  "method_references": [
+    {
+      "url": "https://docs.blender.org/manual/id/5.1/animation/constraints/tracking/ik_solver.html",
+      "application": "Hand target controls the connected arm bones; pole control determines elbow direction. This sample uses an independently written analytic two-bone 2D solver with a consistent signed bend, not Blender or imported code.",
+      "verified": "Official documentation text retrieved through web search on 2026-11-11."
+    }
+  ]
+}
