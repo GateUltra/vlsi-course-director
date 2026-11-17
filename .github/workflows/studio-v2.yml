@@ -12,7 +12,8 @@ permissions:
 
 jobs:
   offline-production:
-    runs-on: ubuntu-latest
+    # Keep the OS within the support matrix of the pinned Playwright version.
+    runs-on: ubuntu-24.04
     timeout-minutes: 25
     env:
       PYTHONDONTWRITEBYTECODE: '1'
