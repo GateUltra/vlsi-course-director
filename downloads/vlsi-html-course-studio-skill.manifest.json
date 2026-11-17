@@ -1,8 +1,8 @@
 {
   "version": "2.0.0",
   "archive": "vlsi-html-course-studio-skill.zip",
-  "bytes": 1210325,
-  "sha256": "bea1a26225b213f361e8bb0b7179ad17b5624285adc33f08b07c34f37f3f9ac9",
+  "bytes": 1213742,
+  "sha256": "54969fd2c6e685c2d6dd5b9204d4e390d84b3ada14076e6d410113b04b3173ab",
   "fileCount": 174,
   "crc": "passed",
   "fileHashes": "passed",
@@ -24,13 +24,13 @@
     },
     {
       "path": "docs/HTML_STUDIO_V2_VALIDATION.md",
-      "bytes": 8498,
-      "sha256": "57660547ab75960d8babef18ecb0e49525b7e7c4839cd35796fa7cf9cd851457"
+      "bytes": 9361,
+      "sha256": "5b6c7129683324b8adafe5835acc53ca73d59b536a67086716baef926e1ea258"
     },
     {
       "path": "docs/studio-v2-evidence.json",
-      "bytes": 84331,
-      "sha256": "2cc13bed72dd02af8aa22235015a2359cd46344ff9536c8e5f4ccc00d1d267df"
+      "bytes": 107945,
+      "sha256": "6c7c603d80abb573fdf0ecb854b69aeb9e426f36690eab0a93b0ee2583f2ffbb"
     },
     {
       "path": "vlsi-html-course-studio/SKILL.md",
@@ -769,8 +769,8 @@
     },
     {
       "path": "vlsi-html-course-studio/references/reproduce-v2.md",
-      "bytes": 6632,
-      "sha256": "cf466903b325ca4840b8775c616ed09c685dd15f4814dc51076b860b52fad599"
+      "bytes": 6899,
+      "sha256": "6ff5ce006ae5fa4060e32523df6757940911c88e8e30c97c73f1214e3982c6af"
     },
     {
       "path": "vlsi-html-course-studio/references/research-direction.md",

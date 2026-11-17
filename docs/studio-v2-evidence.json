@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "release": "2.0.0",
   "validationDate": "2026-11-17",
-  "status": "Local release-candidate checks passed; hosted CI status is separate.",
+  "status": "Local acceptance and fresh hosted Ubuntu 24.04 reproduction passed.",
   "provenance": "Generated from completed local build records, real browser reports and independent agent reproduction; no score is inferred from documentation alone.",
   "baseline": {
     "commit": "dca1c25d2d8e6a944536274d05878904a2cc4d5f",
@@ -2289,12 +2289,607 @@
     "sourceCurrentMatchesFrozen": true
   },
   "limits": [
-    "Local execution evidence is Windows only. Consult GitHub Actions for independently executed Linux status.",
+    "Tested platforms are Windows and a fresh Ubuntu 24.04 GitHub runner; other platforms are not claimed.",
     "Short deterministic 2D SVG benchmarks demonstrate the supported contract; they do not prove every future lesson or visual design.",
     "Full 39-cue Placement source is preserved, not completely ported to the v2 course-pack interface.",
     "Fixture builds make no online TTS calls. Future online voice availability, timing and waveform are external-service dependent.",
     "Browser checks measure decoded audio signal, not perceived voice quality. No native-language translation certification is claimed.",
     "Representative layout inspection is not exhaustive: secondary bottom intent text can be covered by native fullscreen captions; some small diagram labels require desktop view while HTML readouts remain accessible on mobile.",
     "Build identity describes source, frozen audio and render configuration; encoded movie bytes can vary with browser, font, encoder and platform."
-  ]
+  ],
+  "hostedReproduction": {
+    "platform": "GitHub-hosted Ubuntu 24.04",
+    "renderConfig": {
+      "width": 640,
+      "height": 360,
+      "fps": 15
+    },
+    "audioMode": "fixture",
+    "onlineTtsCalls": 0,
+    "run": {
+      "conclusion": "success",
+      "databaseId": 44082688749,
+      "headSha": "11205100a4b28110f0e784bbc0c5a3f2b9705acf",
+      "jobs": [
+        {
+          "completedAt": "2026-11-17T12:26:44Z",
+          "conclusion": "success",
+          "databaseId": 134037031858,
+          "name": "offline-production",
+          "startedAt": "2026-11-17T12:23:34Z",
+          "status": "completed",
+          "steps": [
+            {
+              "completedAt": "2026-11-17T12:23:39Z",
+              "conclusion": "success",
+              "name": "Set up job",
+              "number": 1,
+              "startedAt": "2026-11-17T12:23:35Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-17T12:23:43Z",
+              "conclusion": "success",
+              "name": "Run actions/checkout@v4",
+              "number": 2,
+              "startedAt": "2026-11-17T12:23:39Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-17T12:23:48Z",
+              "conclusion": "success",
+              "name": "Run actions/setup-python@v5",
+              "number": 3,
+              "startedAt": "2026-11-17T12:23:43Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-17T12:23:52Z",
+              "conclusion": "success",
+              "name": "Run actions/setup-node@v4",
+              "number": 4,
+              "startedAt": "2026-11-17T12:23:48Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-17T12:25:12Z",
+              "conclusion": "success",
+              "name": "Install declared tools",
+              "number": 5,
+              "startedAt": "2026-11-17T12:23:52Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-17T12:25:18Z",
+              "conclusion": "success",
+              "name": "Preflight and domain checks",
+              "number": 6,
+              "startedAt": "2026-11-17T12:25:12Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-17T12:26:35Z",
+              "conclusion": "success",
+              "name": "Rebuild real narration without a speech service",
+              "number": 7,
+              "startedAt": "2026-11-17T12:25:18Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-17T12:26:38Z",
+              "conclusion": "success",
+              "name": "Preserve reproduction evidence",
+              "number": 8,
+              "startedAt": "2026-11-17T12:26:35Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-17T12:26:38Z",
+              "conclusion": "success",
+              "name": "Post Run actions/setup-node@v4",
+              "number": 14,
+              "startedAt": "2026-11-17T12:26:38Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-17T12:26:41Z",
+              "conclusion": "success",
+              "name": "Post Run actions/setup-python@v5",
+              "number": 15,
+              "startedAt": "2026-11-17T12:26:38Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-17T12:26:41Z",
+              "conclusion": "success",
+              "name": "Post Run actions/checkout@v4",
+              "number": 16,
+              "startedAt": "2026-11-17T12:26:41Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-17T12:26:41Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "number": 17,
+              "startedAt": "2026-11-17T12:26:41Z",
+              "status": "completed"
+            }
+          ],
+          "url": "https://github.com/GateUltra/vlsi-course-director/actions/runs/44082688749/job/134037031858"
+        }
+      ],
+      "status": "completed",
+      "url": "https://github.com/GateUltra/vlsi-course-director/actions/runs/44082688749"
+    },
+    "fullLogSha256": "7deb8fbce849104028062e50349280fcceb34161c8f8191920f0e4f8ac5d1f1d",
+    "sameEngineAndPackFilesAsLocalValidation": true,
+    "scope": "Actual successful run identity and step results, checked against the full completed log. Screenshot artifacts remain accessible through the run subject to GitHub retention; they are not bundled.",
+    "logReview": {
+      "schemaVersion": "1.0",
+      "source": "Complete downloaded GitHub Actions log and structured run metadata; no artifact screenshots downloaded or reviewed.",
+      "run": {
+        "databaseId": 44082688749,
+        "headSha": "11205100a4b28110f0e784bbc0c5a3f2b9705acf",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/GateUltra/vlsi-course-director/actions/runs/44082688749"
+      },
+      "logSha256": "7deb8fbce849104028062e50349280fcceb34161c8f8191920f0e4f8ac5d1f1d",
+      "runner": {
+        "os": "Ubuntu 24.04.5 LTS",
+        "image": "ubuntu-24.04",
+        "imageVersion": "20261111.127.1"
+      },
+      "doctor": {
+        "line": 1043,
+        "step": "Preflight and domain checks",
+        "result": {
+          "python": "3.11.18",
+          "platform": "Linux-7.0.0-1014-aws-x86_64-with-glibc2.39",
+          "engineVersion": "2.0.0",
+          "node": "v22.23.4",
+          "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+          "ffprobe": "ffprobe version 6.1.1-3ubuntu5 Copyright (c) 2007-2023 the FFmpeg developers",
+          "requiredEncoders": [
+            "libx264",
+            "aac",
+            "libvpx",
+            "libopus"
+          ],
+          "playwright": "1.56.0",
+          "chromium": "141.0.7390.37"
+        }
+      },
+      "packs": {
+        "wirelength": {
+          "admission": {
+            "line": 1059,
+            "step": "Preflight and domain checks",
+            "result": {
+              "adapterContract": true,
+              "independentDomainTests": true,
+              "verifiedAudioClips": 6,
+              "passed": true,
+              "course": "wirelength",
+              "version": "1.0.0"
+            }
+          },
+          "sharedCore": {
+            "line": 1067,
+            "step": "Preflight and domain checks",
+            "result": {
+              "passed": true,
+              "course": "wirelength",
+              "engine": "2.0.0",
+              "checks": [
+                "scene coverage",
+                "complete measured clocks",
+                "random access",
+                "semantic intro/cue/tail mapping",
+                "opaque snapshot transfer",
+                "course/version isolation",
+                "frame composition"
+              ]
+            }
+          },
+          "preflightRegressions": {
+            "line": 1068,
+            "step": "Preflight and domain checks",
+            "result": {
+              "passed": true,
+              "checks": [
+                "duplicate cue IDs",
+                "unknown contract version",
+                "missing translated caption",
+                "exercise references missing cue",
+                "negative explicit hold",
+                "adapter path traversal",
+                "unknown scene implementation",
+                "missing audio clip",
+                "duplicate audio pair",
+                "stale voice setting",
+                "changed audio bytes",
+                "stale narration hash",
+                "appended narration requires matching audio",
+                "appended cue cannot be zip-truncated",
+                "incomplete build fails before final directory",
+                "complete caption coverage and text round-trip",
+                "decimal-safe multilingual wrapping",
+                "failed synthesis preserves absent final fixtures",
+                "actual VP8/Opus frame and decoded-sample measurement",
+                "WebM truncated audio rejected independently",
+                "WebM truncated video rejected independently"
+              ],
+              "count": 21,
+              "onlineCalls": 0
+            }
+          },
+          "build": {
+            "line": 1157,
+            "step": "Rebuild real narration without a speech service",
+            "result": {
+              "site": "/home/runner/work/_temp/site-wirelength",
+              "buildIdentity": "3b8890591990f4b7f18cab96b93034f3a41acac7b7d9382acd2a0c0aee0c2945",
+              "audioMode": "fixture",
+              "voices": 2,
+              "technicalVerification": true,
+              "browserUXReview": "run check_studio_browser.py separately"
+            }
+          },
+          "verification": {
+            "line": 1165,
+            "step": "Rebuild real narration without a speech service",
+            "result": {
+              "passed": true,
+              "engineVersion": "2.0.0",
+              "buildIdentity": "3b8890591990f4b7f18cab96b93034f3a41acac7b7d9382acd2a0c0aee0c2945",
+              "sourceAndAssetHashes": true,
+              "exactCueCaptionVoiceCoverage": true,
+              "tracks": [
+                {
+                  "id": "en_gb",
+                  "duration": 23.2,
+                  "videoDuration": 23.2,
+                  "audioDuration": 23.192,
+                  "clockDuration": 23.192,
+                  "fps": 15.0,
+                  "videoCodec": "h264",
+                  "audioCodec": "aac",
+                  "captionCues": {
+                    "en": 5,
+                    "zh": 3
+                  },
+                  "fullDecode": true
+                },
+                {
+                  "id": "zh",
+                  "duration": 22.4,
+                  "videoDuration": 22.4,
+                  "audioDuration": 22.376,
+                  "clockDuration": 22.376,
+                  "fps": 15.0,
+                  "videoCodec": "h264",
+                  "audioCodec": "aac",
+                  "captionCues": {
+                    "en": 5,
+                    "zh": 3
+                  },
+                  "fullDecode": true
+                }
+              ],
+              "webmAlternatives": [
+                {
+                  "id": "en_gb",
+                  "path": "media/lesson-en_gb.webm",
+                  "container": "webm",
+                  "videoCodec": "vp8",
+                  "audioCodec": "opus",
+                  "frames": 348,
+                  "fps": 15.0,
+                  "dimensions": [
+                    640,
+                    360
+                  ],
+                  "videoDuration": 23.2,
+                  "decodedAudioDuration": 23.192,
+                  "containerDuration": 23.2,
+                  "fullDecode": true,
+                  "audioDurationMethod": "decoded mono 48000 Hz PCM sample count, after Opus pre-skip/discard padding"
+                },
+                {
+                  "id": "zh",
+                  "path": "media/lesson-zh.webm",
+                  "container": "webm",
+                  "videoCodec": "vp8",
+                  "audioCodec": "opus",
+                  "frames": 336,
+                  "fps": 15.0,
+                  "dimensions": [
+                    640,
+                    360
+                  ],
+                  "videoDuration": 22.4,
+                  "decodedAudioDuration": 22.376,
+                  "containerDuration": 22.4,
+                  "fullDecode": true,
+                  "audioDurationMethod": "decoded mono 48000 Hz PCM sample count, after Opus pre-skip/discard padding"
+                }
+              ],
+              "scope": "Technical consistency and complete decoding of both media formats; not a speech, translation or instructional quality review"
+            }
+          },
+          "browser": {
+            "line": 1243,
+            "step": "Rebuild real narration without a speech service",
+            "result": {
+              "passed": true,
+              "course": "wirelength",
+              "voices": 2,
+              "captions": 4,
+              "exactTransfers": 6,
+              "report": "/home/runner/work/_temp/browser-wirelength.json"
+            }
+          },
+          "completeRegressions": {
+            "line": 1244,
+            "step": "Rebuild real narration without a speech service",
+            "result": {
+              "passed": true,
+              "checks": [
+                "duplicate cue IDs",
+                "unknown contract version",
+                "missing translated caption",
+                "exercise references missing cue",
+                "negative explicit hold",
+                "adapter path traversal",
+                "unknown scene implementation",
+                "missing audio clip",
+                "duplicate audio pair",
+                "stale voice setting",
+                "changed audio bytes",
+                "stale narration hash",
+                "appended narration requires matching audio",
+                "appended cue cannot be zip-truncated",
+                "incomplete build fails before final directory",
+                "complete caption coverage and text round-trip",
+                "decimal-safe multilingual wrapping",
+                "failed synthesis preserves absent final fixtures",
+                "actual VP8/Opus frame and decoded-sample measurement",
+                "WebM truncated audio rejected independently",
+                "WebM truncated video rejected independently",
+                "completed build cross-artifact verification",
+                "changed source invalidates build",
+                "changed artifact invalidates build",
+                "format-valid stale caption rejected semantically"
+              ],
+              "count": 25,
+              "onlineCalls": 0
+            }
+          }
+        },
+        "logic-timing": {
+          "admission": {
+            "line": 1096,
+            "step": "Preflight and domain checks",
+            "result": {
+              "adapterContract": true,
+              "independentDomainTests": true,
+              "verifiedAudioClips": 6,
+              "passed": true,
+              "course": "logic-timing",
+              "version": "1.0.0"
+            }
+          },
+          "sharedCore": {
+            "line": 1104,
+            "step": "Preflight and domain checks",
+            "result": {
+              "passed": true,
+              "course": "logic-timing",
+              "engine": "2.0.0",
+              "checks": [
+                "scene coverage",
+                "complete measured clocks",
+                "random access",
+                "semantic intro/cue/tail mapping",
+                "opaque snapshot transfer",
+                "course/version isolation",
+                "frame composition"
+              ]
+            }
+          },
+          "preflightRegressions": {
+            "line": 1105,
+            "step": "Preflight and domain checks",
+            "result": {
+              "passed": true,
+              "checks": [
+                "duplicate cue IDs",
+                "unknown contract version",
+                "missing translated caption",
+                "exercise references missing cue",
+                "negative explicit hold",
+                "adapter path traversal",
+                "unknown scene implementation",
+                "missing audio clip",
+                "duplicate audio pair",
+                "stale voice setting",
+                "changed audio bytes",
+                "stale narration hash",
+                "appended narration requires matching audio",
+                "appended cue cannot be zip-truncated",
+                "incomplete build fails before final directory",
+                "complete caption coverage and text round-trip",
+                "decimal-safe multilingual wrapping",
+                "failed synthesis preserves absent final fixtures",
+                "actual VP8/Opus frame and decoded-sample measurement",
+                "WebM truncated audio rejected independently",
+                "WebM truncated video rejected independently"
+              ],
+              "count": 21,
+              "onlineCalls": 0
+            }
+          },
+          "build": {
+            "line": 1283,
+            "step": "Rebuild real narration without a speech service",
+            "result": {
+              "site": "/home/runner/work/_temp/site-logic-timing",
+              "buildIdentity": "50c47bc2a8d875f0d37e1b9364c8bfe98f43ae2fd776231a6a2afc25c610dddc",
+              "audioMode": "fixture",
+              "voices": 2,
+              "technicalVerification": true,
+              "browserUXReview": "run check_studio_browser.py separately"
+            }
+          },
+          "verification": {
+            "line": 1291,
+            "step": "Rebuild real narration without a speech service",
+            "result": {
+              "passed": true,
+              "engineVersion": "2.0.0",
+              "buildIdentity": "50c47bc2a8d875f0d37e1b9364c8bfe98f43ae2fd776231a6a2afc25c610dddc",
+              "sourceAndAssetHashes": true,
+              "exactCueCaptionVoiceCoverage": true,
+              "tracks": [
+                {
+                  "id": "en_gb",
+                  "duration": 27.466667,
+                  "videoDuration": 27.466667,
+                  "audioDuration": 27.41,
+                  "clockDuration": 27.41,
+                  "fps": 15.0,
+                  "videoCodec": "h264",
+                  "audioCodec": "aac",
+                  "captionCues": {
+                    "en": 6,
+                    "zh": 3
+                  },
+                  "fullDecode": true
+                },
+                {
+                  "id": "zh",
+                  "duration": 28.266667,
+                  "videoDuration": 28.266667,
+                  "audioDuration": 28.25,
+                  "clockDuration": 28.25,
+                  "fps": 15.0,
+                  "videoCodec": "h264",
+                  "audioCodec": "aac",
+                  "captionCues": {
+                    "en": 6,
+                    "zh": 3
+                  },
+                  "fullDecode": true
+                }
+              ],
+              "webmAlternatives": [
+                {
+                  "id": "en_gb",
+                  "path": "media/lesson-en_gb.webm",
+                  "container": "webm",
+                  "videoCodec": "vp8",
+                  "audioCodec": "opus",
+                  "frames": 412,
+                  "fps": 15.0,
+                  "dimensions": [
+                    640,
+                    360
+                  ],
+                  "videoDuration": 27.466666666666665,
+                  "decodedAudioDuration": 27.41,
+                  "containerDuration": 27.467,
+                  "fullDecode": true,
+                  "audioDurationMethod": "decoded mono 48000 Hz PCM sample count, after Opus pre-skip/discard padding"
+                },
+                {
+                  "id": "zh",
+                  "path": "media/lesson-zh.webm",
+                  "container": "webm",
+                  "videoCodec": "vp8",
+                  "audioCodec": "opus",
+                  "frames": 424,
+                  "fps": 15.0,
+                  "dimensions": [
+                    640,
+                    360
+                  ],
+                  "videoDuration": 28.266666666666666,
+                  "decodedAudioDuration": 28.25,
+                  "containerDuration": 28.267,
+                  "fullDecode": true,
+                  "audioDurationMethod": "decoded mono 48000 Hz PCM sample count, after Opus pre-skip/discard padding"
+                }
+              ],
+              "scope": "Technical consistency and complete decoding of both media formats; not a speech, translation or instructional quality review"
+            }
+          },
+          "browser": {
+            "line": 1369,
+            "step": "Rebuild real narration without a speech service",
+            "result": {
+              "passed": true,
+              "course": "logic-timing",
+              "voices": 2,
+              "captions": 4,
+              "exactTransfers": 6,
+              "report": "/home/runner/work/_temp/browser-logic-timing.json"
+            }
+          },
+          "completeRegressions": {
+            "line": 1370,
+            "step": "Rebuild real narration without a speech service",
+            "result": {
+              "passed": true,
+              "checks": [
+                "duplicate cue IDs",
+                "unknown contract version",
+                "missing translated caption",
+                "exercise references missing cue",
+                "negative explicit hold",
+                "adapter path traversal",
+                "unknown scene implementation",
+                "missing audio clip",
+                "duplicate audio pair",
+                "stale voice setting",
+                "changed audio bytes",
+                "stale narration hash",
+                "appended narration requires matching audio",
+                "appended cue cannot be zip-truncated",
+                "incomplete build fails before final directory",
+                "complete caption coverage and text round-trip",
+                "decimal-safe multilingual wrapping",
+                "failed synthesis preserves absent final fixtures",
+                "actual VP8/Opus frame and decoded-sample measurement",
+                "WebM truncated audio rejected independently",
+                "WebM truncated video rejected independently",
+                "completed build cross-artifact verification",
+                "changed source invalidates build",
+                "changed artifact invalidates build",
+                "format-valid stale caption rejected semantically"
+              ],
+              "count": 25,
+              "onlineCalls": 0
+            }
+          }
+        }
+      },
+      "artifactUpload": {
+        "name": "course-pack-reproduction",
+        "id": 14328540237,
+        "files": 28,
+        "bytes": 4680344,
+        "sha256": "5e88f530b93ff4ceab5c20977815e5f53e6d9dbe26a237ea0a878597fd5b5314",
+        "url": "https://github.com/GateUltra/vlsi-course-director/actions/runs/44082688749/artifacts/14328540237",
+        "downloadedAndReviewed": false
+      },
+      "limits": [
+        "Linux CI used 640x360 at 15fps; Windows local acceptance separately used 1280x720 at30fps.",
+        "Browser stdout confirms complete checker passed and 2 voices / 4 caption combinations / 6 exact transfers; detailed per-voice actual selected codec is in the uploaded report, not printed in this log.",
+        "No Linux screenshots, subjective speech listening or native-language translation review are claimed."
+      ],
+      "allRequestedChecksExecutedAndPassed": true
+    }
+  }
 }

@@ -17,7 +17,7 @@ python -m venv .venv
 .\.venv\Scripts\python.exe scripts/studio.py doctor
 ```
 
-Node and FFmpeg/ffprobe must be on PATH, or use the CLI's explicit executable parameters. If Chromium is already installed, use `--browser` with its executable. On another OS, use that venv's Python path and install supported tool packages; cross-platform execution must be verified before claiming it. [Playwright installation](https://playwright.dev/python/docs/library) distinguishes its Python package from its browser download.
+Node and FFmpeg/ffprobe must be on PATH, or use the CLI's explicit executable parameters. If Chromium is already installed, use `--browser` with its executable. A clean Ubuntu 24.04 hosted runner has also passed both full builds and browser checks; use `.venv/bin/python` on that OS. The exact setup/build commands and tested platform are in the [public CI workflow](https://github.com/GateUltra/vlsi-course-director/blob/main/.github/workflows/studio-v2.yml). Do not substitute an untested `ubuntu-latest` when the pinned browser version has a narrower support matrix. [Playwright installation](https://playwright.dev/python/docs/library) distinguishes its Python package from its browser download.
 
 ## Offline full build
 

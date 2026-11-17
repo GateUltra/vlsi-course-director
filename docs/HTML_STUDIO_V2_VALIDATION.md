@@ -2,7 +2,7 @@
 
 Validation date: **2026-11-17**. This report concerns the new shared runtime and its two small narrated course packs. It does not substitute historical Placement results for v2 evidence.
 
-**Local acceptance passed.** Both packs were rendered from source, fully decoded and exercised in real browsers. A separate agent authored the second domain from the public contract and independently rebuilt it without changing the engine. Machine-readable results, source hashes and browser observations are in [studio-v2-evidence.json](studio-v2-evidence.json).
+**Local and hosted acceptance passed.** Both packs were rendered from source, fully decoded and exercised in real browsers. A separate agent authored the second domain from the public contract and independently rebuilt it without changing the engine. A fresh Ubuntu 24.04 runner also completed the entire workflow. Machine-readable results, source hashes and browser observations are in [studio-v2-evidence.json](studio-v2-evidence.json).
 
 ## What can now be reproduced
 
@@ -30,6 +30,7 @@ The clean Windows environment used Python 3.11.4, Node 24.22.1, Playwright 1.56.
 | Failure regression | **25 checks per pack**, including stale audio/text, missing/extra cues, truncated video/audio, altered source/output and stale but syntactically valid subtitles |
 | Real browser matrix | **6/6 passed**: both packs in Playwright headless shell 141, full Chromium 141 and Chrome 156 |
 | Independent migration and rebuild | New logic-timing domain, public contract only; **zero engine changes**; a separate source build with no reused movies or online TTS |
+| Fresh hosted Linux reproduction | Ubuntu 24.04; both complete source builds at 640 × 360 / 15 fps, media verification, browser acceptance and failure regressions passed |
 | Historical preservation | **123 protected files unchanged**, including original director, v1 starter, Placement source and six legacy tools |
 
 Each browser run checked both advancing, unmuted voice tracks and decoded audio signal; four voice/caption combinations; six chapter jumps and six exact intermediate scene transfers; semantic and rapid voice switching; speed/pause preservation; controls, feedback, reset and multiple correct exercise answers. It also checked native fullscreen, a 390-pixel mobile viewport, incompatible snapshot rejection and an explicitly unsupported-media case. There were no unexpected page, HTTP or external-request errors in the final six runs. Numeric interaction is required; pointer interaction is additionally tested where the pack supplies it.
@@ -55,7 +56,9 @@ The checks found and drove fixes for Windows serving `.mjs` with the wrong MIME 
 
 ## Public automation and rollback
 
-[The CI workflow](https://github.com/GateUltra/vlsi-course-director/blob/main/.github/workflows/studio-v2.yml) rebuilds both packs from fixed inputs at 640 × 360 / 15 fps on a fresh Linux runner, then performs full media verification, real browser acceptance and failure regressions. Its live status and downloadable evidence are available in [GitHub Actions](https://github.com/GateUltra/vlsi-course-director/actions/workflows/studio-v2.yml). Local Windows success and a future hosted run are separate claims; consult the actual run for Linux evidence.
+[The CI workflow](https://github.com/GateUltra/vlsi-course-director/blob/main/.github/workflows/studio-v2.yml) rebuilds both packs from fixed inputs at 640 × 360 / 15 fps on a fresh Ubuntu 24.04 runner, then performs full media verification, real browser acceptance and failure regressions. [Run 44082688749](https://github.com/GateUltra/vlsi-course-director/actions/runs/44082688749), for commit `11205100a4b28110f0e784bbc0c5a3f2b9705acf`, completed successfully on 2026-11-17. The release's final documentation/archive updates do not change that tested engine or the packs.
+
+The first hosted attempt used `ubuntu-latest`, which had moved to an OS unsupported by the pinned browser toolchain. It failed during dependency installation. The workflow now explicitly pins Ubuntu 24.04; no test or production capability was removed to obtain the passing result. The hosted run identity, step results and completed-log review are retained in the public evidence JSON; full screenshots are available in the run artifact while GitHub retains it. Future status is visible in [GitHub Actions](https://github.com/GateUltra/vlsi-course-director/actions/workflows/studio-v2.yml).
 
 The [v1 archive](https://github.com/GateUltra/vlsi-course-director/blob/main/downloads/vlsi-html-course-studio-v1.0.0.zip), [historical report](https://github.com/GateUltra/vlsi-course-director/blob/main/docs/HTML_STUDIO_VALIDATION.md) and [baseline hashes](../vlsi-html-course-studio/references/baseline-v1.json) remain available. The [migration policy](../vlsi-html-course-studio/references/migration-v2.md) separates course-pack changes from versioned contract/engine evolution.
 
