@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "1.0",
+  "note": "Synthetic fixture audio: fixed input for offline reconstruction; online service backend is not pinned.",
+  "clips": [
+    {
+      "voiceId": "en_gb",
+      "cueId": "two_pins",
+      "sha256": "5f96a25b06c99e11cdba51332154b4dfb92c9db5116e0d2e46d46fd8d1fe6e63",
+      "textSha256": "a838d610018c314ca90552353584e29e24d98484e3a16105eda3fa8b59c1238a",
+      "voice": "en-GB-ThomasNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "provenance": {
+        "provider": "edge_tts",
+        "clientVersion": "7.3.1",
+        "generatedAt": "2026-11-17T11:34:49.263243+00:00",
+        "backendVersion": "not exposed by service",
+        "synthetic": true,
+        "cacheKey": "1863d367027b83b8e12e0798fb16df801d7431fb147fbdc6cf41f970e1211880"
+      },
+      "path": "audio/en_gb-two_pins.mp3"
+    },
+    {
+      "voiceId": "en_gb",
+      "cueId": "measure_box",
+      "sha256": "e9b52d15435bba71b748dbc789beb0116e303a214a49212f5f38840ae66e5cdc",
+      "textSha256": "2b0c657a99570c9c39e845e74499c5422bef7cf7da7dc976128cb1625b3b906a",
+      "voice": "en-GB-ThomasNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "provenance": {
+        "provider": "edge_tts",
+        "clientVersion": "7.3.1",
+        "generatedAt": "2026-11-17T11:34:59.190171+00:00",
+        "backendVersion": "not exposed by service",
+        "synthetic": true,
+        "cacheKey": "f85d3a2f944acab01748b5886cc037fc46e32faf8248eeef2c2af8ad1ae9b761"
+      },
+      "path": "audio/en_gb-measure_box.mp3"
+    },
+    {
+      "voiceId": "en_gb",
+      "cueId": "move_and_try",
+      "sha256": "0be9a862ac63584878a07cb27071011ef16273ace3e30e90efd0f2522724e7da",
+      "textSha256": "4c435c1a367c59fe97d99c6d90bad6a7b3e9c49865574a33345284fdf4e1131f",
+      "voice": "en-GB-ThomasNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "provenance": {
+        "provider": "edge_tts",
+        "clientVersion": "7.3.1",
+        "generatedAt": "2026-11-17T11:35:09.946150+00:00",
+        "backendVersion": "not exposed by service",
+        "synthetic": true,
+        "cacheKey": "759bd9d47fef5205b4f8842533352a4e58a1aa9654426d6fbc950ecb3d766cff"
+      },
+      "path": "audio/en_gb-move_and_try.mp3"
+    },
+    {
+      "voiceId": "zh",
+      "cueId": "two_pins",
+      "sha256": "f979abe8b69211dd89581a565c0b97eaf0652edeebc9c67bdfef09924f4ca60f",
+      "textSha256": "7954594a70d694651c395a99a056e64a14ec52f0f067becb20f8beeaf5c16173",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "provenance": {
+        "provider": "edge_tts",
+        "clientVersion": "7.3.1",
+        "generatedAt": "2026-11-17T11:35:18.247145+00:00",
+        "backendVersion": "not exposed by service",
+        "synthetic": true,
+        "cacheKey": "4723b9ea665d96ab3bda3195938b34c17583871318572c2d79bd28e4998fd06f"
+      },
+      "path": "audio/zh-two_pins.mp3"
+    },
+    {
+      "voiceId": "zh",
+      "cueId": "measure_box",
+      "sha256": "6c817272a32e119f0dabe6079d504055f51fbfdf1de413a65e6251429423f177",
+      "textSha256": "96daa20fe120fd4dd0a52b5914dff1582bfabdd699f313f864e02b8c9dfae974",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "provenance": {
+        "provider": "edge_tts",
+        "clientVersion": "7.3.1",
+        "generatedAt": "2026-11-17T11:35:28.063255+00:00",
+        "backendVersion": "not exposed by service",
+        "synthetic": true,
+        "cacheKey": "cb9551a2d480740e861dc0ae50f6efe8b9f00217cbbf389b941234c43bf6e781"
+      },
+      "path": "audio/zh-measure_box.mp3"
+    },
+    {
+      "voiceId": "zh",
+      "cueId": "move_and_try",
+      "sha256": "43324fc9da3c6e2ddc4088574a18fba96e33fb100aee10ce626c5ff647d0cb6e",
+      "textSha256": "316fe4976f48e835d221b5f70cc7c445b38563d8710d8820163d22b49ed54b4c",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "provenance": {
+        "provider": "edge_tts",
+        "clientVersion": "7.3.1",
+        "generatedAt": "2026-11-17T11:35:36.626944+00:00",
+        "backendVersion": "not exposed by service",
+        "synthetic": true,
+        "cacheKey": "953b7da83db75c0640fcc784a09e83cca5864574691aea91372717c819a0a415"
+      },
+      "path": "audio/zh-move_and_try.mp3"
+    }
+  ]
+}

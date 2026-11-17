@@ -1,0 +1,881 @@
+{
+  "version": "2.0.0",
+  "archive": "vlsi-html-course-studio-v2.0.0.zip",
+  "bytes": 1210325,
+  "sha256": "bea1a26225b213f361e8bb0b7179ad17b5624285adc33f08b07c34f37f3f9ac9",
+  "fileCount": 174,
+  "crc": "passed",
+  "fileHashes": "passed",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1083,
+      "sha256": "ce8f2572c6e80756e91e1459b876c538c29107531128c3227bb44063af77a48e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1127,
+      "sha256": "22c9ce96d1ff0140c3f2598b30da621a4e2f906a40a3a1370474f7948669ab19"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 3146,
+      "sha256": "4c4d8e3ea13a3dfd681a6ebb9958a5eb0801657840ab8d7b7d1e1194a92b2d04"
+    },
+    {
+      "path": "docs/HTML_STUDIO_V2_VALIDATION.md",
+      "bytes": 8498,
+      "sha256": "57660547ab75960d8babef18ecb0e49525b7e7c4839cd35796fa7cf9cd851457"
+    },
+    {
+      "path": "docs/studio-v2-evidence.json",
+      "bytes": 84331,
+      "sha256": "2cc13bed72dd02af8aa22235015a2359cd46344ff9536c8e5f4ccc00d1d267df"
+    },
+    {
+      "path": "vlsi-html-course-studio/SKILL.md",
+      "bytes": 6031,
+      "sha256": "8b8b7905b3be697601548cade731825ee0176dff0af03c7ce2a4a26de38f7510"
+    },
+    {
+      "path": "vlsi-html-course-studio/agents/openai.yaml",
+      "bytes": 302,
+      "sha256": "61dfaa493feaac83782a720005defe4521d5f6a1b68062a74c1432bb8e4b1fdc"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/course-packs/logic-timing/README.md",
+      "bytes": 1787,
+      "sha256": "1b8146b8633af48956f7d1d49f47846e8b11bd241f78aa0e1b62314230a30d15"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/course-packs/logic-timing/adapter.mjs",
+      "bytes": 9988,
+      "sha256": "8fbff1b9c6dec98c2d1c5a077886bf567361dc1b7666bab2257ecda78ffeddf1"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/course-packs/logic-timing/audio/en_gb-arrive.mp3",
+      "bytes": 49968,
+      "sha256": "4088b6b78de8bbec053834b41182a6dbd5ed94e7e38d03b6256a52a020d41ffd"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/course-packs/logic-timing/audio/en_gb-change.mp3",
+      "bytes": 52992,
+      "sha256": "13ffa5dbc60f1c600113ff1df9068e09e0856686c3c65e764033a12841f96d5a"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/course-packs/logic-timing/audio/en_gb-merge.mp3",
+      "bytes": 50400,
+      "sha256": "f934090c50fa27b2ebae4beb53a5ac6e79a5f87f63f23b25586b9211731ae4ba"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/course-packs/logic-timing/audio/fixtures.json",
+      "bytes": 4319,
+      "sha256": "46ac338aad29531347e453809df0b3ab3b133cb9fe1f2b84ce27d71741c9e024"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/course-packs/logic-timing/audio/zh-arrive.mp3",
+      "bytes": 55584,
+      "sha256": "1a35d57b3205eef9ef3c9e190e827a0a43ec7fd30398cf357a145ac8f8a824de"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/course-packs/logic-timing/audio/zh-change.mp3",
+      "bytes": 50256,
+      "sha256": "8e9054ea97a857463186dd0eb6d504d9c5b610ceeea5eb09cb36075b44c58f52"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/course-packs/logic-timing/audio/zh-merge.mp3",
+      "bytes": 52560,
+      "sha256": "8db9ffb82980102ceb86883d98c1342a6c39bfb387fd97e5fb19a271cc6c8531"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/course-packs/logic-timing/check.mjs",
+      "bytes": 4006,
+      "sha256": "72977b1823ee4357bde4882ed9d99b689c4fbbd9047e8a08894d358523c24605"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/course-packs/logic-timing/lesson.json",
+      "bytes": 4176,
+      "sha256": "f7d8898fc80dc55125ee96c97e9c8335afe0bbb87bac2c2e52157ac9969f561c"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/course-packs/wirelength/adapter.mjs",
+      "bytes": 6891,
+      "sha256": "6f777f18a1c967bcce0336f93631f2591dff219bca24bfcf24374c049b3700eb"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/course-packs/wirelength/audio/en_gb-measure_box.mp3",
+      "bytes": 43488,
+      "sha256": "e9b52d15435bba71b748dbc789beb0116e303a214a49212f5f38840ae66e5cdc"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/course-packs/wirelength/audio/en_gb-move_and_try.mp3",
+      "bytes": 51984,
+      "sha256": "0be9a862ac63584878a07cb27071011ef16273ace3e30e90efd0f2522724e7da"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/course-packs/wirelength/audio/en_gb-two_pins.mp3",
+      "bytes": 31680,
+      "sha256": "5f96a25b06c99e11cdba51332154b4dfb92c9db5116e0d2e46d46fd8d1fe6e63"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/course-packs/wirelength/audio/fixtures.json",
+      "bytes": 4375,
+      "sha256": "ddc714a2ec81299b5d5344e41f287023f73079089cf178140e2a10e16e4c9d5c"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/course-packs/wirelength/audio/zh-measure_box.mp3",
+      "bytes": 41184,
+      "sha256": "6c817272a32e119f0dabe6079d504055f51fbfdf1de413a65e6251429423f177"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/course-packs/wirelength/audio/zh-move_and_try.mp3",
+      "bytes": 46224,
+      "sha256": "43324fc9da3c6e2ddc4088574a18fba96e33fb100aee10ce626c5ff647d0cb6e"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/course-packs/wirelength/audio/zh-two_pins.mp3",
+      "bytes": 34848,
+      "sha256": "f979abe8b69211dd89581a565c0b97eaf0652edeebc9c67bdfef09924f4ca60f"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/course-packs/wirelength/check.mjs",
+      "bytes": 1621,
+      "sha256": "84f00f4db0c676ca123a42da6483e1e3e9eb9958ccba41ca188972f58cb658a2"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/course-packs/wirelength/lesson.json",
+      "bytes": 3097,
+      "sha256": "caf4fabf85da31b0bacec7f6245cc517f3f5848b4876b7d0d6a4570c4d78796d"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/SNAPSHOT.json",
+      "bytes": 16210,
+      "sha256": "8477408eb5a2b2326b5021e5d1a5d19b4a23e8bd81555f786227fb89ed17495a"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/SNAPSHOT_README.md",
+      "bytes": 3616,
+      "sha256": "d056ec6ce250dd8d6cb652a27b8c160109953cc7dda85e9ed48502566d4a1689"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/CREDITS.md",
+      "bytes": 3688,
+      "sha256": "4d00479fe10fe7a8650e29126c6935fb8b54f9ce14d12bac518ac35a247d571d"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/README.md",
+      "bytes": 5969,
+      "sha256": "4ff255dc85b5f2d83147e60fc695f64027e4f6b8911e3b827f71d12f46168ca2"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/START_PREVIEW.cmd",
+      "bytes": 219,
+      "sha256": "0513ac56debc7cbe4f06bbe3012cd5bed0453050ee51d01e6e1bca6337f94eae"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/app.js",
+      "bytes": 1405,
+      "sha256": "1b5415f1227f53c58dda33ddeff45141e7522f14bdcd5b1f64f4fba05d90c8f9"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/assets/einstein-character.svg",
+      "bytes": 30426,
+      "sha256": "1743c933dff1b85185bab1a2e0ee05e754aae8e56d96665ca34a8e832d7e4d5c"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/assets/einstein-original.svg",
+      "bytes": 47643,
+      "sha256": "bfe4993246cdd0402f582385ef123cf5c1229e0b7be3d7f3bba1af3f2ccd2617"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/assets/license-source.html",
+      "bytes": 13492,
+      "sha256": "214e900b88f159dd1e5e5becfce26d0019e46961f0f8826b140bace2e8cd705e"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/assets/provenance.json",
+      "bytes": 848,
+      "sha256": "da2979e3538ce0e92fd5c351bdbfa77b4e18370f8a78be2a888653345421d57a"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/assets/rig-provenance.json",
+      "bytes": 1888,
+      "sha256": "89657ebbfb5e881ac66c0280f2ebf5126fcbf12706f5a8602b14582bdd81a286"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/assets/scientist-closed.svg",
+      "bytes": 35657,
+      "sha256": "2f70052c6f7f5cfce71c9b60d72d5616efea4d06fe62db4f1e0897c59a6252fb"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/board.js",
+      "bytes": 5778,
+      "sha256": "0a5b9502fd5184e0090ab04c779766434888ec4eca7d2f2cfea8767bba75f582"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/content/audio-provenance.json",
+      "bytes": 1795,
+      "sha256": "aad77b9af71e9a33083daf5c3ac6e82049bba1698210f789c9d05932e1931378"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/content/caption-glossary.json",
+      "bytes": 1903,
+      "sha256": "5bb0e13465b93eac28b66ab1f92bbc7cc454e9ffc24e8a5c813df54eeba527a6"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/content/script.json",
+      "bytes": 15777,
+      "sha256": "9893d1ec8f43835416f85f9754834d1e82ad4840db24d3ebc79c55fa043b0490"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/content/translations.json",
+      "bytes": 37887,
+      "sha256": "f9b7aa569e196df12d1ea5c5a33cede2b6b29a3bffb88190e35c9ec71e8cf2b0"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/content/voice-provenance.json",
+      "bytes": 2914,
+      "sha256": "6d88098120977aff6a2805cc61f830108d2e98b11a772535768433b9b872aecb"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/domain.js",
+      "bytes": 3739,
+      "sha256": "a475177f2c109153b2e2b31d9254f7e48ba645c4a4aba648dae9b4a871846792"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/exercises.css",
+      "bytes": 2218,
+      "sha256": "0ad5f5b527c635f8858dce81c6ced75c0de02a5b38a8a7fb72375cb0e014d6d7"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/exercises.js",
+      "bytes": 6606,
+      "sha256": "cdb3ed6aabb7e5ad09f52cf007b1e75e465a4ce2feb51d9b9f5b6194e35cdaf3"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/film-art.js",
+      "bytes": 6030,
+      "sha256": "f32041d1005dbc87484a8531a5ce416811aef5e8d5ebf077f1493085a127a657"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/index.html",
+      "bytes": 10104,
+      "sha256": "090e55e0ac6f9ecdd0c0fec44ad21b98b2102d9592056967c8c6308fa7debf04"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/lab.css",
+      "bytes": 5134,
+      "sha256": "3f1fff4435ff9f78ae236749d2b823aa7ac47e2dfe3fd84b8a6151bade2fad1c"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/lab.js",
+      "bytes": 13958,
+      "sha256": "a42cbe8b15a929c41df161695431187b191e0b35bb6628b560c90ad3c99cbb29"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/en_gb-de.vtt",
+      "bytes": 12583,
+      "sha256": "259b5f6b6ac557cdba24199c57054f6c44bcae9e82e2938aa039c24f56cf1965"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/en_gb-en.vtt",
+      "bytes": 10719,
+      "sha256": "5a48dfbd9050b937f5c1a16d41c45d7d2d7c06c9d465592f3a9b4e215459b5e1"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/en_gb-es.vtt",
+      "bytes": 12172,
+      "sha256": "cc340eaaf0584ce3333ebbb9c4f651d0a647e32c922b7723126af40c1955ddc7"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/en_gb-fr.vtt",
+      "bytes": 12515,
+      "sha256": "805e6bdbe75deca6457821c73b6f33b1df9aca04c7f7bbc3842dbf0222213cbd"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/en_gb-ja.vtt",
+      "bytes": 11896,
+      "sha256": "e043989c4d87c9aae5b901a30b1993e53bd99baf3778bdb98ddeb49c5da5b49f"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/en_gb-ko.vtt",
+      "bytes": 11532,
+      "sha256": "41313ef8a835f1a9830355aa0f37d9a77f28749e1f6b4cf0e205cae4cbe1a37b"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/en_gb-zh.vtt",
+      "bytes": 9740,
+      "sha256": "74e2a279a3c0622404395c592ff1de923f2983198e6e528cce0fcd486c06a6d7"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/en_in-de.vtt",
+      "bytes": 12583,
+      "sha256": "d49bfd2f234f1aae809f0aec6a8b670e63c07c5c8217aac8cedc616c7f03bc92"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/en_in-en.vtt",
+      "bytes": 10719,
+      "sha256": "e781e5454494faa23a6ed7bcb6ce3b8fbb4da3ce024c314b5e44cbd81fb8324c"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/en_in-es.vtt",
+      "bytes": 12172,
+      "sha256": "cc875f61dd1e5c32c89df9b92a0837be276e39defdc82d45be894710d79deddd"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/en_in-fr.vtt",
+      "bytes": 12515,
+      "sha256": "20d4fd656e2931c278318f601d665e3e9b6635e833826916e41eb287cbc52240"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/en_in-ja.vtt",
+      "bytes": 11896,
+      "sha256": "11fc625e9b921b7e7f07e29823d9843bdb6f204a82bd017fb4aa1f596ca4b297"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/en_in-ko.vtt",
+      "bytes": 11532,
+      "sha256": "f704c319ee20eacc3ff016a200619661ae01e2ec32a2e2920d89ebda40a64338"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/en_in-zh.vtt",
+      "bytes": 9740,
+      "sha256": "3f078d3a40a98ba74212f87cef50ea3391c7d9ab7aad129c29f23e6bf3a1ec8c"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/en_us-de.vtt",
+      "bytes": 12583,
+      "sha256": "520d4ad9d7db4c1c9676a1ffc07188e30981b78be3d7df11444e59db69c07e42"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/en_us-en.vtt",
+      "bytes": 10719,
+      "sha256": "16b6b245c39d172c1443b1c1a06d80c8239d42018f7a3740052565a6e1745721"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/en_us-es.vtt",
+      "bytes": 12172,
+      "sha256": "8b5265bcd1ad0a403b08b9b532b143cd65aa342c92206deec29d86a3600e4069"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/en_us-fr.vtt",
+      "bytes": 12515,
+      "sha256": "39e107df587c60808b668960ab1081da7117e86179e3dd134c555e7e799507a0"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/en_us-ja.vtt",
+      "bytes": 11896,
+      "sha256": "748b533d3ccd48b30708c11f7fee272d5a7a2ea722201a3cf63e425dfea22b46"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/en_us-ko.vtt",
+      "bytes": 11532,
+      "sha256": "b66ac68fb0786f6ae03cb5f9751afd50824d37f0762276b7b6124552009a9d49"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/en_us-zh.vtt",
+      "bytes": 9740,
+      "sha256": "6d77936d9e9d21a23be0855ef249a6ecd10cd0fa4bb2424d989d4b5d4f2888c9"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/zh-de.vtt",
+      "bytes": 12583,
+      "sha256": "9b53dda603153972cbed0873cc30855c20717ffb426563c419c9ef75e26dd1cc"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/zh-en.vtt",
+      "bytes": 10719,
+      "sha256": "5ddfc063f89d81348cd2096b077a4f60802323444c3aac85f5d795a920d74c5d"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/zh-es.vtt",
+      "bytes": 12172,
+      "sha256": "bf0d47c0b8d2da6563e285558546558c56e69fb005c328dc10a014c9361d8285"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/zh-fr.vtt",
+      "bytes": 12515,
+      "sha256": "c7787e549022ec4500bd21f31ba9a90eac87577fca1f6972dcbc44ce74629675"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/zh-ja.vtt",
+      "bytes": 11896,
+      "sha256": "1b4168f14dd035295444f437c63e5f3336b0ab539f5ddcf3e93b4cde92c04ddd"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/zh-ko.vtt",
+      "bytes": 11532,
+      "sha256": "249ba69f01c929257ea662d7bb21447f5fd91a25da9a6f4a3148e91d31e59cad"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/captions/zh-zh.vtt",
+      "bytes": 9740,
+      "sha256": "a17a0096f2c1e149f29d5907c85ab62d15e825a77478729f9f5b91b07e8e1ad3"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/manifest.json",
+      "bytes": 1696,
+      "sha256": "09e2e74299bc4c8e154bf37097b1f8f68f0c55948adecb532f8c153b22be3e2b"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/timings/en_gb-envelope.json",
+      "bytes": 115955,
+      "sha256": "01ca77b776391d7766a610ee3ba82603a486bdd746c9ba02fa912afa18db92c7"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/timings/en_gb.json",
+      "bytes": 28818,
+      "sha256": "b1660a2219d67ad37ba421cd6369cf4edea015dd05b57906ba528fcce2ebde04"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/timings/en_in-envelope.json",
+      "bytes": 135202,
+      "sha256": "c491cd279052018832314631c3a7e5389bb8b09ec0ef4a7dcc9f468da5df9faf"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/timings/en_in.json",
+      "bytes": 28834,
+      "sha256": "234064dad8976341c324e05b54c8e66cd52c54de099f79ac271bda664ea1e96c"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/timings/en_us-envelope.json",
+      "bytes": 114984,
+      "sha256": "c9ad9bb0886e6371db87984b4ba2a8d1ae9e3c6076042527807f13e0ed044d30"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/timings/en_us.json",
+      "bytes": 28789,
+      "sha256": "76877a129bdf5649ed2c0ad7752f87e187df81557a3dedc566ddd05e71063813"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/timings/zh-envelope.json",
+      "bytes": 120535,
+      "sha256": "6c39ba312e58195f32e641186584debeb577c11172b007aa62289852eb8b61f3"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/media/timings/zh.json",
+      "bytes": 28694,
+      "sha256": "7c09d626d9557b7b61bdc59974694e42d3750531c52df33bacde9b96f25a6af5"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/mentor.js",
+      "bytes": 6723,
+      "sha256": "f53c4504a740dc1cca608acdf71a0c226560cbe43d1e99b418fef45f8696de19"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/player.js",
+      "bytes": 7920,
+      "sha256": "dc8bd1a0c0404d8ed3c8cbe13e9b8099c0c5e2b3a166db7e0d3d9c46970742b9"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/poster.jpg",
+      "bytes": 193260,
+      "sha256": "cfe8adf10170170197c8cbe8361f628b8a747f0187a2bc0b6dd50a8fa728b262"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/render.html",
+      "bytes": 2160,
+      "sha256": "7a79b432d370438883a530fe9b823f19576e781e1a7244c4dbc5d9d0bf6313c6"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/scene.js",
+      "bytes": 21035,
+      "sha256": "5f97aa83516aca26dcde8da091ac3a421e9295e24edaa714464d8c0988269494"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/scientist-art.js",
+      "bytes": 31219,
+      "sha256": "a099c47038678f03b1fa65366054384ed59562f0cbb0ff0c6558d3cb95d279a0"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/scientist-rig.js",
+      "bytes": 8536,
+      "sha256": "beb6837aa2b481456dd5a27111abb0a8b29102885f8ed1595036b061f620dbff"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/serve_site.py",
+      "bytes": 4710,
+      "sha256": "09a4ca632f1d119b4b3346bae6f1d48293693558388f86cc73bbfa110fb9d196"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/site.css",
+      "bytes": 17915,
+      "sha256": "fde37a05fc0e93ecc9c249f857d1879617b1a2fdf686572941b1ab269b81dfb0"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/course/timeline.js",
+      "bytes": 4082,
+      "sha256": "63ce3efb218ae73f45c7532905b891e0031daeee9889177c12d9a7bd839688f8"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/review-course/DELIVERY_CHECK.md",
+      "bytes": 3690,
+      "sha256": "22735ff415a19526cb2d3d3c22e431444b8e8fb2aa43e6fe9619b3eb681d1a9f"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/review-course/audio-checks.json",
+      "bytes": 6552,
+      "sha256": "5413b565521342040206d5062b0efb982ab786da487f7e8b3e5d3e9fc67b0fbe"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/review-course/domain-checks.json",
+      "bytes": 3537,
+      "sha256": "098935102a65609249deac00cf77078205d7614a3b454fc8d92a8ff178241f76"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/review-course/film-scene-checks.json",
+      "bytes": 10474,
+      "sha256": "8c4af7f091c2f69b0f8e07d39c6a15075359448d299a46d885ba54496ed7b901"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/review-course/lab-browser-checks.json",
+      "bytes": 437,
+      "sha256": "42fc25b43ac22ca65a74d1d8cfde7295ba0a47a7ac69f05ea9a7906d05cafe81"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/review-course/media-checks.json",
+      "bytes": 29837,
+      "sha256": "8f1d89b65c6ee12475582ae6a8ca4df1252985a3a45b9d31d72257a520c4b275"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/review-course/package-check.json",
+      "bytes": 459,
+      "sha256": "477a3c50e9fde8a26b7eb151f7a5dcda10e188a806f06f3ee120349fcf9ccdc6"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/review-course/real-clock-checks.json",
+      "bytes": 347,
+      "sha256": "e1bd5e90056bbcf35f07e49f4eb1f30584ec518154f833a3de7ee39d00ba8403"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/review-course/render-primary.json",
+      "bytes": 184,
+      "sha256": "97cff570767b42c087aca1c19a64851b7978a6723663a2e12f3fb4714dded71c"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/review-course/retime-en_in.json",
+      "bytes": 6604,
+      "sha256": "a7b7df8e643dd18f85fb48ff1f6c708e2a7ff607045e7ee7a3e0818843297bfa"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/review-course/retime-en_us.json",
+      "bytes": 6592,
+      "sha256": "81c1a5b45027e71653e13af04548e5099f032f10dae070dbf39a775a574536d4"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/review-course/retime-zh.json",
+      "bytes": 6593,
+      "sha256": "1862727cff263362f1008daea9a45470d600f508b08732dfe360327355a0e6ab"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/review-course/site-browser-checks.json",
+      "bytes": 4160,
+      "sha256": "f5fc298cc586ace96458be6e1fdf43528ab4b217299c1a5b1b7a11a38f29c56c"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/scripts/capture_course_captions.py",
+      "bytes": 1702,
+      "sha256": "5ef844036548edb2774b4fd95dfa4ca3e146b3bb98cb0c5731ac1d15c90a43e0"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/scripts/check_course_audio.py",
+      "bytes": 5324,
+      "sha256": "4e6559c2b37a81c9ec987fc410f7f72671ad10ccbafe2b596630d65c53a4dc90"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/scripts/check_course_film.py",
+      "bytes": 4401,
+      "sha256": "3d505da1eba8afb93dd9f31f9bc960f781e0424a45e0d391bd1d5d8358aa3c26"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/scripts/check_course_lab.py",
+      "bytes": 6852,
+      "sha256": "c8ce0eedb40ee7e9f64a794968092fb0e253a3953585008d440006cf202126d2"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/scripts/check_course_media.py",
+      "bytes": 7714,
+      "sha256": "21b57c4b82f48910d0bc70f0ceefd39d9da1df1ffb607cdc0eca314790534907"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/scripts/check_course_site.py",
+      "bytes": 10959,
+      "sha256": "9636658846305c7dc358c52f9e458b3ef01b2c266da18974c06ba1ddd0d4bc13"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/scripts/check_course_timeline.py",
+      "bytes": 1950,
+      "sha256": "d98ef185d863d99af4ce2a5a93340f3df3fb6dd4bde7ce8a25c993f6fd27f45e"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/scripts/make_course_audio.py",
+      "bytes": 11153,
+      "sha256": "90e98bf66f47f68accdd81b816a1aa6d11b5d516fdee945827a22d2699fda5ba"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/scripts/package_course.py",
+      "bytes": 1745,
+      "sha256": "c643cef36ebc84712803ac2c57a412f7417da44b0e0483efaa3a4e48604c6a6e"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/scripts/render_course.py",
+      "bytes": 6697,
+      "sha256": "76759de20b2e37f5abe8fc2d15dfa4bfd3dfcceea1ced1c302857d80f259fb84"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/placement-lesson06-source/scripts/serve_site.py",
+      "bytes": 4710,
+      "sha256": "09a4ca632f1d119b4b3346bae6f1d48293693558388f86cc73bbfa110fb9d196"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/planning/cue-sheet.json",
+      "bytes": 649,
+      "sha256": "e5140f8f576339d53e4485ad1213b879f0932c2e0d6cc9c51cd3a130794323ee"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/planning/lesson-brief.md",
+      "bytes": 1530,
+      "sha256": "113420f9c6f6d41912d722919cd8c8bdb822c2ae6378d3b101cc5973abd2606c"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/runtime/app.mjs",
+      "bytes": 13088,
+      "sha256": "eb1f6f86bf981b4b20fc2b061654b56bf34f993d1a1a2b075f8ab03236698224"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/runtime/check_core.mjs",
+      "bytes": 2437,
+      "sha256": "ff7583ee87b256c157c4735c9d6be9e95bcddee36cf9b995d2f029b4a31fa039"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/runtime/core.mjs",
+      "bytes": 6030,
+      "sha256": "32ad5c333961afb8242849fc99b23b2db8ea5f5417a367e7aa8a89d5a20dde0f"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/runtime/index.html",
+      "bytes": 2936,
+      "sha256": "b5f5f41ab3dd8afdbc6bcab60df3873556d9d402eef7d906e6d0e8bda20edd3f"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/runtime/render.html",
+      "bytes": 1057,
+      "sha256": "429d9f2a8a8b056d3d7b83865a9fdfbf2516c27c34809ffe3cc665f33516f868"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/runtime/scene.mjs",
+      "bytes": 5272,
+      "sha256": "00c25ad85fdd39bb289799402eee8b258715a30a7a95497d36249fefbc4deaab"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/runtime/style.css",
+      "bytes": 6948,
+      "sha256": "63693ad1bab9ff49d3f806afe799f8c42054a362749fa1af603d6d55fdb22c5a"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/starter/app.js",
+      "bytes": 6859,
+      "sha256": "6fe850eab16c1f7dcfc27f0ea52a8b65586b05fe35de50fc8decb081b80ebb54"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/starter/board.js",
+      "bytes": 2136,
+      "sha256": "03f526833f448305a4d54a21cdddb5ecbcda2dba0db61c6b3e0bdd54b0c6ec3b"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/starter/check.mjs",
+      "bytes": 3727,
+      "sha256": "ec8aab6ec577d035e74ebcb0bc723a1a5b6296ef2ea82b6925c5d53d4f04923a"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/starter/check_browser.py",
+      "bytes": 6212,
+      "sha256": "f11a3343396443261c5797b60d6603aeab69ef94880c3f356a543dcf42eadab0"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/starter/content/demo-clock.json",
+      "bytes": 417,
+      "sha256": "2e0ec9565908d6841637d5646f8bbae7c069b88521df8b1c26720c59ea7c12fa"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/starter/content/script.json",
+      "bytes": 1139,
+      "sha256": "21dd5fe26b98c6add6e4a0575790c16afbaf6ff8a741fbc7494c8bd07af531b3"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/starter/domain.js",
+      "bytes": 2761,
+      "sha256": "59cde9cc8259b22df0a552dbc0864d4bf7cf3abc2ccec596bbd02b6879f2d10a"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/starter/index.html",
+      "bytes": 3464,
+      "sha256": "23c6dfc7f1284aa76abc4057c9ca8d98250ca76d632f28ec5f0c41e2b1765171"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/starter/render.html",
+      "bytes": 1004,
+      "sha256": "c3199f58fde4354404959e022ffdcc4e36ce60738829155f4b2b65378e0ce92e"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/starter/scene.js",
+      "bytes": 1877,
+      "sha256": "f7ee6a376f3ee707b3e55a6d80869e72896d27968bf1e4521e5d97dd1f025de6"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/starter/styles.css",
+      "bytes": 5568,
+      "sha256": "4a215c92f1f92b86fca53762cb4eb23dbc2dfd3e976eff0accd7abb676781975"
+    },
+    {
+      "path": "vlsi-html-course-studio/assets/starter/timeline.js",
+      "bytes": 1592,
+      "sha256": "36c898ff0dff1612e4d89bd20400dc86451bf503426e48b4f0eea6ed71c22812"
+    },
+    {
+      "path": "vlsi-html-course-studio/references/audio-captions.md",
+      "bytes": 7465,
+      "sha256": "bcdcac52488a60b1aa26c76b7f90c277365e78fb4e927774ed3a02c2280ea0fd"
+    },
+    {
+      "path": "vlsi-html-course-studio/references/baseline-v1.json",
+      "bytes": 19209,
+      "sha256": "61f44b234728a4b09dcf8ce4d83d74ac2d8031800ca13fe10cb6fd19be8e09db"
+    },
+    {
+      "path": "vlsi-html-course-studio/references/change-and-coordination.md",
+      "bytes": 2935,
+      "sha256": "4621fe8123e8b181bd5122f02b77ae11b24bd552ae208f8a23c5a5b57f3fd041"
+    },
+    {
+      "path": "vlsi-html-course-studio/references/character-mentor.md",
+      "bytes": 6692,
+      "sha256": "56b28d703b67a3647eac7087fa31230985385b807683a45a300a5b36b96ac1fe"
+    },
+    {
+      "path": "vlsi-html-course-studio/references/course-pack-contract.md",
+      "bytes": 7790,
+      "sha256": "bfb6eb1c33881446d7943c18547e59e94ed9f3aa241b19d482ba62e5bfd0980a"
+    },
+    {
+      "path": "vlsi-html-course-studio/references/migration-v2.md",
+      "bytes": 4172,
+      "sha256": "34c4cd8fee5866fce763d152c3ecfdfe8c16c3cb19225b27f1758e2db32162d3"
+    },
+    {
+      "path": "vlsi-html-course-studio/references/placement-case-study.md",
+      "bytes": 7122,
+      "sha256": "e0ef112896e93ed7a931c6dd54ecca370cce404fec43a3fea5f12ff566d308f0"
+    },
+    {
+      "path": "vlsi-html-course-studio/references/reproduce-v2.md",
+      "bytes": 6632,
+      "sha256": "cf466903b325ca4840b8775c616ed09c685dd15f4814dc51076b860b52fad599"
+    },
+    {
+      "path": "vlsi-html-course-studio/references/research-direction.md",
+      "bytes": 6933,
+      "sha256": "03087dc51ae633ad814516059c485fb61af21d816b3c2a5ca8e1cf30943782e1"
+    },
+    {
+      "path": "vlsi-html-course-studio/references/shared-architecture.md",
+      "bytes": 7006,
+      "sha256": "e377b0905963d1d1d8bab1851b68fd5ff9e921fe4eb9f3cf3a496dc3c3172dc0"
+    },
+    {
+      "path": "vlsi-html-course-studio/references/site-verification.md",
+      "bytes": 4939,
+      "sha256": "465476bd1a1b37e3130a219be9419457627c6568bce875f26bb9b663a611c958"
+    },
+    {
+      "path": "vlsi-html-course-studio/references/starter.md",
+      "bytes": 5304,
+      "sha256": "cb82fd430cb9352c3268c0718d4a39a416bdbc67370effbbf11b76e05a2cabd4"
+    },
+    {
+      "path": "vlsi-html-course-studio/references/tooling.md",
+      "bytes": 9013,
+      "sha256": "2534bb67fb61334e09aa0a8f8850cfd0920b55389530dad32857992e9e7598b8"
+    },
+    {
+      "path": "vlsi-html-course-studio/requirements-lock-windows-py311.txt",
+      "bytes": 388,
+      "sha256": "817d1c258e3a524c11bcc3aec223f367f4b569b41eb4b2acc650ac37b1fe128c"
+    },
+    {
+      "path": "vlsi-html-course-studio/requirements.txt",
+      "bytes": 120,
+      "sha256": "d7884925a77725e21ee33ae0d22dfec4065a911729ba54fd812af75da1825f49"
+    },
+    {
+      "path": "vlsi-html-course-studio/scripts/_studio_audio.py",
+      "bytes": 9927,
+      "sha256": "d6a03ac334fca3a151b4df00ea01ee742f0f6bd53d93edcef80aefd2b41714ea"
+    },
+    {
+      "path": "vlsi-html-course-studio/scripts/_studio_build.py",
+      "bytes": 19002,
+      "sha256": "63087aee9325921f415efc481ab608df4b60e96ab97e4dedda1139ae67fdcf50"
+    },
+    {
+      "path": "vlsi-html-course-studio/scripts/_studio_contract.py",
+      "bytes": 9212,
+      "sha256": "a098839c9e8f2933167b45b402d1fbb1b39f6be54547c3757e8e9b7981965976"
+    },
+    {
+      "path": "vlsi-html-course-studio/scripts/check_adapter.mjs",
+      "bytes": 5005,
+      "sha256": "e495899b3102a2618a083b36b1286f70b124245275e22a95032976a0960732ab"
+    },
+    {
+      "path": "vlsi-html-course-studio/scripts/check_studio.py",
+      "bytes": 8903,
+      "sha256": "e2a81c256dbe28020dbfe14cbd0d98751bc7aae25293c38da3920c835210a153"
+    },
+    {
+      "path": "vlsi-html-course-studio/scripts/check_studio_browser.py",
+      "bytes": 23671,
+      "sha256": "cce8a447bf7e92b000b3c44786cfb5f9c2c098ad1227ce386656d4bd06560c3e"
+    },
+    {
+      "path": "vlsi-html-course-studio/scripts/check_tooling.py",
+      "bytes": 9575,
+      "sha256": "264b18d589e18aa6c8906cfc67bbdbe592dcea7f3acf82edda165ecd85afa20f"
+    },
+    {
+      "path": "vlsi-html-course-studio/scripts/init_course.py",
+      "bytes": 1863,
+      "sha256": "5d40f9107bd92ddaede40069a55b5db0bb40cb26c08e66a08fa96d8018cbbce6"
+    },
+    {
+      "path": "vlsi-html-course-studio/scripts/render_html.py",
+      "bytes": 7117,
+      "sha256": "883bff84fd0d728a432b0ea7b61f29c97b2d95e4db600368eaea03ab9b0bf907"
+    },
+    {
+      "path": "vlsi-html-course-studio/scripts/retime_video.py",
+      "bytes": 7144,
+      "sha256": "2e668d4b3b32a81a20822ad348da44760daf9920f27b698b54f768f50161331e"
+    },
+    {
+      "path": "vlsi-html-course-studio/scripts/serve_site.py",
+      "bytes": 4710,
+      "sha256": "09a4ca632f1d119b4b3346bae6f1d48293693558388f86cc73bbfa110fb9d196"
+    },
+    {
+      "path": "vlsi-html-course-studio/scripts/serve_studio.py",
+      "bytes": 1437,
+      "sha256": "0402ab4f4426a55f8377f772e4927a0e1aeaef691181284b0bf295fca698ef99"
+    },
+    {
+      "path": "vlsi-html-course-studio/scripts/studio.py",
+      "bytes": 3680,
+      "sha256": "e21045ea923adf8cba3beeeca83fede71e076c4bc3940d3c4eeaaf2d4f41dcae"
+    },
+    {
+      "path": "vlsi-html-course-studio/scripts/validate_media.py",
+      "bytes": 9035,
+      "sha256": "b6e298ad680f32be4c221c0ffefca4071b90078de77cb9e369afdaeca0c79646"
+    }
+  ]
+}

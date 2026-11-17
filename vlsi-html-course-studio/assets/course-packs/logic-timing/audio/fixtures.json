@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "1.0",
+  "note": "Synthetic fixture audio: fixed input for offline reconstruction; online service backend is not pinned.",
+  "clips": [
+    {
+      "voiceId": "en_gb",
+      "cueId": "arrive",
+      "sha256": "4088b6b78de8bbec053834b41182a6dbd5ed94e7e38d03b6256a52a020d41ffd",
+      "textSha256": "1d7e8506d163c0173811e726a46892901b5d333d1792580191f1b5961dda82fc",
+      "voice": "en-GB-ThomasNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "provenance": {
+        "provider": "edge_tts",
+        "clientVersion": "7.3.1",
+        "generatedAt": "2026-11-17T11:34:49.297146+00:00",
+        "backendVersion": "not exposed by service",
+        "synthetic": true,
+        "cacheKey": "9e4c30714048a3fe788e22c31ecd755cc2ea89f1ec19f54f6904c2b28fcac92a"
+      },
+      "path": "audio/en_gb-arrive.mp3"
+    },
+    {
+      "voiceId": "en_gb",
+      "cueId": "merge",
+      "sha256": "f934090c50fa27b2ebae4beb53a5ac6e79a5f87f63f23b25586b9211731ae4ba",
+      "textSha256": "6fa1a3fc63a401b5042dfb637d377dd683c6eac2c6360b4aab3e8cbfccea711a",
+      "voice": "en-GB-ThomasNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "provenance": {
+        "provider": "edge_tts",
+        "clientVersion": "7.3.1",
+        "generatedAt": "2026-11-17T11:34:59.520160+00:00",
+        "backendVersion": "not exposed by service",
+        "synthetic": true,
+        "cacheKey": "1f38a6dc1ff67d8081d193a1b6e378ce5afed3f39f9dd334acfcc35fbe713a3e"
+      },
+      "path": "audio/en_gb-merge.mp3"
+    },
+    {
+      "voiceId": "en_gb",
+      "cueId": "change",
+      "sha256": "13ffa5dbc60f1c600113ff1df9068e09e0856686c3c65e764033a12841f96d5a",
+      "textSha256": "929eaf1110c6fe419b3384998fb38778f4da1b9b62b34bf4c167a70dfd9f14c0",
+      "voice": "en-GB-ThomasNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "provenance": {
+        "provider": "edge_tts",
+        "clientVersion": "7.3.1",
+        "generatedAt": "2026-11-17T11:35:08.659448+00:00",
+        "backendVersion": "not exposed by service",
+        "synthetic": true,
+        "cacheKey": "368b83295912d5b4795bd279b94957ddcb04648c7c3336798b091194b70387fa"
+      },
+      "path": "audio/en_gb-change.mp3"
+    },
+    {
+      "voiceId": "zh",
+      "cueId": "arrive",
+      "sha256": "1a35d57b3205eef9ef3c9e190e827a0a43ec7fd30398cf357a145ac8f8a824de",
+      "textSha256": "48c8cb8b5fcc6268ea856d55e98076a2dd129c1c782ba5c50df127e4fd306867",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "provenance": {
+        "provider": "edge_tts",
+        "clientVersion": "7.3.1",
+        "generatedAt": "2026-11-17T11:35:17.060420+00:00",
+        "backendVersion": "not exposed by service",
+        "synthetic": true,
+        "cacheKey": "166e3c8f029bf4e01730f1addb9bb9e46bb2431a928e9c2617556e094550e3a1"
+      },
+      "path": "audio/zh-arrive.mp3"
+    },
+    {
+      "voiceId": "zh",
+      "cueId": "merge",
+      "sha256": "8db9ffb82980102ceb86883d98c1342a6c39bfb387fd97e5fb19a271cc6c8531",
+      "textSha256": "afc2f026d5fc18665412e39df8fdabad11e6ffa0c1daa112309364f55dd6ef33",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "provenance": {
+        "provider": "edge_tts",
+        "clientVersion": "7.3.1",
+        "generatedAt": "2026-11-17T11:35:27.152960+00:00",
+        "backendVersion": "not exposed by service",
+        "synthetic": true,
+        "cacheKey": "2a6984aa4e653580303964b497685207098db674654b969849a4d1bbf5c69dbf"
+      },
+      "path": "audio/zh-merge.mp3"
+    },
+    {
+      "voiceId": "zh",
+      "cueId": "change",
+      "sha256": "8e9054ea97a857463186dd0eb6d504d9c5b610ceeea5eb09cb36075b44c58f52",
+      "textSha256": "e38612436029450a5c7b8ba7da3e4ac5ff4e79fd07ee73ee1b76021b0a37f8fb",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "provenance": {
+        "provider": "edge_tts",
+        "clientVersion": "7.3.1",
+        "generatedAt": "2026-11-17T11:35:36.357209+00:00",
+        "backendVersion": "not exposed by service",
+        "synthetic": true,
+        "cacheKey": "126a8c91b16bfdfe785f56ad9917b8edfc5c7027a8577cc21fe7dc113a11efbd"
+      },
+      "path": "audio/zh-change.mp3"
+    }
+  ]
+}

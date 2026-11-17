@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><title>Course frame renderer</title><style>html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#f8f3e6}#stage{width:100vw;height:100vh}#stage>svg{display:block;width:100%;height:100%}</style></head><body><div id="stage"></div><script type="module">
+import {loadStudio} from './core.mjs';
+import {sceneAt} from './scene.mjs';
+const data=await loadStudio();
+const voice=new URLSearchParams(location.search).get('voice')||data.manifest.defaultVoice;
+if(!data.clocks.has(voice))throw new Error(`Unknown voice ${voice}`);
+window.clock=data.clocks.get(voice);window.buildIdentity=data.manifest.buildIdentity;
+window.renderAt=t=>{const result=sceneAt(t,window.clock,data.course,data.adapter);document.querySelector('#stage').innerHTML=result.svg;return result.snapshot;};
+window.studio={...data,voice,renderAt:window.renderAt};window.renderAt(0);window.ready=true;
+</script></body></html>

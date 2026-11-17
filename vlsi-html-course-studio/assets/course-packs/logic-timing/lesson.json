@@ -1,0 +1,85 @@
+{
+  "contractVersion": "1.0",
+  "id": "logic-timing",
+  "version": "1.0.0",
+  "title": "Which path sets the pace?",
+  "description": "A constant-delay, max-plus timing model with one input splitting and reconverging. Delays are in nanoseconds; input arrival is zero. This teaching model omits logic sensitization, interconnect, slew, load, clocks and setup/hold checks; it is not full static timing signoff.",
+  "adapter": "adapter.mjs",
+  "defaultVoice": "en_gb",
+  "voices": [
+    {"id":"en_gb","language":"en","label":"British English","provider":"edge_tts","voice":"en-GB-ThomasNeural","rate":"+0%","pitch":"+0Hz"},
+    {"id":"zh","language":"zh","label":"普通话","provider":"edge_tts","voice":"zh-CN-YunxiNeural","rate":"+0%","pitch":"+0Hz"}
+  ],
+  "captionLanguages": ["en", "zh"],
+  "cues": [
+    {
+      "id": "arrive",
+      "chapter": "01",
+      "title": "Two routes, one source",
+      "intent": "Read the different branch delays from a shared input arrival of zero.",
+      "sceneId": "arrival-paths",
+      "narration": {
+        "en": "One input splits into two paths: two nanoseconds above, five below. Both paths reach the same final gate.",
+        "zh": "一个输入分成两条路径：上方延迟两纳秒，下方五纳秒。两条路径汇入同一个末级逻辑门。"
+      },
+      "captions": {
+        "en": "One input splits into two paths: two nanoseconds above, five below. Both paths reach the same final gate.",
+        "zh": "一个输入分成两条路径：上方延迟两纳秒，下方五纳秒。两条路径汇入同一个末级逻辑门。"
+      },
+      "holdAfter": 0.35
+    },
+    {
+      "id": "merge",
+      "chapter": "02",
+      "title": "The later input sets arrival",
+      "intent": "Compute output arrival as maximum input arrival plus the final gate delay.",
+      "sceneId": "merge-maximum",
+      "narration": {
+        "en": "Its output arrival time is the later input arrival, plus its own delay. Five plus one gives six nanoseconds.",
+        "zh": "输出到达时间，等于较晚的输入到达时间，加上末级门自身的延迟。五加一，得到六纳秒。"
+      },
+      "captions": {
+        "en": "Its output arrival time is the later input arrival, plus its own delay. Five plus one gives six nanoseconds.",
+        "zh": "输出到达时间，等于较晚的输入到达时间，加上末级门自身的延迟。五加一，得到六纳秒。"
+      },
+      "holdAfter": 0.4
+    },
+    {
+      "id": "change",
+      "chapter": "03",
+      "title": "A different path becomes critical",
+      "intent": "Observe the critical branch switch at equal delays, then manipulate the same model.",
+      "sceneId": "change-critical",
+      "narration": {
+        "en": "Increase the upper delay past five. The critical path changes. Now try controlling these delays yourself.",
+        "zh": "把上方延迟增加到五纳秒以上，关键路径就会改变。现在，试着自己调整这些延迟。"
+      },
+      "captions": {
+        "en": "Increase the upper delay past five. The critical path changes. Now try controlling these delays yourself.",
+        "zh": "把上方延迟增加到五纳秒以上，关键路径就会改变。现在，试着自己调整这些延迟。"
+      },
+      "holdAfter": 0.5
+    }
+  ],
+  "exercises": [
+    {
+      "id": "upper-critical-budget",
+      "cueId": "change",
+      "prompt": "Make the upper path uniquely critical while keeping output arrival at or below 6 ns. Many delay combinations work.",
+      "config": {"maximumArrival": 6, "criticalBranch": "upper"}
+    }
+  ],
+  "audioFixtures": "audio/fixtures.json",
+  "modelAssumptions": {
+    "inputArrival": 0,
+    "delayUnit": "ns",
+    "allowedGateDelay": [0.5, 10],
+    "initialDelays": {"upper": 2, "lower": 5, "final": 1},
+    "animationTargetDelays": {"upper": 7, "lower": 5, "final": 1},
+    "numericTolerance": 1e-9
+  },
+  "provenance": {
+    "type": "original-teaching-example",
+    "note": "Original authored DAG and SVG, using the elementary max-plus arrival recurrence. No upstream course code or third-party artwork is included. Independent expected arithmetic is in check.mjs."
+  }
+}

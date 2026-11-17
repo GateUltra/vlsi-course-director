@@ -1,0 +1,40 @@
+{
+  "contractVersion": "1.0",
+  "id": "wirelength",
+  "version": "1.0.0",
+  "title": "A shorter connection",
+  "description": "Move one pin, watch its bounding box, and measure what changes. A small experiment in half-perimeter wirelength.",
+  "scope": "Two point pins on a 0–10 board. HPWL estimates connection length; it is not an actual routed wire or a complete placement solver.",
+  "adapter": "adapter.mjs",
+  "defaultVoice": "en_gb",
+  "voices": [
+    {"id":"en_gb","language":"en","label":"British English · Thomas","provider":"edge_tts","voice":"en-GB-ThomasNeural","rate":"+0%","pitch":"+0Hz"},
+    {"id":"zh","language":"zh","label":"普通话 · 云希","provider":"edge_tts","voice":"zh-CN-YunxiNeural","rate":"+0%","pitch":"+0Hz"}
+  ],
+  "captionLanguages": ["en", "zh"],
+  "cues": [
+    {
+      "id": "two_pins", "chapter": "01", "title": "Two pins. One connection.", "sceneId": "introduce",
+      "intent": "Identify the fixed pin A and movable pin B before measuring their separation.",
+      "narration": {"en":"Two connected pins give us a simple placement question: how far apart are they?", "zh":"两个相连的引脚，带来一个简单的布局问题：它们到底相隔多远？"},
+      "captions": {"en":"Two connected pins give us a simple placement question: how far apart are they?", "zh":"两个相连的引脚，带来一个简单的布局问题：它们到底相隔多远？"},
+      "holdAfter": 0.4
+    },
+    {
+      "id": "measure_box", "chapter": "02", "title": "Width plus height.", "sceneId": "measure",
+      "intent": "Read the bounding-box width and height: 6 + 5 = 11 units.",
+      "narration": {"en":"We estimate their connection with a bounding box. Add its width and height: six plus five makes eleven.", "zh":"我们用包围盒估计连接长度。把宽和高相加：六加五，等于十一。"},
+      "captions": {"en":"We estimate their connection with a bounding box. Add its width and height: six plus five makes eleven.", "zh":"我们用包围盒估计连接长度。把宽和高相加：六加五，等于十一。"},
+      "holdAfter": 0.4
+    },
+    {
+      "id": "move_and_try", "chapter": "03", "title": "Move it. Measure again.", "sceneId": "move",
+      "intent": "Move B closer, then find another position with a length between 4 and 6.",
+      "narration": {"en":"Move B closer. The estimate falls to five. Now try a different position with a length between four and six.", "zh":"把 B 移近，估计长度降到了五。现在请换一个位置，让长度保持在四到六之间。"},
+      "captions": {"en":"Move B closer. The estimate falls to five. Now try a different position with a length between four and six.", "zh":"把 B 移近，估计长度降到了五。现在请换一个位置，让长度保持在四到六之间。"},
+      "holdAfter": 0.6
+    }
+  ],
+  "exercises": [{"id":"length_target","cueId":"move_and_try","prompt":"Keep A fixed. Place B so the estimated length is between 4 and 6 units, including both endpoints.","config":{"minimum":4,"maximum":6}}],
+  "audioFixtures": "audio/fixtures.json"
+}

@@ -7,3 +7,9 @@ production/
 *.mp4
 *.mp3
 *.wav
+# Small fixed narration inputs are intentional portable fixtures, not finished movies.
+!vlsi-html-course-studio/assets/course-packs/*/audio/*.mp3
+.venv/
+.studio-tts-cache/
+build-wirelength/
+build-logic-timing/

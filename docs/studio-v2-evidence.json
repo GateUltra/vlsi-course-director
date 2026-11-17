@@ -1,0 +1,2300 @@
+{
+  "schemaVersion": "1.0",
+  "release": "2.0.0",
+  "validationDate": "2026-11-17",
+  "status": "Local release-candidate checks passed; hosted CI status is separate.",
+  "provenance": "Generated from completed local build records, real browser reports and independent agent reproduction; no score is inferred from documentation alone.",
+  "baseline": {
+    "commit": "dca1c25d2d8e6a944536274d05878904a2cc4d5f",
+    "filesChecked": 123,
+    "unchanged": true
+  },
+  "packs": {
+    "wirelength": {
+      "build": {
+        "engineVersion": "2.0.0",
+        "contractVersion": "1.0",
+        "buildIdentity": "509c0a894be2c70bf61ca3e98a2046ec398ed44b642b07afd0241ccf63e95c7d",
+        "createdAt": "2026-11-17T12:10:51.593031+00:00",
+        "audioMode": "fixture",
+        "renderConfig": {
+          "fps": 30,
+          "width": 1280,
+          "height": 720
+        },
+        "sourceInventory": {
+          "adapter.mjs": {
+            "sha256": "6f777f18a1c967bcce0336f93631f2591dff219bca24bfcf24374c049b3700eb",
+            "bytes": 6891
+          },
+          "audio/en_gb-measure_box.mp3": {
+            "sha256": "e9b52d15435bba71b748dbc789beb0116e303a214a49212f5f38840ae66e5cdc",
+            "bytes": 43488
+          },
+          "audio/en_gb-move_and_try.mp3": {
+            "sha256": "0be9a862ac63584878a07cb27071011ef16273ace3e30e90efd0f2522724e7da",
+            "bytes": 51984
+          },
+          "audio/en_gb-two_pins.mp3": {
+            "sha256": "5f96a25b06c99e11cdba51332154b4dfb92c9db5116e0d2e46d46fd8d1fe6e63",
+            "bytes": 31680
+          },
+          "audio/fixtures.json": {
+            "sha256": "ddc714a2ec81299b5d5344e41f287023f73079089cf178140e2a10e16e4c9d5c",
+            "bytes": 4375
+          },
+          "audio/zh-measure_box.mp3": {
+            "sha256": "6c817272a32e119f0dabe6079d504055f51fbfdf1de413a65e6251429423f177",
+            "bytes": 41184
+          },
+          "audio/zh-move_and_try.mp3": {
+            "sha256": "43324fc9da3c6e2ddc4088574a18fba96e33fb100aee10ce626c5ff647d0cb6e",
+            "bytes": 46224
+          },
+          "audio/zh-two_pins.mp3": {
+            "sha256": "f979abe8b69211dd89581a565c0b97eaf0652edeebc9c67bdfef09924f4ca60f",
+            "bytes": 34848
+          },
+          "check.mjs": {
+            "sha256": "84f00f4db0c676ca123a42da6483e1e3e9eb9958ccba41ca188972f58cb658a2",
+            "bytes": 1621
+          },
+          "lesson.json": {
+            "sha256": "caf4fabf85da31b0bacec7f6245cc517f3f5848b4876b7d0d6a4570c4d78796d",
+            "bytes": 3097
+          }
+        },
+        "engineInventory": {
+          "runtime/app.mjs": {
+            "sha256": "eb1f6f86bf981b4b20fc2b061654b56bf34f993d1a1a2b075f8ab03236698224",
+            "bytes": 13088
+          },
+          "runtime/check_core.mjs": {
+            "sha256": "ff7583ee87b256c157c4735c9d6be9e95bcddee36cf9b995d2f029b4a31fa039",
+            "bytes": 2437
+          },
+          "runtime/core.mjs": {
+            "sha256": "32ad5c333961afb8242849fc99b23b2db8ea5f5417a367e7aa8a89d5a20dde0f",
+            "bytes": 6030
+          },
+          "runtime/index.html": {
+            "sha256": "b5f5f41ab3dd8afdbc6bcab60df3873556d9d402eef7d906e6d0e8bda20edd3f",
+            "bytes": 2936
+          },
+          "runtime/render.html": {
+            "sha256": "429d9f2a8a8b056d3d7b83865a9fdfbf2516c27c34809ffe3cc665f33516f868",
+            "bytes": 1057
+          },
+          "runtime/scene.mjs": {
+            "sha256": "00c25ad85fdd39bb289799402eee8b258715a30a7a95497d36249fefbc4deaab",
+            "bytes": 5272
+          },
+          "runtime/style.css": {
+            "sha256": "63693ad1bab9ff49d3f806afe799f8c42054a362749fa1af603d6d55fdb22c5a",
+            "bytes": 6948
+          },
+          "scripts/studio.py": {
+            "sha256": "e21045ea923adf8cba3beeeca83fede71e076c4bc3940d3c4eeaaf2d4f41dcae",
+            "bytes": 3680
+          },
+          "scripts/_studio_contract.py": {
+            "sha256": "a098839c9e8f2933167b45b402d1fbb1b39f6be54547c3757e8e9b7981965976",
+            "bytes": 9212
+          },
+          "scripts/_studio_audio.py": {
+            "sha256": "d6a03ac334fca3a151b4df00ea01ee742f0f6bd53d93edcef80aefd2b41714ea",
+            "bytes": 9927
+          },
+          "scripts/_studio_build.py": {
+            "sha256": "63087aee9325921f415efc481ab608df4b60e96ab97e4dedda1139ae67fdcf50",
+            "bytes": 19002
+          },
+          "scripts/check_adapter.mjs": {
+            "sha256": "e495899b3102a2618a083b36b1286f70b124245275e22a95032976a0960732ab",
+            "bytes": 5005
+          },
+          "scripts/serve_site.py": {
+            "sha256": "09a4ca632f1d119b4b3346bae6f1d48293693558388f86cc73bbfa110fb9d196",
+            "bytes": 4710
+          },
+          "scripts/serve_studio.py": {
+            "sha256": "0402ab4f4426a55f8377f772e4927a0e1aeaef691181284b0bf295fca698ef99",
+            "bytes": 1437
+          },
+          "scripts/render_html.py": {
+            "sha256": "883bff84fd0d728a432b0ea7b61f29c97b2d95e4db600368eaea03ab9b0bf907",
+            "bytes": 7117
+          },
+          "scripts/validate_media.py": {
+            "sha256": "b6e298ad680f32be4c221c0ffefca4071b90078de77cb9e369afdaeca0c79646",
+            "bytes": 9035
+          }
+        },
+        "audioInputs": [
+          {
+            "voiceId": "en_gb",
+            "cueId": "two_pins",
+            "sha256": "5f96a25b06c99e11cdba51332154b4dfb92c9db5116e0d2e46d46fd8d1fe6e63",
+            "textSha256": "a838d610018c314ca90552353584e29e24d98484e3a16105eda3fa8b59c1238a",
+            "voice": "en-GB-ThomasNeural",
+            "rate": "+0%",
+            "pitch": "+0Hz",
+            "provenance": {
+              "provider": "edge_tts",
+              "clientVersion": "7.3.1",
+              "generatedAt": "2026-11-17T11:34:49.263243+00:00",
+              "backendVersion": "not exposed by service",
+              "synthetic": true,
+              "cacheKey": "1863d367027b83b8e12e0798fb16df801d7431fb147fbdc6cf41f970e1211880"
+            }
+          },
+          {
+            "voiceId": "en_gb",
+            "cueId": "measure_box",
+            "sha256": "e9b52d15435bba71b748dbc789beb0116e303a214a49212f5f38840ae66e5cdc",
+            "textSha256": "2b0c657a99570c9c39e845e74499c5422bef7cf7da7dc976128cb1625b3b906a",
+            "voice": "en-GB-ThomasNeural",
+            "rate": "+0%",
+            "pitch": "+0Hz",
+            "provenance": {
+              "provider": "edge_tts",
+              "clientVersion": "7.3.1",
+              "generatedAt": "2026-11-17T11:34:59.190171+00:00",
+              "backendVersion": "not exposed by service",
+              "synthetic": true,
+              "cacheKey": "f85d3a2f944acab01748b5886cc037fc46e32faf8248eeef2c2af8ad1ae9b761"
+            }
+          },
+          {
+            "voiceId": "en_gb",
+            "cueId": "move_and_try",
+            "sha256": "0be9a862ac63584878a07cb27071011ef16273ace3e30e90efd0f2522724e7da",
+            "textSha256": "4c435c1a367c59fe97d99c6d90bad6a7b3e9c49865574a33345284fdf4e1131f",
+            "voice": "en-GB-ThomasNeural",
+            "rate": "+0%",
+            "pitch": "+0Hz",
+            "provenance": {
+              "provider": "edge_tts",
+              "clientVersion": "7.3.1",
+              "generatedAt": "2026-11-17T11:35:09.946150+00:00",
+              "backendVersion": "not exposed by service",
+              "synthetic": true,
+              "cacheKey": "759bd9d47fef5205b4f8842533352a4e58a1aa9654426d6fbc950ecb3d766cff"
+            }
+          },
+          {
+            "voiceId": "zh",
+            "cueId": "two_pins",
+            "sha256": "f979abe8b69211dd89581a565c0b97eaf0652edeebc9c67bdfef09924f4ca60f",
+            "textSha256": "7954594a70d694651c395a99a056e64a14ec52f0f067becb20f8beeaf5c16173",
+            "voice": "zh-CN-YunxiNeural",
+            "rate": "+0%",
+            "pitch": "+0Hz",
+            "provenance": {
+              "provider": "edge_tts",
+              "clientVersion": "7.3.1",
+              "generatedAt": "2026-11-17T11:35:18.247145+00:00",
+              "backendVersion": "not exposed by service",
+              "synthetic": true,
+              "cacheKey": "4723b9ea665d96ab3bda3195938b34c17583871318572c2d79bd28e4998fd06f"
+            }
+          },
+          {
+            "voiceId": "zh",
+            "cueId": "measure_box",
+            "sha256": "6c817272a32e119f0dabe6079d504055f51fbfdf1de413a65e6251429423f177",
+            "textSha256": "96daa20fe120fd4dd0a52b5914dff1582bfabdd699f313f864e02b8c9dfae974",
+            "voice": "zh-CN-YunxiNeural",
+            "rate": "+0%",
+            "pitch": "+0Hz",
+            "provenance": {
+              "provider": "edge_tts",
+              "clientVersion": "7.3.1",
+              "generatedAt": "2026-11-17T11:35:28.063255+00:00",
+              "backendVersion": "not exposed by service",
+              "synthetic": true,
+              "cacheKey": "cb9551a2d480740e861dc0ae50f6efe8b9f00217cbbf389b941234c43bf6e781"
+            }
+          },
+          {
+            "voiceId": "zh",
+            "cueId": "move_and_try",
+            "sha256": "43324fc9da3c6e2ddc4088574a18fba96e33fb100aee10ce626c5ff647d0cb6e",
+            "textSha256": "316fe4976f48e835d221b5f70cc7c445b38563d8710d8820163d22b49ed54b4c",
+            "voice": "zh-CN-YunxiNeural",
+            "rate": "+0%",
+            "pitch": "+0Hz",
+            "provenance": {
+              "provider": "edge_tts",
+              "clientVersion": "7.3.1",
+              "generatedAt": "2026-11-17T11:35:36.626944+00:00",
+              "backendVersion": "not exposed by service",
+              "synthetic": true,
+              "cacheKey": "953b7da83db75c0640fcc784a09e83cca5864574691aea91372717c819a0a415"
+            }
+          }
+        ],
+        "environment": {
+          "python": "3.11.4",
+          "platform": "Windows-10-10.0.26100-SP0",
+          "engineVersion": "2.0.0",
+          "node": "v24.22.1",
+          "ffmpeg": "ffmpeg version 2025-04-21-git-9e1162bdf1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers",
+          "ffprobe": "ffprobe version 2025-04-21-git-9e1162bdf1-essentials_build-www.gyan.dev Copyright (c) 2007-2025 the FFmpeg developers",
+          "requiredEncoders": [
+            "libx264",
+            "aac",
+            "libvpx",
+            "libopus"
+          ],
+          "playwright": "1.56.0",
+          "chromium": "141.0.7390.37"
+        },
+        "renders": [
+          {
+            "id": "en_gb",
+            "frames": 696,
+            "fps": 30,
+            "dimensions": [
+              1280,
+              720
+            ],
+            "strictClockIdentity": true,
+            "randomAccess": true,
+            "externalRequests": [],
+            "pageErrors": [],
+            "formats": [
+              {
+                "path": "media/lesson-en_gb.mp4",
+                "container": "mp4",
+                "videoCodec": "h264",
+                "audioCodec": "aac"
+              },
+              {
+                "path": "media/lesson-en_gb.webm",
+                "container": "webm",
+                "videoCodec": "vp8",
+                "audioCodec": "opus"
+              }
+            ]
+          },
+          {
+            "id": "zh",
+            "frames": 672,
+            "fps": 30,
+            "dimensions": [
+              1280,
+              720
+            ],
+            "strictClockIdentity": true,
+            "randomAccess": true,
+            "externalRequests": [],
+            "pageErrors": [],
+            "formats": [
+              {
+                "path": "media/lesson-zh.mp4",
+                "container": "mp4",
+                "videoCodec": "h264",
+                "audioCodec": "aac"
+              },
+              {
+                "path": "media/lesson-zh.webm",
+                "container": "webm",
+                "videoCodec": "vp8",
+                "audioCodec": "opus"
+              }
+            ]
+          }
+        ],
+        "mediaVerification": {
+          "mp4": [
+            {
+              "id": "en_gb",
+              "duration": 23.2,
+              "videoDuration": 23.2,
+              "audioDuration": 23.192,
+              "clockDuration": 23.192,
+              "fps": 30.0,
+              "videoCodec": "h264",
+              "audioCodec": "aac",
+              "captionCues": {
+                "en": 5,
+                "zh": 3
+              },
+              "fullDecode": true
+            },
+            {
+              "id": "zh",
+              "duration": 22.4,
+              "videoDuration": 22.4,
+              "audioDuration": 22.376,
+              "clockDuration": 22.376,
+              "fps": 30.0,
+              "videoCodec": "h264",
+              "audioCodec": "aac",
+              "captionCues": {
+                "en": 5,
+                "zh": 3
+              },
+              "fullDecode": true
+            }
+          ],
+          "webm": [
+            {
+              "id": "en_gb",
+              "path": "media/lesson-en_gb.webm",
+              "container": "webm",
+              "videoCodec": "vp8",
+              "audioCodec": "opus",
+              "frames": 696,
+              "fps": 30.0,
+              "dimensions": [
+                1280,
+                720
+              ],
+              "videoDuration": 23.2,
+              "decodedAudioDuration": 23.192,
+              "containerDuration": 23.2,
+              "fullDecode": true,
+              "audioDurationMethod": "decoded mono 48000 Hz PCM sample count, after Opus pre-skip/discard padding"
+            },
+            {
+              "id": "zh",
+              "path": "media/lesson-zh.webm",
+              "container": "webm",
+              "videoCodec": "vp8",
+              "audioCodec": "opus",
+              "frames": 672,
+              "fps": 30.0,
+              "dimensions": [
+                1280,
+                720
+              ],
+              "videoDuration": 22.4,
+              "decodedAudioDuration": 22.376,
+              "containerDuration": 22.4,
+              "fullDecode": true,
+              "audioDurationMethod": "decoded mono 48000 Hz PCM sample count, after Opus pre-skip/discard padding"
+            }
+          ]
+        }
+      },
+      "regression": {
+        "passed": true,
+        "checks": [
+          "duplicate cue IDs",
+          "unknown contract version",
+          "missing translated caption",
+          "exercise references missing cue",
+          "negative explicit hold",
+          "adapter path traversal",
+          "unknown scene implementation",
+          "missing audio clip",
+          "duplicate audio pair",
+          "stale voice setting",
+          "changed audio bytes",
+          "stale narration hash",
+          "appended narration requires matching audio",
+          "appended cue cannot be zip-truncated",
+          "incomplete build fails before final directory",
+          "complete caption coverage and text round-trip",
+          "decimal-safe multilingual wrapping",
+          "failed synthesis preserves absent final fixtures",
+          "actual VP8/Opus frame and decoded-sample measurement",
+          "WebM truncated audio rejected independently",
+          "WebM truncated video rejected independently",
+          "completed build cross-artifact verification",
+          "changed source invalidates build",
+          "changed artifact invalidates build",
+          "format-valid stale caption rejected semantically"
+        ],
+        "count": 25,
+        "onlineCalls": 0
+      },
+      "browsers": {
+        "headless": {
+          "passed": true,
+          "scope": "Actual browser functionality, decoded audio signal and sampled layout. No subjective listening or native-language certification.",
+          "voices": [
+            {
+              "id": "en_gb",
+              "start": 0.899999,
+              "end": 1.801332,
+              "muted": false,
+              "volume": 1,
+              "audioDecodedBytes": 31657,
+              "width": 1280,
+              "height": 720,
+              "nonzeroSamples": 20,
+              "peakRms": 0.26078847231706753,
+              "currentSrc": "./media/lesson-en_gb.webm",
+              "selectedType": "video/webm; codecs=\"vp8, opus\""
+            },
+            {
+              "id": "zh",
+              "start": 0.899999,
+              "end": 2.289332,
+              "muted": false,
+              "volume": 1,
+              "audioDecodedBytes": 35520,
+              "width": 1280,
+              "height": 720,
+              "nonzeroSamples": 30,
+              "peakRms": 0.2344065275606067,
+              "currentSrc": "./media/lesson-zh.webm",
+              "selectedType": "video/webm; codecs=\"vp8, opus\""
+            }
+          ],
+          "captions": [
+            {
+              "voice": "en_gb",
+              "language": "en",
+              "text": "Two connected pins give us a simple\nplacement question: how far apart are they?"
+            },
+            {
+              "voice": "en_gb",
+              "language": "zh",
+              "text": "两个相连的引脚，带来一个简单的布局问题：它们到底\n相隔多远？"
+            },
+            {
+              "voice": "zh",
+              "language": "en",
+              "text": "Two connected pins give us a simple\nplacement question: how far apart are they?"
+            },
+            {
+              "voice": "zh",
+              "language": "zh",
+              "text": "两个相连的引脚，带来一个简单的布局问题：它们到底\n相隔多远？"
+            }
+          ],
+          "chapters": [
+            {
+              "voice": "en_gb",
+              "cueId": "two_pins",
+              "time": 0.3
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "measure_box",
+              "time": 5.98
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "move_and_try",
+              "time": 13.628
+            },
+            {
+              "voice": "zh",
+              "cueId": "two_pins",
+              "time": 0.3
+            },
+            {
+              "voice": "zh",
+              "cueId": "measure_box",
+              "time": 6.508
+            },
+            {
+              "voice": "zh",
+              "cueId": "move_and_try",
+              "time": 13.772
+            }
+          ],
+          "transfers": [
+            {
+              "voice": "en_gb",
+              "cueId": "two_pins",
+              "progress": 0.37000000000000005,
+              "exactState": true
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "measure_box",
+              "progress": 0.37000000000000005,
+              "exactState": true
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "move_and_try",
+              "progress": 0.3699999999999999,
+              "exactState": true
+            },
+            {
+              "voice": "zh",
+              "cueId": "two_pins",
+              "progress": 0.3699998389175258,
+              "exactState": true
+            },
+            {
+              "voice": "zh",
+              "cueId": "measure_box",
+              "progress": 0.3699999999999999,
+              "exactState": true
+            },
+            {
+              "voice": "zh",
+              "cueId": "move_and_try",
+              "progress": 0.37000000000000005,
+              "exactState": true
+            }
+          ],
+          "exercises": [
+            {
+              "id": "length_target",
+              "passingStates": 2,
+              "failingStates": 1,
+              "basis": "UI integration; independent arithmetic is in course check.mjs"
+            }
+          ],
+          "screenshots": [
+            "en_gb-desktop.png",
+            "zh-desktop.png",
+            "lab-desktop.png",
+            "fullscreen.png",
+            "mobile.png",
+            "mobile-lab.png"
+          ],
+          "moduleMimeTypes": {
+            "core.mjs": "text/javascript",
+            "pack/adapter.mjs": "text/javascript"
+          },
+          "browser": "141.0.7390.37",
+          "browserLaunchMode": "playwright-default-headless",
+          "mediaSupport": {
+            "video/mp4; codecs=\"avc1.640028, mp4a.40.2\"": "",
+            "video/webm; codecs=\"vp8, opus\"": "probably"
+          },
+          "course": "wirelength",
+          "courseVersion": "1.0.0",
+          "buildIdentity": "509c0a894be2c70bf61ca3e98a2046ec398ed44b642b07afd0241ccf63e95c7d",
+          "semanticSwitch": {
+            "passed": true,
+            "rapidReplacement": true,
+            "preservesSpeedCaptionsAndPlayState": true
+          },
+          "keyboardAndReset": true,
+          "pointerDrag": true,
+          "wrongSnapshotRejected": true,
+          "nativeFullscreen": true,
+          "mobile": {
+            "width": 390,
+            "scrollWidth": 390,
+            "captions": 17,
+            "feedback": 14,
+            "metricValue": 22,
+            "metricLabel": 14,
+            "controlLabel": 14
+          },
+          "unsupportedSourcesRejected": {
+            "passed": true,
+            "message": "This browser cannot play the available formats for British English · Thomas. Try a browser with VP8/Opus or H.264/AAC support.",
+            "mediaRequests": [],
+            "scope": "Isolated served-manifest negative test; production files unchanged"
+          },
+          "wallSeconds": 8.47,
+          "pageErrors": [],
+          "httpErrors": [],
+          "unexpectedRequestFailures": [],
+          "expectedCanceledRequests": 10,
+          "externalRequests": []
+        },
+        "chromium": {
+          "passed": true,
+          "scope": "Actual browser functionality, decoded audio signal and sampled layout. No subjective listening or native-language certification.",
+          "voices": [
+            {
+              "id": "en_gb",
+              "start": 0.899999,
+              "end": 1.961332,
+              "muted": false,
+              "volume": 1,
+              "audioDecodedBytes": 34604,
+              "width": 1280,
+              "height": 720,
+              "nonzeroSamples": 25,
+              "peakRms": 0.290694965920357,
+              "currentSrc": "./media/lesson-en_gb.webm",
+              "selectedType": "video/webm; codecs=\"vp8, opus\""
+            },
+            {
+              "id": "zh",
+              "start": 0.899999,
+              "end": 2.291783,
+              "muted": false,
+              "volume": 1,
+              "audioDecodedBytes": 35520,
+              "width": 1280,
+              "height": 720,
+              "nonzeroSamples": 30,
+              "peakRms": 0.22318188807993164,
+              "currentSrc": "./media/lesson-zh.webm",
+              "selectedType": "video/webm; codecs=\"vp8, opus\""
+            }
+          ],
+          "captions": [
+            {
+              "voice": "en_gb",
+              "language": "en",
+              "text": "Two connected pins give us a simple\nplacement question: how far apart are they?"
+            },
+            {
+              "voice": "en_gb",
+              "language": "zh",
+              "text": "两个相连的引脚，带来一个简单的布局问题：它们到底\n相隔多远？"
+            },
+            {
+              "voice": "zh",
+              "language": "en",
+              "text": "Two connected pins give us a simple\nplacement question: how far apart are they?"
+            },
+            {
+              "voice": "zh",
+              "language": "zh",
+              "text": "两个相连的引脚，带来一个简单的布局问题：它们到底\n相隔多远？"
+            }
+          ],
+          "chapters": [
+            {
+              "voice": "en_gb",
+              "cueId": "two_pins",
+              "time": 0.3
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "measure_box",
+              "time": 5.98
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "move_and_try",
+              "time": 13.628
+            },
+            {
+              "voice": "zh",
+              "cueId": "two_pins",
+              "time": 0.3
+            },
+            {
+              "voice": "zh",
+              "cueId": "measure_box",
+              "time": 6.508
+            },
+            {
+              "voice": "zh",
+              "cueId": "move_and_try",
+              "time": 13.772
+            }
+          ],
+          "transfers": [
+            {
+              "voice": "en_gb",
+              "cueId": "two_pins",
+              "progress": 0.37000000000000005,
+              "exactState": true
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "measure_box",
+              "progress": 0.37000000000000005,
+              "exactState": true
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "move_and_try",
+              "progress": 0.3699999999999999,
+              "exactState": true
+            },
+            {
+              "voice": "zh",
+              "cueId": "two_pins",
+              "progress": 0.3699998389175258,
+              "exactState": true
+            },
+            {
+              "voice": "zh",
+              "cueId": "measure_box",
+              "progress": 0.3699999999999999,
+              "exactState": true
+            },
+            {
+              "voice": "zh",
+              "cueId": "move_and_try",
+              "progress": 0.37000000000000005,
+              "exactState": true
+            }
+          ],
+          "exercises": [
+            {
+              "id": "length_target",
+              "passingStates": 2,
+              "failingStates": 1,
+              "basis": "UI integration; independent arithmetic is in course check.mjs"
+            }
+          ],
+          "screenshots": [
+            "en_gb-desktop.png",
+            "zh-desktop.png",
+            "lab-desktop.png",
+            "fullscreen.png",
+            "mobile.png",
+            "mobile-lab.png"
+          ],
+          "moduleMimeTypes": {
+            "core.mjs": "text/javascript",
+            "pack/adapter.mjs": "text/javascript"
+          },
+          "browser": "141.0.7390.37",
+          "browserLaunchMode": "explicit-executable",
+          "mediaSupport": {
+            "video/mp4; codecs=\"avc1.640028, mp4a.40.2\"": "",
+            "video/webm; codecs=\"vp8, opus\"": "probably"
+          },
+          "course": "wirelength",
+          "courseVersion": "1.0.0",
+          "buildIdentity": "509c0a894be2c70bf61ca3e98a2046ec398ed44b642b07afd0241ccf63e95c7d",
+          "semanticSwitch": {
+            "passed": true,
+            "rapidReplacement": true,
+            "preservesSpeedCaptionsAndPlayState": true
+          },
+          "keyboardAndReset": true,
+          "pointerDrag": true,
+          "wrongSnapshotRejected": true,
+          "nativeFullscreen": true,
+          "mobile": {
+            "width": 390,
+            "scrollWidth": 390,
+            "captions": 17,
+            "feedback": 14,
+            "metricValue": 22,
+            "metricLabel": 14,
+            "controlLabel": 14
+          },
+          "unsupportedSourcesRejected": {
+            "passed": true,
+            "message": "This browser cannot play the available formats for British English · Thomas. Try a browser with VP8/Opus or H.264/AAC support.",
+            "mediaRequests": [],
+            "scope": "Isolated served-manifest negative test; production files unchanged"
+          },
+          "wallSeconds": 7.8,
+          "pageErrors": [],
+          "httpErrors": [],
+          "unexpectedRequestFailures": [],
+          "expectedCanceledRequests": 11,
+          "externalRequests": []
+        },
+        "chrome": {
+          "passed": true,
+          "scope": "Actual browser functionality, decoded audio signal and sampled layout. No subjective listening or native-language certification.",
+          "voices": [
+            {
+              "id": "en_gb",
+              "start": 0.899999,
+              "end": 2.179999,
+              "muted": false,
+              "volume": 1,
+              "audioDecodedBytes": 44813,
+              "width": 1280,
+              "height": 720,
+              "nonzeroSamples": 30,
+              "peakRms": 0.2879839137049879,
+              "currentSrc": "./media/lesson-en_gb.mp4",
+              "selectedType": "video/mp4; codecs=\"avc1.640028, mp4a.40.2\""
+            },
+            {
+              "id": "zh",
+              "start": 0.899999,
+              "end": 2.289332,
+              "muted": false,
+              "volume": 1,
+              "audioDecodedBytes": 45627,
+              "width": 1280,
+              "height": 720,
+              "nonzeroSamples": 30,
+              "peakRms": 0.2390521154658221,
+              "currentSrc": "./media/lesson-zh.mp4",
+              "selectedType": "video/mp4; codecs=\"avc1.640028, mp4a.40.2\""
+            }
+          ],
+          "captions": [
+            {
+              "voice": "en_gb",
+              "language": "en",
+              "text": "Two connected pins give us a simple\nplacement question: how far apart are they?"
+            },
+            {
+              "voice": "en_gb",
+              "language": "zh",
+              "text": "两个相连的引脚，带来一个简单的布局问题：它们到底\n相隔多远？"
+            },
+            {
+              "voice": "zh",
+              "language": "en",
+              "text": "Two connected pins give us a simple\nplacement question: how far apart are they?"
+            },
+            {
+              "voice": "zh",
+              "language": "zh",
+              "text": "两个相连的引脚，带来一个简单的布局问题：它们到底\n相隔多远？"
+            }
+          ],
+          "chapters": [
+            {
+              "voice": "en_gb",
+              "cueId": "two_pins",
+              "time": 0.3
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "measure_box",
+              "time": 5.98
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "move_and_try",
+              "time": 13.628
+            },
+            {
+              "voice": "zh",
+              "cueId": "two_pins",
+              "time": 0.3
+            },
+            {
+              "voice": "zh",
+              "cueId": "measure_box",
+              "time": 6.508
+            },
+            {
+              "voice": "zh",
+              "cueId": "move_and_try",
+              "time": 13.772
+            }
+          ],
+          "transfers": [
+            {
+              "voice": "en_gb",
+              "cueId": "two_pins",
+              "progress": 0.37000000000000005,
+              "exactState": true
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "measure_box",
+              "progress": 0.37000000000000005,
+              "exactState": true
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "move_and_try",
+              "progress": 0.3699999999999999,
+              "exactState": true
+            },
+            {
+              "voice": "zh",
+              "cueId": "two_pins",
+              "progress": 0.3699998389175258,
+              "exactState": true
+            },
+            {
+              "voice": "zh",
+              "cueId": "measure_box",
+              "progress": 0.3699999999999999,
+              "exactState": true
+            },
+            {
+              "voice": "zh",
+              "cueId": "move_and_try",
+              "progress": 0.37000000000000005,
+              "exactState": true
+            }
+          ],
+          "exercises": [
+            {
+              "id": "length_target",
+              "passingStates": 2,
+              "failingStates": 1,
+              "basis": "UI integration; independent arithmetic is in course check.mjs"
+            }
+          ],
+          "screenshots": [
+            "en_gb-desktop.png",
+            "zh-desktop.png",
+            "lab-desktop.png",
+            "fullscreen.png",
+            "mobile.png",
+            "mobile-lab.png"
+          ],
+          "moduleMimeTypes": {
+            "core.mjs": "text/javascript",
+            "pack/adapter.mjs": "text/javascript"
+          },
+          "browser": "156.0.8078.49",
+          "browserLaunchMode": "explicit-executable",
+          "mediaSupport": {
+            "video/mp4; codecs=\"avc1.640028, mp4a.40.2\"": "probably",
+            "video/webm; codecs=\"vp8, opus\"": "probably"
+          },
+          "course": "wirelength",
+          "courseVersion": "1.0.0",
+          "buildIdentity": "509c0a894be2c70bf61ca3e98a2046ec398ed44b642b07afd0241ccf63e95c7d",
+          "semanticSwitch": {
+            "passed": true,
+            "rapidReplacement": true,
+            "preservesSpeedCaptionsAndPlayState": true
+          },
+          "keyboardAndReset": true,
+          "pointerDrag": true,
+          "wrongSnapshotRejected": true,
+          "nativeFullscreen": true,
+          "mobile": {
+            "width": 390,
+            "scrollWidth": 390,
+            "captions": 17,
+            "feedback": 14,
+            "metricValue": 22,
+            "metricLabel": 14,
+            "controlLabel": 14
+          },
+          "unsupportedSourcesRejected": {
+            "passed": true,
+            "message": "This browser cannot play the available formats for British English · Thomas. Try a browser with VP8/Opus or H.264/AAC support.",
+            "mediaRequests": [],
+            "scope": "Isolated served-manifest negative test; production files unchanged"
+          },
+          "wallSeconds": 7.56,
+          "pageErrors": [],
+          "httpErrors": [],
+          "unexpectedRequestFailures": [],
+          "expectedCanceledRequests": 8,
+          "externalRequests": []
+        }
+      }
+    },
+    "logic-timing": {
+      "build": {
+        "engineVersion": "2.0.0",
+        "contractVersion": "1.0",
+        "buildIdentity": "e7a30a82d3633e1b9c61a495b27aaf43bb3067dfe79c798490fcdf4d2dd1e727",
+        "createdAt": "2026-11-17T12:11:03.560765+00:00",
+        "audioMode": "fixture",
+        "renderConfig": {
+          "fps": 30,
+          "width": 1280,
+          "height": 720
+        },
+        "sourceInventory": {
+          "adapter.mjs": {
+            "sha256": "8fbff1b9c6dec98c2d1c5a077886bf567361dc1b7666bab2257ecda78ffeddf1",
+            "bytes": 9988
+          },
+          "audio/en_gb-arrive.mp3": {
+            "sha256": "4088b6b78de8bbec053834b41182a6dbd5ed94e7e38d03b6256a52a020d41ffd",
+            "bytes": 49968
+          },
+          "audio/en_gb-change.mp3": {
+            "sha256": "13ffa5dbc60f1c600113ff1df9068e09e0856686c3c65e764033a12841f96d5a",
+            "bytes": 52992
+          },
+          "audio/en_gb-merge.mp3": {
+            "sha256": "f934090c50fa27b2ebae4beb53a5ac6e79a5f87f63f23b25586b9211731ae4ba",
+            "bytes": 50400
+          },
+          "audio/fixtures.json": {
+            "sha256": "46ac338aad29531347e453809df0b3ab3b133cb9fe1f2b84ce27d71741c9e024",
+            "bytes": 4319
+          },
+          "audio/zh-arrive.mp3": {
+            "sha256": "1a35d57b3205eef9ef3c9e190e827a0a43ec7fd30398cf357a145ac8f8a824de",
+            "bytes": 55584
+          },
+          "audio/zh-change.mp3": {
+            "sha256": "8e9054ea97a857463186dd0eb6d504d9c5b610ceeea5eb09cb36075b44c58f52",
+            "bytes": 50256
+          },
+          "audio/zh-merge.mp3": {
+            "sha256": "8db9ffb82980102ceb86883d98c1342a6c39bfb387fd97e5fb19a271cc6c8531",
+            "bytes": 52560
+          },
+          "check.mjs": {
+            "sha256": "72977b1823ee4357bde4882ed9d99b689c4fbbd9047e8a08894d358523c24605",
+            "bytes": 4006
+          },
+          "lesson.json": {
+            "sha256": "f7d8898fc80dc55125ee96c97e9c8335afe0bbb87bac2c2e52157ac9969f561c",
+            "bytes": 4176
+          },
+          "README.md": {
+            "sha256": "1b8146b8633af48956f7d1d49f47846e8b11bd241f78aa0e1b62314230a30d15",
+            "bytes": 1787
+          }
+        },
+        "engineInventory": {
+          "runtime/app.mjs": {
+            "sha256": "eb1f6f86bf981b4b20fc2b061654b56bf34f993d1a1a2b075f8ab03236698224",
+            "bytes": 13088
+          },
+          "runtime/check_core.mjs": {
+            "sha256": "ff7583ee87b256c157c4735c9d6be9e95bcddee36cf9b995d2f029b4a31fa039",
+            "bytes": 2437
+          },
+          "runtime/core.mjs": {
+            "sha256": "32ad5c333961afb8242849fc99b23b2db8ea5f5417a367e7aa8a89d5a20dde0f",
+            "bytes": 6030
+          },
+          "runtime/index.html": {
+            "sha256": "b5f5f41ab3dd8afdbc6bcab60df3873556d9d402eef7d906e6d0e8bda20edd3f",
+            "bytes": 2936
+          },
+          "runtime/render.html": {
+            "sha256": "429d9f2a8a8b056d3d7b83865a9fdfbf2516c27c34809ffe3cc665f33516f868",
+            "bytes": 1057
+          },
+          "runtime/scene.mjs": {
+            "sha256": "00c25ad85fdd39bb289799402eee8b258715a30a7a95497d36249fefbc4deaab",
+            "bytes": 5272
+          },
+          "runtime/style.css": {
+            "sha256": "63693ad1bab9ff49d3f806afe799f8c42054a362749fa1af603d6d55fdb22c5a",
+            "bytes": 6948
+          },
+          "scripts/studio.py": {
+            "sha256": "e21045ea923adf8cba3beeeca83fede71e076c4bc3940d3c4eeaaf2d4f41dcae",
+            "bytes": 3680
+          },
+          "scripts/_studio_contract.py": {
+            "sha256": "a098839c9e8f2933167b45b402d1fbb1b39f6be54547c3757e8e9b7981965976",
+            "bytes": 9212
+          },
+          "scripts/_studio_audio.py": {
+            "sha256": "d6a03ac334fca3a151b4df00ea01ee742f0f6bd53d93edcef80aefd2b41714ea",
+            "bytes": 9927
+          },
+          "scripts/_studio_build.py": {
+            "sha256": "63087aee9325921f415efc481ab608df4b60e96ab97e4dedda1139ae67fdcf50",
+            "bytes": 19002
+          },
+          "scripts/check_adapter.mjs": {
+            "sha256": "e495899b3102a2618a083b36b1286f70b124245275e22a95032976a0960732ab",
+            "bytes": 5005
+          },
+          "scripts/serve_site.py": {
+            "sha256": "09a4ca632f1d119b4b3346bae6f1d48293693558388f86cc73bbfa110fb9d196",
+            "bytes": 4710
+          },
+          "scripts/serve_studio.py": {
+            "sha256": "0402ab4f4426a55f8377f772e4927a0e1aeaef691181284b0bf295fca698ef99",
+            "bytes": 1437
+          },
+          "scripts/render_html.py": {
+            "sha256": "883bff84fd0d728a432b0ea7b61f29c97b2d95e4db600368eaea03ab9b0bf907",
+            "bytes": 7117
+          },
+          "scripts/validate_media.py": {
+            "sha256": "b6e298ad680f32be4c221c0ffefca4071b90078de77cb9e369afdaeca0c79646",
+            "bytes": 9035
+          }
+        },
+        "audioInputs": [
+          {
+            "voiceId": "en_gb",
+            "cueId": "arrive",
+            "sha256": "4088b6b78de8bbec053834b41182a6dbd5ed94e7e38d03b6256a52a020d41ffd",
+            "textSha256": "1d7e8506d163c0173811e726a46892901b5d333d1792580191f1b5961dda82fc",
+            "voice": "en-GB-ThomasNeural",
+            "rate": "+0%",
+            "pitch": "+0Hz",
+            "provenance": {
+              "provider": "edge_tts",
+              "clientVersion": "7.3.1",
+              "generatedAt": "2026-11-17T11:34:49.297146+00:00",
+              "backendVersion": "not exposed by service",
+              "synthetic": true,
+              "cacheKey": "9e4c30714048a3fe788e22c31ecd755cc2ea89f1ec19f54f6904c2b28fcac92a"
+            }
+          },
+          {
+            "voiceId": "en_gb",
+            "cueId": "merge",
+            "sha256": "f934090c50fa27b2ebae4beb53a5ac6e79a5f87f63f23b25586b9211731ae4ba",
+            "textSha256": "6fa1a3fc63a401b5042dfb637d377dd683c6eac2c6360b4aab3e8cbfccea711a",
+            "voice": "en-GB-ThomasNeural",
+            "rate": "+0%",
+            "pitch": "+0Hz",
+            "provenance": {
+              "provider": "edge_tts",
+              "clientVersion": "7.3.1",
+              "generatedAt": "2026-11-17T11:34:59.520160+00:00",
+              "backendVersion": "not exposed by service",
+              "synthetic": true,
+              "cacheKey": "1f38a6dc1ff67d8081d193a1b6e378ce5afed3f39f9dd334acfcc35fbe713a3e"
+            }
+          },
+          {
+            "voiceId": "en_gb",
+            "cueId": "change",
+            "sha256": "13ffa5dbc60f1c600113ff1df9068e09e0856686c3c65e764033a12841f96d5a",
+            "textSha256": "929eaf1110c6fe419b3384998fb38778f4da1b9b62b34bf4c167a70dfd9f14c0",
+            "voice": "en-GB-ThomasNeural",
+            "rate": "+0%",
+            "pitch": "+0Hz",
+            "provenance": {
+              "provider": "edge_tts",
+              "clientVersion": "7.3.1",
+              "generatedAt": "2026-11-17T11:35:08.659448+00:00",
+              "backendVersion": "not exposed by service",
+              "synthetic": true,
+              "cacheKey": "368b83295912d5b4795bd279b94957ddcb04648c7c3336798b091194b70387fa"
+            }
+          },
+          {
+            "voiceId": "zh",
+            "cueId": "arrive",
+            "sha256": "1a35d57b3205eef9ef3c9e190e827a0a43ec7fd30398cf357a145ac8f8a824de",
+            "textSha256": "48c8cb8b5fcc6268ea856d55e98076a2dd129c1c782ba5c50df127e4fd306867",
+            "voice": "zh-CN-YunxiNeural",
+            "rate": "+0%",
+            "pitch": "+0Hz",
+            "provenance": {
+              "provider": "edge_tts",
+              "clientVersion": "7.3.1",
+              "generatedAt": "2026-11-17T11:35:17.060420+00:00",
+              "backendVersion": "not exposed by service",
+              "synthetic": true,
+              "cacheKey": "166e3c8f029bf4e01730f1addb9bb9e46bb2431a928e9c2617556e094550e3a1"
+            }
+          },
+          {
+            "voiceId": "zh",
+            "cueId": "merge",
+            "sha256": "8db9ffb82980102ceb86883d98c1342a6c39bfb387fd97e5fb19a271cc6c8531",
+            "textSha256": "afc2f026d5fc18665412e39df8fdabad11e6ffa0c1daa112309364f55dd6ef33",
+            "voice": "zh-CN-YunxiNeural",
+            "rate": "+0%",
+            "pitch": "+0Hz",
+            "provenance": {
+              "provider": "edge_tts",
+              "clientVersion": "7.3.1",
+              "generatedAt": "2026-11-17T11:35:27.152960+00:00",
+              "backendVersion": "not exposed by service",
+              "synthetic": true,
+              "cacheKey": "2a6984aa4e653580303964b497685207098db674654b969849a4d1bbf5c69dbf"
+            }
+          },
+          {
+            "voiceId": "zh",
+            "cueId": "change",
+            "sha256": "8e9054ea97a857463186dd0eb6d504d9c5b610ceeea5eb09cb36075b44c58f52",
+            "textSha256": "e38612436029450a5c7b8ba7da3e4ac5ff4e79fd07ee73ee1b76021b0a37f8fb",
+            "voice": "zh-CN-YunxiNeural",
+            "rate": "+0%",
+            "pitch": "+0Hz",
+            "provenance": {
+              "provider": "edge_tts",
+              "clientVersion": "7.3.1",
+              "generatedAt": "2026-11-17T11:35:36.357209+00:00",
+              "backendVersion": "not exposed by service",
+              "synthetic": true,
+              "cacheKey": "126a8c91b16bfdfe785f56ad9917b8edfc5c7027a8577cc21fe7dc113a11efbd"
+            }
+          }
+        ],
+        "environment": {
+          "python": "3.11.4",
+          "platform": "Windows-10-10.0.26100-SP0",
+          "engineVersion": "2.0.0",
+          "node": "v24.22.1",
+          "ffmpeg": "ffmpeg version 2025-04-21-git-9e1162bdf1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers",
+          "ffprobe": "ffprobe version 2025-04-21-git-9e1162bdf1-essentials_build-www.gyan.dev Copyright (c) 2007-2025 the FFmpeg developers",
+          "requiredEncoders": [
+            "libx264",
+            "aac",
+            "libvpx",
+            "libopus"
+          ],
+          "playwright": "1.56.0",
+          "chromium": "141.0.7390.37"
+        },
+        "renders": [
+          {
+            "id": "en_gb",
+            "frames": 823,
+            "fps": 30,
+            "dimensions": [
+              1280,
+              720
+            ],
+            "strictClockIdentity": true,
+            "randomAccess": true,
+            "externalRequests": [],
+            "pageErrors": [],
+            "formats": [
+              {
+                "path": "media/lesson-en_gb.mp4",
+                "container": "mp4",
+                "videoCodec": "h264",
+                "audioCodec": "aac"
+              },
+              {
+                "path": "media/lesson-en_gb.webm",
+                "container": "webm",
+                "videoCodec": "vp8",
+                "audioCodec": "opus"
+              }
+            ]
+          },
+          {
+            "id": "zh",
+            "frames": 848,
+            "fps": 30,
+            "dimensions": [
+              1280,
+              720
+            ],
+            "strictClockIdentity": true,
+            "randomAccess": true,
+            "externalRequests": [],
+            "pageErrors": [],
+            "formats": [
+              {
+                "path": "media/lesson-zh.mp4",
+                "container": "mp4",
+                "videoCodec": "h264",
+                "audioCodec": "aac"
+              },
+              {
+                "path": "media/lesson-zh.webm",
+                "container": "webm",
+                "videoCodec": "vp8",
+                "audioCodec": "opus"
+              }
+            ]
+          }
+        ],
+        "mediaVerification": {
+          "mp4": [
+            {
+              "id": "en_gb",
+              "duration": 27.433333,
+              "videoDuration": 27.433333,
+              "audioDuration": 27.41,
+              "clockDuration": 27.41,
+              "fps": 30.0,
+              "videoCodec": "h264",
+              "audioCodec": "aac",
+              "captionCues": {
+                "en": 6,
+                "zh": 3
+              },
+              "fullDecode": true
+            },
+            {
+              "id": "zh",
+              "duration": 28.266667,
+              "videoDuration": 28.266667,
+              "audioDuration": 28.25,
+              "clockDuration": 28.25,
+              "fps": 30.0,
+              "videoCodec": "h264",
+              "audioCodec": "aac",
+              "captionCues": {
+                "en": 6,
+                "zh": 3
+              },
+              "fullDecode": true
+            }
+          ],
+          "webm": [
+            {
+              "id": "en_gb",
+              "path": "media/lesson-en_gb.webm",
+              "container": "webm",
+              "videoCodec": "vp8",
+              "audioCodec": "opus",
+              "frames": 823,
+              "fps": 30.0,
+              "dimensions": [
+                1280,
+                720
+              ],
+              "videoDuration": 27.433333333333334,
+              "decodedAudioDuration": 27.41,
+              "containerDuration": 27.433,
+              "fullDecode": true,
+              "audioDurationMethod": "decoded mono 48000 Hz PCM sample count, after Opus pre-skip/discard padding"
+            },
+            {
+              "id": "zh",
+              "path": "media/lesson-zh.webm",
+              "container": "webm",
+              "videoCodec": "vp8",
+              "audioCodec": "opus",
+              "frames": 848,
+              "fps": 30.0,
+              "dimensions": [
+                1280,
+                720
+              ],
+              "videoDuration": 28.266666666666666,
+              "decodedAudioDuration": 28.25,
+              "containerDuration": 28.266,
+              "fullDecode": true,
+              "audioDurationMethod": "decoded mono 48000 Hz PCM sample count, after Opus pre-skip/discard padding"
+            }
+          ]
+        }
+      },
+      "regression": {
+        "passed": true,
+        "checks": [
+          "duplicate cue IDs",
+          "unknown contract version",
+          "missing translated caption",
+          "exercise references missing cue",
+          "negative explicit hold",
+          "adapter path traversal",
+          "unknown scene implementation",
+          "missing audio clip",
+          "duplicate audio pair",
+          "stale voice setting",
+          "changed audio bytes",
+          "stale narration hash",
+          "appended narration requires matching audio",
+          "appended cue cannot be zip-truncated",
+          "incomplete build fails before final directory",
+          "complete caption coverage and text round-trip",
+          "decimal-safe multilingual wrapping",
+          "failed synthesis preserves absent final fixtures",
+          "actual VP8/Opus frame and decoded-sample measurement",
+          "WebM truncated audio rejected independently",
+          "WebM truncated video rejected independently",
+          "completed build cross-artifact verification",
+          "changed source invalidates build",
+          "changed artifact invalidates build",
+          "format-valid stale caption rejected semantically"
+        ],
+        "count": 25,
+        "onlineCalls": 0
+      },
+      "browsers": {
+        "headless": {
+          "passed": true,
+          "scope": "Actual browser functionality, decoded audio signal and sampled layout. No subjective listening or native-language certification.",
+          "voices": [
+            {
+              "id": "en_gb",
+              "start": 0.899999,
+              "end": 2.217892,
+              "muted": false,
+              "volume": 1,
+              "audioDecodedBytes": 39907,
+              "width": 1280,
+              "height": 720,
+              "nonzeroSamples": 29,
+              "peakRms": 0.34904778206373666,
+              "currentSrc": "./media/lesson-en_gb.webm",
+              "selectedType": "video/webm; codecs=\"vp8, opus\""
+            },
+            {
+              "id": "zh",
+              "start": 0.899999,
+              "end": 2.291999,
+              "muted": false,
+              "volume": 1,
+              "audioDecodedBytes": 34121,
+              "width": 1280,
+              "height": 720,
+              "nonzeroSamples": 30,
+              "peakRms": 0.29108175615665205,
+              "currentSrc": "./media/lesson-zh.webm",
+              "selectedType": "video/webm; codecs=\"vp8, opus\""
+            }
+          ],
+          "captions": [
+            {
+              "voice": "en_gb",
+              "language": "en",
+              "text": "One input splits into two paths: two\nnanoseconds above, five below. Both paths"
+            },
+            {
+              "voice": "en_gb",
+              "language": "zh",
+              "text": "一个输入分成两条路径：上方延迟两纳秒，下方五纳秒\n。两条路径汇入同一个末级逻辑门。"
+            },
+            {
+              "voice": "zh",
+              "language": "en",
+              "text": "One input splits into two paths: two\nnanoseconds above, five below. Both paths"
+            },
+            {
+              "voice": "zh",
+              "language": "zh",
+              "text": "一个输入分成两条路径：上方延迟两纳秒，下方五纳秒\n。两条路径汇入同一个末级逻辑门。"
+            }
+          ],
+          "chapters": [
+            {
+              "voice": "en_gb",
+              "cueId": "arrive",
+              "time": 0.3
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "merge",
+              "time": 8.978
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "change",
+              "time": 17.778
+            },
+            {
+              "voice": "zh",
+              "cueId": "arrive",
+              "time": 0.3
+            },
+            {
+              "voice": "zh",
+              "cueId": "merge",
+              "time": 9.914
+            },
+            {
+              "voice": "zh",
+              "cueId": "change",
+              "time": 19.074
+            }
+          ],
+          "transfers": [
+            {
+              "voice": "en_gb",
+              "cueId": "arrive",
+              "progress": 0.3699998847660752,
+              "exactState": true
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "merge",
+              "progress": 0.37000000000000005,
+              "exactState": true
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "change",
+              "progress": 0.37000000000000016,
+              "exactState": true
+            },
+            {
+              "voice": "zh",
+              "cueId": "arrive",
+              "progress": 0.36999989598502186,
+              "exactState": true
+            },
+            {
+              "voice": "zh",
+              "cueId": "merge",
+              "progress": 0.37,
+              "exactState": true
+            },
+            {
+              "voice": "zh",
+              "cueId": "change",
+              "progress": 0.3699999999999999,
+              "exactState": true
+            }
+          ],
+          "exercises": [
+            {
+              "id": "upper-critical-budget",
+              "passingStates": 2,
+              "failingStates": 1,
+              "basis": "UI integration; independent arithmetic is in course check.mjs"
+            }
+          ],
+          "screenshots": [
+            "en_gb-desktop.png",
+            "zh-desktop.png",
+            "lab-desktop.png",
+            "fullscreen.png",
+            "mobile.png",
+            "mobile-lab.png"
+          ],
+          "moduleMimeTypes": {
+            "core.mjs": "text/javascript",
+            "pack/adapter.mjs": "text/javascript"
+          },
+          "browser": "141.0.7390.37",
+          "browserLaunchMode": "playwright-default-headless",
+          "mediaSupport": {
+            "video/mp4; codecs=\"avc1.640028, mp4a.40.2\"": "",
+            "video/webm; codecs=\"vp8, opus\"": "probably"
+          },
+          "course": "logic-timing",
+          "courseVersion": "1.0.0",
+          "buildIdentity": "e7a30a82d3633e1b9c61a495b27aaf43bb3067dfe79c798490fcdf4d2dd1e727",
+          "semanticSwitch": {
+            "passed": true,
+            "rapidReplacement": true,
+            "preservesSpeedCaptionsAndPlayState": true
+          },
+          "keyboardAndReset": true,
+          "pointerDrag": "Not supplied by this course; numeric controls are the supported interaction",
+          "wrongSnapshotRejected": true,
+          "nativeFullscreen": true,
+          "mobile": {
+            "width": 390,
+            "scrollWidth": 390,
+            "captions": 17,
+            "feedback": 14,
+            "metricValue": 22,
+            "metricLabel": 14,
+            "controlLabel": 14
+          },
+          "unsupportedSourcesRejected": {
+            "passed": true,
+            "message": "This browser cannot play the available formats for British English. Try a browser with VP8/Opus or H.264/AAC support.",
+            "mediaRequests": [],
+            "scope": "Isolated served-manifest negative test; production files unchanged"
+          },
+          "wallSeconds": 7.72,
+          "pageErrors": [],
+          "httpErrors": [],
+          "unexpectedRequestFailures": [],
+          "expectedCanceledRequests": 10,
+          "externalRequests": []
+        },
+        "chromium": {
+          "passed": true,
+          "scope": "Actual browser functionality, decoded audio signal and sampled layout. No subjective listening or native-language certification.",
+          "voices": [
+            {
+              "id": "en_gb",
+              "start": 0.899999,
+              "end": 2.131999,
+              "muted": false,
+              "volume": 1,
+              "audioDecodedBytes": 38587,
+              "width": 1280,
+              "height": 720,
+              "nonzeroSamples": 29,
+              "peakRms": 0.2606235710403277,
+              "currentSrc": "./media/lesson-en_gb.webm",
+              "selectedType": "video/webm; codecs=\"vp8, opus\""
+            },
+            {
+              "id": "zh",
+              "start": 0.899999,
+              "end": 2.299999,
+              "muted": false,
+              "volume": 1,
+              "audioDecodedBytes": 34381,
+              "width": 1280,
+              "height": 720,
+              "nonzeroSamples": 30,
+              "peakRms": 0.2782861338120844,
+              "currentSrc": "./media/lesson-zh.webm",
+              "selectedType": "video/webm; codecs=\"vp8, opus\""
+            }
+          ],
+          "captions": [
+            {
+              "voice": "en_gb",
+              "language": "en",
+              "text": "One input splits into two paths: two\nnanoseconds above, five below. Both paths"
+            },
+            {
+              "voice": "en_gb",
+              "language": "zh",
+              "text": "一个输入分成两条路径：上方延迟两纳秒，下方五纳秒\n。两条路径汇入同一个末级逻辑门。"
+            },
+            {
+              "voice": "zh",
+              "language": "en",
+              "text": "One input splits into two paths: two\nnanoseconds above, five below. Both paths"
+            },
+            {
+              "voice": "zh",
+              "language": "zh",
+              "text": "一个输入分成两条路径：上方延迟两纳秒，下方五纳秒\n。两条路径汇入同一个末级逻辑门。"
+            }
+          ],
+          "chapters": [
+            {
+              "voice": "en_gb",
+              "cueId": "arrive",
+              "time": 0.3
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "merge",
+              "time": 8.978
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "change",
+              "time": 17.778
+            },
+            {
+              "voice": "zh",
+              "cueId": "arrive",
+              "time": 0.3
+            },
+            {
+              "voice": "zh",
+              "cueId": "merge",
+              "time": 9.914
+            },
+            {
+              "voice": "zh",
+              "cueId": "change",
+              "time": 19.074
+            }
+          ],
+          "transfers": [
+            {
+              "voice": "en_gb",
+              "cueId": "arrive",
+              "progress": 0.3699998847660752,
+              "exactState": true
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "merge",
+              "progress": 0.37000000000000005,
+              "exactState": true
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "change",
+              "progress": 0.37000000000000016,
+              "exactState": true
+            },
+            {
+              "voice": "zh",
+              "cueId": "arrive",
+              "progress": 0.36999989598502186,
+              "exactState": true
+            },
+            {
+              "voice": "zh",
+              "cueId": "merge",
+              "progress": 0.37,
+              "exactState": true
+            },
+            {
+              "voice": "zh",
+              "cueId": "change",
+              "progress": 0.3699999999999999,
+              "exactState": true
+            }
+          ],
+          "exercises": [
+            {
+              "id": "upper-critical-budget",
+              "passingStates": 2,
+              "failingStates": 1,
+              "basis": "UI integration; independent arithmetic is in course check.mjs"
+            }
+          ],
+          "screenshots": [
+            "en_gb-desktop.png",
+            "zh-desktop.png",
+            "lab-desktop.png",
+            "fullscreen.png",
+            "mobile.png",
+            "mobile-lab.png"
+          ],
+          "moduleMimeTypes": {
+            "core.mjs": "text/javascript",
+            "pack/adapter.mjs": "text/javascript"
+          },
+          "browser": "141.0.7390.37",
+          "browserLaunchMode": "explicit-executable",
+          "mediaSupport": {
+            "video/mp4; codecs=\"avc1.640028, mp4a.40.2\"": "",
+            "video/webm; codecs=\"vp8, opus\"": "probably"
+          },
+          "course": "logic-timing",
+          "courseVersion": "1.0.0",
+          "buildIdentity": "e7a30a82d3633e1b9c61a495b27aaf43bb3067dfe79c798490fcdf4d2dd1e727",
+          "semanticSwitch": {
+            "passed": true,
+            "rapidReplacement": true,
+            "preservesSpeedCaptionsAndPlayState": true
+          },
+          "keyboardAndReset": true,
+          "pointerDrag": "Not supplied by this course; numeric controls are the supported interaction",
+          "wrongSnapshotRejected": true,
+          "nativeFullscreen": true,
+          "mobile": {
+            "width": 390,
+            "scrollWidth": 390,
+            "captions": 17,
+            "feedback": 14,
+            "metricValue": 22,
+            "metricLabel": 14,
+            "controlLabel": 14
+          },
+          "unsupportedSourcesRejected": {
+            "passed": true,
+            "message": "This browser cannot play the available formats for British English. Try a browser with VP8/Opus or H.264/AAC support.",
+            "mediaRequests": [],
+            "scope": "Isolated served-manifest negative test; production files unchanged"
+          },
+          "wallSeconds": 7.56,
+          "pageErrors": [],
+          "httpErrors": [],
+          "unexpectedRequestFailures": [],
+          "expectedCanceledRequests": 10,
+          "externalRequests": []
+        },
+        "chrome": {
+          "passed": true,
+          "scope": "Actual browser functionality, decoded audio signal and sampled layout. No subjective listening or native-language certification.",
+          "voices": [
+            {
+              "id": "en_gb",
+              "start": 0.899999,
+              "end": 1.709908,
+              "muted": false,
+              "volume": 1,
+              "audioDecodedBytes": 34769,
+              "width": 1280,
+              "height": 720,
+              "nonzeroSamples": 19,
+              "peakRms": 0.2524096864223935,
+              "currentSrc": "./media/lesson-en_gb.mp4",
+              "selectedType": "video/mp4; codecs=\"avc1.640028, mp4a.40.2\""
+            },
+            {
+              "id": "zh",
+              "start": 0.899999,
+              "end": 2.289332,
+              "muted": false,
+              "volume": 1,
+              "audioDecodedBytes": 57556,
+              "width": 1280,
+              "height": 720,
+              "nonzeroSamples": 30,
+              "peakRms": 0.2943386450901459,
+              "currentSrc": "./media/lesson-zh.mp4",
+              "selectedType": "video/mp4; codecs=\"avc1.640028, mp4a.40.2\""
+            }
+          ],
+          "captions": [
+            {
+              "voice": "en_gb",
+              "language": "en",
+              "text": "One input splits into two paths: two\nnanoseconds above, five below. Both paths"
+            },
+            {
+              "voice": "en_gb",
+              "language": "zh",
+              "text": "一个输入分成两条路径：上方延迟两纳秒，下方五纳秒\n。两条路径汇入同一个末级逻辑门。"
+            },
+            {
+              "voice": "zh",
+              "language": "en",
+              "text": "One input splits into two paths: two\nnanoseconds above, five below. Both paths"
+            },
+            {
+              "voice": "zh",
+              "language": "zh",
+              "text": "一个输入分成两条路径：上方延迟两纳秒，下方五纳秒\n。两条路径汇入同一个末级逻辑门。"
+            }
+          ],
+          "chapters": [
+            {
+              "voice": "en_gb",
+              "cueId": "arrive",
+              "time": 0.3
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "merge",
+              "time": 8.978
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "change",
+              "time": 17.778
+            },
+            {
+              "voice": "zh",
+              "cueId": "arrive",
+              "time": 0.3
+            },
+            {
+              "voice": "zh",
+              "cueId": "merge",
+              "time": 9.914
+            },
+            {
+              "voice": "zh",
+              "cueId": "change",
+              "time": 19.074
+            }
+          ],
+          "transfers": [
+            {
+              "voice": "en_gb",
+              "cueId": "arrive",
+              "progress": 0.3699998847660752,
+              "exactState": true
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "merge",
+              "progress": 0.37000000000000005,
+              "exactState": true
+            },
+            {
+              "voice": "en_gb",
+              "cueId": "change",
+              "progress": 0.37000000000000016,
+              "exactState": true
+            },
+            {
+              "voice": "zh",
+              "cueId": "arrive",
+              "progress": 0.36999989598502186,
+              "exactState": true
+            },
+            {
+              "voice": "zh",
+              "cueId": "merge",
+              "progress": 0.37,
+              "exactState": true
+            },
+            {
+              "voice": "zh",
+              "cueId": "change",
+              "progress": 0.3699999999999999,
+              "exactState": true
+            }
+          ],
+          "exercises": [
+            {
+              "id": "upper-critical-budget",
+              "passingStates": 2,
+              "failingStates": 1,
+              "basis": "UI integration; independent arithmetic is in course check.mjs"
+            }
+          ],
+          "screenshots": [
+            "en_gb-desktop.png",
+            "zh-desktop.png",
+            "lab-desktop.png",
+            "fullscreen.png",
+            "mobile.png",
+            "mobile-lab.png"
+          ],
+          "moduleMimeTypes": {
+            "core.mjs": "text/javascript",
+            "pack/adapter.mjs": "text/javascript"
+          },
+          "browser": "156.0.8078.49",
+          "browserLaunchMode": "explicit-executable",
+          "mediaSupport": {
+            "video/mp4; codecs=\"avc1.640028, mp4a.40.2\"": "probably",
+            "video/webm; codecs=\"vp8, opus\"": "probably"
+          },
+          "course": "logic-timing",
+          "courseVersion": "1.0.0",
+          "buildIdentity": "e7a30a82d3633e1b9c61a495b27aaf43bb3067dfe79c798490fcdf4d2dd1e727",
+          "semanticSwitch": {
+            "passed": true,
+            "rapidReplacement": true,
+            "preservesSpeedCaptionsAndPlayState": true
+          },
+          "keyboardAndReset": true,
+          "pointerDrag": "Not supplied by this course; numeric controls are the supported interaction",
+          "wrongSnapshotRejected": true,
+          "nativeFullscreen": true,
+          "mobile": {
+            "width": 390,
+            "scrollWidth": 390,
+            "captions": 17,
+            "feedback": 14,
+            "metricValue": 22,
+            "metricLabel": 14,
+            "controlLabel": 14
+          },
+          "unsupportedSourcesRejected": {
+            "passed": true,
+            "message": "This browser cannot play the available formats for British English. Try a browser with VP8/Opus or H.264/AAC support.",
+            "mediaRequests": [],
+            "scope": "Isolated served-manifest negative test; production files unchanged"
+          },
+          "wallSeconds": 7.45,
+          "pageErrors": [],
+          "httpErrors": [],
+          "unexpectedRequestFailures": [],
+          "expectedCanceledRequests": 8,
+          "externalRequests": []
+        }
+      }
+    }
+  },
+  "independentReproduction": {
+    "passed": true,
+    "candidate": "attempt-5-final-visual-regression",
+    "course": "logic-timing",
+    "independentAuthoring": {
+      "input": "Public course-pack contract only",
+      "readOtherPackOrEngineImplementation": false,
+      "changedEngineFiles": []
+    },
+    "environment": {
+      "os": "Windows 11 / build 26100",
+      "python": "3.11.4",
+      "node": "24.22.1",
+      "playwright": "1.56.0",
+      "chromium": "141.0.7390.37",
+      "browser": "default Playwright headless browser",
+      "pythonEnvironment": "fresh pinned venv prepared for release validation",
+      "browserInstallation": "fresh isolated Playwright browser download selected by PLAYWRIGHT_BROWSERS_PATH",
+      "specialBrowserFlags": []
+    },
+    "commands": [
+      "python scripts/studio.py doctor",
+      "python scripts/studio.py check --course ../timing-pack --audio-mode fixture",
+      "python scripts/studio.py build --course ../timing-pack --out ../timing-site --audio-mode fixture --width 1280 --height 720 --fps 30",
+      "python scripts/studio.py verify --site ../timing-site",
+      "python scripts/check_studio_browser.py --site ../timing-site --report ../browser-check.json"
+    ],
+    "buildVerification": {
+      "passed": true,
+      "engineVersion": "2.0.0",
+      "buildIdentity": "e7a30a82d3633e1b9c61a495b27aaf43bb3067dfe79c798490fcdf4d2dd1e727",
+      "sourceAndAssetHashes": true,
+      "exactCueCaptionVoiceCoverage": true,
+      "tracks": [
+        {
+          "id": "en_gb",
+          "duration": 27.433333,
+          "videoDuration": 27.433333,
+          "audioDuration": 27.41,
+          "clockDuration": 27.41,
+          "fps": 30.0,
+          "videoCodec": "h264",
+          "audioCodec": "aac",
+          "captionCues": {
+            "en": 6,
+            "zh": 3
+          },
+          "fullDecode": true
+        },
+        {
+          "id": "zh",
+          "duration": 28.266667,
+          "videoDuration": 28.266667,
+          "audioDuration": 28.25,
+          "clockDuration": 28.25,
+          "fps": 30.0,
+          "videoCodec": "h264",
+          "audioCodec": "aac",
+          "captionCues": {
+            "en": 6,
+            "zh": 3
+          },
+          "fullDecode": true
+        }
+      ],
+      "webmAlternatives": [
+        {
+          "id": "en_gb",
+          "path": "media/lesson-en_gb.webm",
+          "container": "webm",
+          "videoCodec": "vp8",
+          "audioCodec": "opus",
+          "frames": 823,
+          "fps": 30.0,
+          "dimensions": [
+            1280,
+            720
+          ],
+          "videoDuration": 27.433333333333334,
+          "decodedAudioDuration": 27.41,
+          "containerDuration": 27.433,
+          "fullDecode": true,
+          "audioDurationMethod": "decoded mono 48000 Hz PCM sample count, after Opus pre-skip/discard padding"
+        },
+        {
+          "id": "zh",
+          "path": "media/lesson-zh.webm",
+          "container": "webm",
+          "videoCodec": "vp8",
+          "audioCodec": "opus",
+          "frames": 848,
+          "fps": 30.0,
+          "dimensions": [
+            1280,
+            720
+          ],
+          "videoDuration": 28.266666666666666,
+          "decodedAudioDuration": 28.25,
+          "containerDuration": 28.266,
+          "fullDecode": true,
+          "audioDurationMethod": "decoded mono 48000 Hz PCM sample count, after Opus pre-skip/discard padding"
+        }
+      ],
+      "scope": "Technical consistency and complete decoding of both media formats; not a speech, translation or instructional quality review"
+    },
+    "engineUnchanged": true,
+    "engineFiles": {
+      "scripts/_studio_audio.py": "d6a03ac334fca3a151b4df00ea01ee742f0f6bd53d93edcef80aefd2b41714ea",
+      "scripts/_studio_build.py": "63087aee9325921f415efc481ab608df4b60e96ab97e4dedda1139ae67fdcf50",
+      "scripts/_studio_contract.py": "a098839c9e8f2933167b45b402d1fbb1b39f6be54547c3757e8e9b7981965976",
+      "scripts/check_adapter.mjs": "e495899b3102a2618a083b36b1286f70b124245275e22a95032976a0960732ab",
+      "scripts/check_studio.py": "e2a81c256dbe28020dbfe14cbd0d98751bc7aae25293c38da3920c835210a153",
+      "scripts/check_studio_browser.py": "cce8a447bf7e92b000b3c44786cfb5f9c2c098ad1227ce386656d4bd06560c3e",
+      "scripts/check_tooling.py": "264b18d589e18aa6c8906cfc67bbdbe592dcea7f3acf82edda165ecd85afa20f",
+      "scripts/init_course.py": "5d40f9107bd92ddaede40069a55b5db0bb40cb26c08e66a08fa96d8018cbbce6",
+      "scripts/render_html.py": "883bff84fd0d728a432b0ea7b61f29c97b2d95e4db600368eaea03ab9b0bf907",
+      "scripts/retime_video.py": "2e668d4b3b32a81a20822ad348da44760daf9920f27b698b54f768f50161331e",
+      "scripts/serve_site.py": "09a4ca632f1d119b4b3346bae6f1d48293693558388f86cc73bbfa110fb9d196",
+      "scripts/serve_studio.py": "0402ab4f4426a55f8377f772e4927a0e1aeaef691181284b0bf295fca698ef99",
+      "scripts/studio.py": "e21045ea923adf8cba3beeeca83fede71e076c4bc3940d3c4eeaaf2d4f41dcae",
+      "scripts/validate_media.py": "b6e298ad680f32be4c221c0ffefca4071b90078de77cb9e369afdaeca0c79646",
+      "assets/runtime/app.mjs": "eb1f6f86bf981b4b20fc2b061654b56bf34f993d1a1a2b075f8ab03236698224",
+      "assets/runtime/check_core.mjs": "ff7583ee87b256c157c4735c9d6be9e95bcddee36cf9b995d2f029b4a31fa039",
+      "assets/runtime/core.mjs": "32ad5c333961afb8242849fc99b23b2db8ea5f5417a367e7aa8a89d5a20dde0f",
+      "assets/runtime/index.html": "b5f5f41ab3dd8afdbc6bcab60df3873556d9d402eef7d906e6d0e8bda20edd3f",
+      "assets/runtime/render.html": "429d9f2a8a8b056d3d7b83865a9fdfbf2516c27c34809ffe3cc665f33516f868",
+      "assets/runtime/scene.mjs": "00c25ad85fdd39bb289799402eee8b258715a30a7a95497d36249fefbc4deaab",
+      "assets/runtime/style.css": "63693ad1bab9ff49d3f806afe799f8c42054a362749fa1af603d6d55fdb22c5a"
+    },
+    "packUnchangedDuringBuild": true,
+    "packFiles": {
+      "adapter.mjs": "8fbff1b9c6dec98c2d1c5a077886bf567361dc1b7666bab2257ecda78ffeddf1",
+      "audio/en_gb-arrive.mp3": "4088b6b78de8bbec053834b41182a6dbd5ed94e7e38d03b6256a52a020d41ffd",
+      "audio/en_gb-change.mp3": "13ffa5dbc60f1c600113ff1df9068e09e0856686c3c65e764033a12841f96d5a",
+      "audio/en_gb-merge.mp3": "f934090c50fa27b2ebae4beb53a5ac6e79a5f87f63f23b25586b9211731ae4ba",
+      "audio/fixtures.json": "46ac338aad29531347e453809df0b3ab3b133cb9fe1f2b84ce27d71741c9e024",
+      "audio/zh-arrive.mp3": "1a35d57b3205eef9ef3c9e190e827a0a43ec7fd30398cf357a145ac8f8a824de",
+      "audio/zh-change.mp3": "8e9054ea97a857463186dd0eb6d504d9c5b610ceeea5eb09cb36075b44c58f52",
+      "audio/zh-merge.mp3": "8db9ffb82980102ceb86883d98c1342a6c39bfb387fd97e5fb19a271cc6c8531",
+      "check.mjs": "72977b1823ee4357bde4882ed9d99b689c4fbbd9047e8a08894d358523c24605",
+      "lesson.json": "f7d8898fc80dc55125ee96c97e9c8335afe0bbb87bac2c2e52157ac9969f561c",
+      "README.md": "1b8146b8633af48956f7d1d49f47846e8b11bd241f78aa0e1b62314230a30d15"
+    },
+    "browserVerification": {
+      "passed": true,
+      "scope": "Actual browser functionality, decoded audio signal and sampled layout. No subjective listening or native-language certification.",
+      "voices": [
+        {
+          "id": "en_gb",
+          "start": 0.899999,
+          "end": 2.051999,
+          "muted": false,
+          "volume": 1,
+          "audioDecodedBytes": 37074,
+          "width": 1280,
+          "height": 720,
+          "nonzeroSamples": 25,
+          "peakRms": 0.34904778206373666,
+          "currentSrc": "./media/lesson-en_gb.webm",
+          "selectedType": "video/webm; codecs=\"vp8, opus\""
+        },
+        {
+          "id": "zh",
+          "start": 0.899999,
+          "end": 2.287449,
+          "muted": false,
+          "volume": 1,
+          "audioDecodedBytes": 35346,
+          "width": 1280,
+          "height": 720,
+          "nonzeroSamples": 30,
+          "peakRms": 0.2905941587885745,
+          "currentSrc": "./media/lesson-zh.webm",
+          "selectedType": "video/webm; codecs=\"vp8, opus\""
+        }
+      ],
+      "captions": [
+        {
+          "voice": "en_gb",
+          "language": "en",
+          "text": "One input splits into two paths: two\nnanoseconds above, five below. Both paths"
+        },
+        {
+          "voice": "en_gb",
+          "language": "zh",
+          "text": "一个输入分成两条路径：上方延迟两纳秒，下方五纳秒\n。两条路径汇入同一个末级逻辑门。"
+        },
+        {
+          "voice": "zh",
+          "language": "en",
+          "text": "One input splits into two paths: two\nnanoseconds above, five below. Both paths"
+        },
+        {
+          "voice": "zh",
+          "language": "zh",
+          "text": "一个输入分成两条路径：上方延迟两纳秒，下方五纳秒\n。两条路径汇入同一个末级逻辑门。"
+        }
+      ],
+      "chapters": [
+        {
+          "voice": "en_gb",
+          "cueId": "arrive",
+          "time": 0.3
+        },
+        {
+          "voice": "en_gb",
+          "cueId": "merge",
+          "time": 8.978
+        },
+        {
+          "voice": "en_gb",
+          "cueId": "change",
+          "time": 17.778
+        },
+        {
+          "voice": "zh",
+          "cueId": "arrive",
+          "time": 0.3
+        },
+        {
+          "voice": "zh",
+          "cueId": "merge",
+          "time": 9.914
+        },
+        {
+          "voice": "zh",
+          "cueId": "change",
+          "time": 19.074
+        }
+      ],
+      "transfers": [
+        {
+          "voice": "en_gb",
+          "cueId": "arrive",
+          "progress": 0.3699998847660752,
+          "exactState": true
+        },
+        {
+          "voice": "en_gb",
+          "cueId": "merge",
+          "progress": 0.37000000000000005,
+          "exactState": true
+        },
+        {
+          "voice": "en_gb",
+          "cueId": "change",
+          "progress": 0.37000000000000016,
+          "exactState": true
+        },
+        {
+          "voice": "zh",
+          "cueId": "arrive",
+          "progress": 0.36999989598502186,
+          "exactState": true
+        },
+        {
+          "voice": "zh",
+          "cueId": "merge",
+          "progress": 0.37,
+          "exactState": true
+        },
+        {
+          "voice": "zh",
+          "cueId": "change",
+          "progress": 0.3699999999999999,
+          "exactState": true
+        }
+      ],
+      "exercises": [
+        {
+          "id": "upper-critical-budget",
+          "passingStates": 2,
+          "failingStates": 1,
+          "basis": "UI integration; independent arithmetic is in course check.mjs"
+        }
+      ],
+      "screenshots": [
+        "en_gb-desktop.png",
+        "zh-desktop.png",
+        "lab-desktop.png",
+        "fullscreen.png",
+        "mobile.png",
+        "mobile-lab.png"
+      ],
+      "moduleMimeTypes": {
+        "core.mjs": "text/javascript",
+        "pack/adapter.mjs": "text/javascript"
+      },
+      "browser": "141.0.7390.37",
+      "browserLaunchMode": "playwright-default-headless",
+      "mediaSupport": {
+        "video/mp4; codecs=\"avc1.640028, mp4a.40.2\"": "",
+        "video/webm; codecs=\"vp8, opus\"": "probably"
+      },
+      "course": "logic-timing",
+      "courseVersion": "1.0.0",
+      "buildIdentity": "e7a30a82d3633e1b9c61a495b27aaf43bb3067dfe79c798490fcdf4d2dd1e727",
+      "semanticSwitch": {
+        "passed": true,
+        "rapidReplacement": true,
+        "preservesSpeedCaptionsAndPlayState": true
+      },
+      "keyboardAndReset": true,
+      "pointerDrag": "Not supplied by this course; numeric controls are the supported interaction",
+      "wrongSnapshotRejected": true,
+      "nativeFullscreen": true,
+      "mobile": {
+        "width": 390,
+        "scrollWidth": 390,
+        "captions": 17,
+        "feedback": 14,
+        "metricValue": 22,
+        "metricLabel": 14,
+        "controlLabel": 14
+      },
+      "unsupportedSourcesRejected": {
+        "passed": true,
+        "message": "This browser cannot play the available formats for British English. Try a browser with VP8/Opus or H.264/AAC support.",
+        "mediaRequests": [],
+        "scope": "Isolated served-manifest negative test; production files unchanged"
+      },
+      "wallSeconds": 7.08,
+      "pageErrors": [],
+      "httpErrors": [],
+      "unexpectedRequestFailures": [],
+      "expectedCanceledRequests": 8,
+      "externalRequests": []
+    },
+    "visualInspection": {
+      "screenshots": [
+        "review/en_gb/change.png",
+        "fullscreen.png"
+      ],
+      "result": "Film uses the adapter sans-serif typography; native fullscreen captions remain below the displayed timing formula. Other browser layout checks passed.",
+      "scope": "Representative screenshot inspection, not complete subjective film review."
+    },
+    "supplementalHelp": [
+      "Existing clean venv and browser location supplied as environment context; otherwise documented commands only.",
+      "Desktop sandbox execution escalation required; now documented in copied guide."
+    ],
+    "onlineTtsCalls": 0,
+    "existingRenderedMediaReused": false,
+    "earlierCandidates": [
+      "Module MIME integration fix before this run",
+      "MP4-only Chromium incompatibility rejected",
+      "VP9 Windows decoder failure rejected; final artifact uses VP8/Opus alternative",
+      "Passed technical candidate received bounded font-attribute and fullscreen-safe-area fix; entire independent build and browser acceptance repeated for current code."
+    ],
+    "limits": [
+      "Only Windows tested; no cross-platform claim.",
+      "No subjective listening or native-language certification.",
+      "This is a short engineering benchmark, not a full new course."
+    ],
+    "sourceCurrentMatchesFrozen": true
+  },
+  "limits": [
+    "Local execution evidence is Windows only. Consult GitHub Actions for independently executed Linux status.",
+    "Short deterministic 2D SVG benchmarks demonstrate the supported contract; they do not prove every future lesson or visual design.",
+    "Full 39-cue Placement source is preserved, not completely ported to the v2 course-pack interface.",
+    "Fixture builds make no online TTS calls. Future online voice availability, timing and waveform are external-service dependent.",
+    "Browser checks measure decoded audio signal, not perceived voice quality. No native-language translation certification is claimed.",
+    "Representative layout inspection is not exhaustive: secondary bottom intent text can be covered by native fullscreen captions; some small diagram labels require desktop view while HTML readouts remain accessible on mobile.",
+    "Build identity describes source, frozen audio and render configuration; encoded movie bytes can vary with browser, font, encoder and platform."
+  ]
+}

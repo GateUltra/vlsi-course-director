@@ -1,85 +1,50 @@
 # VLSI Course Director
 
-[中文说明](README.zh-CN.md) · [Detailed HTML studio guide](docs/HTML_STUDIO_GUIDE.md) · [Download the new skill](downloads/vlsi-html-course-studio-skill.zip)
+Reusable workflows and source for making narrated VLSI/EDA lessons with animated video, interactive experiments and exercises.
 
-Reusable community skills for making VLSI / EDA lessons: instructional planning, animated teaching video, narration, independent subtitles, interactive experiments, exercises, and editable sources. These are project-derived agent skills, not official OpenAI skills or a hosted course website.
+## Choose an edition
 
-## Choose a skill
+| Edition | Use it for |
+|---|---|
+| [HTML Course Studio 2](vlsi-html-course-studio/SKILL.md) | Reproducible HTML/SVG course packs: a shared model, real speech, captions, video export, lab transfer and checks |
+| [Original Course Director](vlsi-course-director/SKILL.md) | Lightweight direction with a flexible production technology |
+| [HTML Studio v1 archive](downloads/vlsi-html-course-studio-v1.0.0.zip) | The original methods, silent starter and source-only Placement example |
 
-| Skill | Best fit | What is included |
-|---|---|---|
-| **[vlsi-html-course-studio](vlsi-html-course-studio/SKILL.md)** — new | Shared HTML/SVG animation for video, a live lab, and exercises; multilingual production and an interactive teaching character | 9 detailed guides, 6 portable tools, a runnable silent starter, and a source-only Placement Lesson 06 example |
-| **[vlsi-course-director](vlsi-course-director/SKILL.md)** — original, retained | A lighter, technology-flexible workflow for course research, direction, video/audio and website delivery | Original instructions, lesson blueprint, Floorplanning case study, preview server and media validator |
+[中文介绍](README.zh-CN.md) · [Reproduction guide](vlsi-html-course-studio/references/reproduce-v2.md) · [Contract](vlsi-html-course-studio/references/course-pack-contract.md) · [Download current skill](downloads/vlsi-html-course-studio-skill.zip)
 
-The original skill folder and its installation path are unchanged. The new skill has a distinct name; you can keep both and explicitly select the one appropriate to a task. The new skill's detailed guides are in Chinese; code and example teaching interfaces are in English. This README and the [usage guide](docs/HTML_STUDIO_GUIDE.md) provide English entry points.
+## What changed in v2
+
+A stable runtime and production CLI now accept replaceable course packs. Domain code, diagrams, cues, narration, subtitles, controls and grading live in the pack. The player, timing, audio assembly, rendering and verification do not know which lesson they are running.
+
+Two small complete benchmarks are included: two-pin wirelength and reconvergent logic timing. Each includes English/Chinese speech fixtures, two subtitle languages, three scenes, an interactive model and a multi-answer exercise. Fixture builds make no TTS calls. These are engineering benchmarks; the preserved Placement example still demonstrates a full 39-cue production and richer character animation.
+
+The contract currently supports deterministic 2D SVG, JSON states, numeric/pointer controls and state-based exercises. It is not an arbitrary-animation compiler. Human review remains necessary for explanation, natural voice, translation and pacing.
 
 ## Install and invoke
 
-In Codex with the bundled skill installer, send this as a **chat prompt**, not a shell command:
+In a Codex conversation with the built-in installer:
 
 ```text
 $skill-installer install https://github.com/GateUltra/vlsi-course-director/tree/main/vlsi-html-course-studio
 ```
 
-For the original skill, use:
+Alternatively copy the complete skill folder into your project's `.agents/skills/`. Inspect existing installations before replacing them. The original `vlsi-course-director` name and path remain unchanged.
 
 ```text
-$skill-installer install https://github.com/GateUltra/vlsi-course-director/tree/main/vlsi-course-director
+Use $vlsi-html-course-studio with these course materials: <links or files>.
+Create a new course pack, preserving the shared runtime. First deliver a narrated
+sample, an exact scene-to-lab transfer and a meaningful exercise.
+Validate the model independently and report the executed reproduction checks.
 ```
 
-For manual project-local installation, clone or download this repository and copy the complete selected skill folder to `.agents/skills/` inside your project. Keep `SKILL.md`, `agents/`, `references/`, `scripts/` and `assets/` together. Check an existing installation before replacing it. Codex discovers local skills; if a newly installed skill does not appear, restart the session. See the [official skill documentation](https://learn.chatgpt.com/docs/build-skills).
+For a manual end-to-end reproduction, follow the [isolated environment commands](vlsi-html-course-studio/references/reproduce-v2.md). Raw finished movies and dependencies are not bundled; the small fixed audio inputs are included. A future online synthesis can sound different; the offline fixture path preserves the inputs used to validate the pipeline.
 
-Then provide the actual lesson materials and intended scope:
+## Evidence and rollback
 
-```text
-Use $vlsi-html-course-studio for this VLSI lesson: <course URL>.
-The audience is university students learning the topic for the first time.
-Create a 45–60 second narrated sample and an interactive version that shares
-the same diagram and state. Explain the model, test a prediction, and include
-one exercise. Use the voice and visual direction we have agreed on.
-```
+[Current validation](docs/HTML_STUDIO_V2_VALIDATION.md) records what actually ran and its limits. [Historical v1 validation](docs/HTML_STUDIO_VALIDATION.md) remains separate. Original source and six tools are preserved against a [123-file baseline](vlsi-html-course-studio/references/baseline-v1.json). Reproduction is about repeatable logic and evidence, not identical MP4 bytes across browsers or codecs.
 
-Other agents can read the chosen `SKILL.md` directly or install it using their supported skill mechanism. A request for planning only remains a planning task; the skill does not automatically authorize online speech services or publication.
+See [migration policy](vlsi-html-course-studio/references/migration-v2.md) before changing shared code. This is a source/skill repository, not a GitHub Pages course website.
 
-## Try the new starter without generating speech
+## Rights
 
-Run from the repository root with Python 3.10+:
-
-```powershell
-python vlsi-html-course-studio/scripts/init_course.py --destination ../my-vlsi-lesson --title "My VLSI Studio"
-python vlsi-html-course-studio/scripts/serve_site.py --directory ../my-vlsi-lesson --port 8780
-```
-
-Open **http://127.0.0.1:8780/**. The destination must be a new directory. This original two-pin example is a **32-second silent storyboard**, explicitly marked as provisional. It demonstrates a shared SVG board, exact scene transfer into a draggable/keyboard-accessible lab, metric-based companion comments, and an exercise accepting multiple solutions. It does not contain a generated narrated movie or call an online service.
-
-Optional model checks:
-
-```powershell
-node ../my-vlsi-lesson/check.mjs
-```
-
-For real video production, install the needed Playwright/Chromium and FFmpeg dependencies, create authorized narration and measured cue clocks, then follow the [production guide](docs/HTML_STUDIO_GUIDE.md). Viewing a finished static lesson does not require the production tools.
-
-## New skill contents
-
-```text
-vlsi-html-course-studio/
-├── SKILL.md
-├── agents/openai.yaml
-├── references/                      Nine focused production guides
-├── scripts/                         Init, preview, render, retime and validation
-└── assets/
-    ├── planning/                    Lesson brief and cue template
-    ├── starter/                     Runnable original silent example
-    └── placement-lesson06-source/    Worked source snapshot, no final movies
-```
-
-The worked example includes the closed-mouth scientist rig, two-bone arm IK, local lab feedback, voice-specific timing, caption handling and the original production scripts. Its historical course scripts retain course-specific settings; the portable tools are in the top-level skill `scripts/` folder. Read [SNAPSHOT_README.md](vlsi-html-course-studio/assets/placement-lesson06-source/SNAPSHOT_README.md) before trying to rebuild it.
-
-The [validation record](docs/HTML_STUDIO_VALIDATION.md) distinguishes executed tool/browser checks from human listening and translation review. The small downloadable package excludes finished MP4s, raw audio, installed dependencies and private working directories.
-
-## Credit and license
-
-Original skill instructions, portable helpers and original starter code are available under the repository's [MIT License](LICENSE). Third-party artwork and source-derived examples retain their separate provenance; the repository license does not grant rights to third-party material. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the worked example's [CREDITS.md](vlsi-html-course-studio/assets/placement-lesson06-source/course/CREDITS.md).
-
-The course examples credit Yongfu Li and the [EDA Learning project](https://github.com/yongfu-li/eda-learning). The new example explicitly records that the upstream course's stated license intention was not verified as a license grant. Preserve those distinctions when adapting or redistributing examples.
+Original documentation, helpers and new teaching examples are covered by [MIT](LICENSE). Preserve [third-party notices](THIRD_PARTY_NOTICES.md) for the historical course source and character assets. Synthetic fixture provenance is recorded per clip; no voice models, service credentials or human impersonation are included.

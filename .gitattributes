@@ -2,3 +2,4 @@
 /vlsi-html-course-studio/** -text
 /downloads/*.json -text
 /downloads/*.zip binary
+*.mp3 binary

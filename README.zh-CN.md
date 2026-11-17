@@ -1,70 +1,45 @@
 # VLSI Course Director · 课程制作技能库
 
-[English](README.md) · [新版详细用法](docs/HTML_STUDIO_GUIDE.md) · [下载新版技能包](downloads/vlsi-html-course-studio-skill.zip)
+[English](README.md) · [完整复现命令](vlsi-html-course-studio/references/reproduce-v2.md) · [下载当前技能包](downloads/vlsi-html-course-studio-skill.zip)
 
-这个仓库分享实际制作 VLSI / EDA 课程时形成的方法：研究课程、设计叙事、制作动画和声音、准备字幕、实现交互网页与习题，并交付可编辑源码。它是社区技能库，不是课程网站，也不是 OpenAI 官方技能。
+本仓库将制作课程视频、交互网页、配音字幕和习题的方法，落实为可运行的制作工具与课程包接口。它是公开的技能源码仓库，不是课程网站。
 
-## 两个版本如何选择
+## 三个入口
 
-| 版本 | 适合的任务 | 主要内容 |
-|---|---|---|
-| **[vlsi-html-course-studio](vlsi-html-course-studio/SKILL.md)** 新版 | 视频、网页、实验和题目共用 HTML/SVG 组件与状态；需要多语言和互动讲解角色 | 9份详细指南、6个工具、可运行分镜模板、Placement Lesson 06源码实例 |
-| **[vlsi-course-director](vlsi-course-director/SKILL.md)** 原版 | 更轻量、技术路线灵活的课程导演流程 | 原有说明、课程蓝图、Floorplanning案例、本地服务与媒体验证 |
+- **[HTML Course Studio 2](vlsi-html-course-studio/SKILL.md)**：当前推荐入口，共用制作内核、替换课程包、完整有声样例与自动校验。
+- **[原始 Course Director](vlsi-course-director/SKILL.md)**：保留轻量导演流程，技术路线灵活。
+- **[HTML Studio v1 压缩包](downloads/vlsi-html-course-studio-v1.0.0.zip)**：保留上一版方法、无声模板和 Placement 源码先例，可回滚使用。
 
-**旧版目录和安装路径原样保留。** 两个技能使用不同名称，可以并存，按任务明确调用。新版指南主要用中文撰写，代码及教学界面示例默认英文。
+## 新版怎样复用
 
-## 安装与调用
+课程包保存知识模型、SVG 图板、动作、教学意图、台词、译文、音色设置、点评和习题。播放器、配音编排、实测时钟、逐帧导出和完整性验证由同一内核执行。
 
-在支持内置技能安装器的 Codex 对话中发送（不是在 PowerShell 里执行）：
+现成的两套短样例分别讲两引脚线长、逻辑门延迟与关键路径；两者知识结构不同，共用同一内核。各自包含三幕、英中真实旁白缓存、独立字幕、可操作实验与允许多个答案的练习。第一次复现可以完全不调用在线 TTS。
+
+新版检查文稿、声音、时钟、画面与字幕的版本依赖，拒绝新增片段却沿用旧声音、未知场景、损坏缓存和被改动的产物。构建失败不会留下冒充成品的最终目录。
+
+## 安装与使用
+
+在支持内置技能安装器的 Codex 对话里发送：
 
 ```text
 $skill-installer install https://github.com/GateUltra/vlsi-course-director/tree/main/vlsi-html-course-studio
 ```
 
-旧版仍可使用：
+也可以复制整个文件夹到项目 `.agents/skills/`。已有同名安装先检查自己的修改。旧技能名称及路径保持不变。
 
 ```text
-$skill-installer install https://github.com/GateUltra/vlsi-course-director/tree/main/vlsi-course-director
+使用 $vlsi-html-course-studio，依据这些课程材料创建新的课程包：<链接或文件>。
+面向首次学习的大学生，先交付真实配音样片、准确场景移交和一道可操作习题。
+保留共用内核，独立验证知识模型，并报告实际执行的复现检查。
 ```
 
-手动安装时，克隆或下载仓库，把完整的目标技能文件夹复制到项目的 `.agents/skills/` 中，保留内部相对目录。已有同名版本先检查，避免覆盖自己的修改。如果新技能未显示，重启会话。安装位置和发现机制以 [官方说明](https://learn.chatgpt.com/docs/build-skills) 为准。
+从零搭环境和构建两个样例，见[复现指南](vlsi-html-course-studio/references/reproduce-v2.md)。新增课程接口见[契约](vlsi-html-course-studio/references/course-pack-contract.md)。
 
-然后把课程材料交给 AI，例如：
+## 能力边界与证据
 
-```text
-使用 $vlsi-html-course-studio 制作这节 VLSI 课程：<课程链接>。
-面向第一次学习该主题的大学生，英文教学画面，与我用中文交流。
-先制作45–60秒真实配音样片和共享组件的交互版本，
-保留已约定的音色与视觉风格，设计一个预测问题和配套练习。
-```
+当前内核支持确定性的 2D SVG、JSON 状态、数值/指针交互和按状态评分。它没有承诺自动生成任意风格或任意交互。小型样例证明工程链路；完整课程的研究、自然配音、翻译和视觉质量仍需审查。
 
-其他 AI 工具可以按其技能机制安装，或直接读取 `SKILL.md`。技能支持任务范围，不会因为读到制作指南就自动调用在线语音服务或发布网站。
+原 39 幕 Placement 源码、人物 IK 和精细调优完整留底，尚未声称全部转为 v2 课程包。原有 123 个源码/工具文件有哈希基线；原版导演技能保持原样。
 
-## 新版包含的方法
-
-- 课程原文、作业、算法与数值核验；面向大学初学者的因果叙事。
-- HTML/CSS/SVG构图、确定性随机访问渲染、视频/实验/习题共用模型。
-- 科学家闭嘴与胡须微动、双骨IK手势、头像/全身切换、基于真实指标的点评。
-- 实测每种配音的时间轴、精确缓存、语义片段重定时、低音量BGM。
-- 配音和字幕独立选择、英中法西德日韩字幕、小数安全断句、全屏字幕处理。
-- 章节跳转、倍速、语义位置切换、视频中间状态移交、键盘/触摸操作与多解习题。
-- 逐层验收、修改后的重建范围、多智能体分工和完整源文件交付。
-
-## 无需在线服务即可试用
-
-在仓库根目录执行，要求 Python 3.10+，目标目录必须尚不存在：
-
-```powershell
-python vlsi-html-course-studio/scripts/init_course.py --destination ../my-vlsi-lesson --title "My VLSI Studio"
-python vlsi-html-course-studio/scripts/serve_site.py --directory ../my-vlsi-lesson --port 8780
-```
-
-打开 `http://127.0.0.1:8780/`。模板是明确标注的 **32秒无声分镜**，可以拖动点、用键盘微调、把当前画面带进实验并完成一道多解练习。它用来验证技术结构，不冒充带配音成片。
-
-正式制作需要课程模型、真实旁白、实测时钟与字幕；渲染另需 Playwright/Chromium和FFmpeg。详细命令见 [制作工具说明](vlsi-html-course-studio/references/tooling.md)，实际验证见 [验证记录](docs/HTML_STUDIO_VALIDATION.md)。
-
-Placement案例提供完整可读源码和历史记录，**不含MP4、原始音频或依赖环境**；直接打开案例网页会缺少视频。请先读 [源码快照说明](vlsi-html-course-studio/assets/placement-lesson06-source/SNAPSHOT_README.md)。
-
-## 授权和来源
-
-原创技能说明、通用工具及原创起步模板遵循仓库 [MIT License](LICENSE)。第三方头像采用CC0来源记录；课程来源和改写实例另有说明，不因为被放进技能库就改变其权利状态。详见 [第三方来源说明](THIRD_PARTY_NOTICES.md) 和案例 [CREDITS.md](vlsi-html-course-studio/assets/placement-lesson06-source/course/CREDITS.md)。
+查看[本次验收记录](docs/HTML_STUDIO_V2_VALIDATION.md)和[迁移/回滚规则](vlsi-html-course-studio/references/migration-v2.md)。历史验收不冒充新课的通过记录。配音缓存支持离线复现，在线重合成的音色与时长仍可能随服务变化。
